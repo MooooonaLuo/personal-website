@@ -1,3 +1,4 @@
+
 #header{
 	/*width: 1430px;*/
 	height: 110px;
@@ -125,14 +126,15 @@
 
 #about_me{
 	width: 1420px;
-	height: 680px;
-	background: rgb(220,220,220);
+	height: 500px;
+	background: rgb(70,70,70);
 	margin-top: 20px;
-	padding-top: 120px;
+	padding-top: 260px;
+	padding-left: 50px;
 }
 #contact{
-	width: 1420px;
-	height: 680px;
-	background: rgb(200,200,200);
+	/*width: 1420px;*/
+	height: 80px;
+	/*background: rgb(200,200,200);*/
 	margin-top: 20px;
 }
