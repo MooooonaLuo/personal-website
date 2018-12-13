@@ -10,6 +10,7 @@
     left: 0;
     bottom: auto;
     background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo{
 	width: 60px;
@@ -51,9 +52,9 @@
 }
 
 #home{
-	width: 1420px;
+	/*width: 1420px;*/
 	height: 680px;
-	background: rgb(210,210,210);
+	background: rgb(121,189,203);
 	margin-top: 25px;
 	padding-top: 130px;
 }
@@ -125,11 +126,10 @@
 
 
 #about_me{
-	width: 1420px;
-	height: 500px;
-	background: rgb(70,70,70);
-	margin-top: 20px;
-	padding-top: 160px;
+	height: 400px;
+	background: rgb(121,189,203);
+	/*margin-top: 20px;*/
+	padding-top: 200px;
 	padding-left: 50px;
 }
 #contact{
