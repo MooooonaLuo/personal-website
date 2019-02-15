@@ -13,15 +13,15 @@ body{
     left: 0;
     bottom: auto;
     background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
 }
 .logo{
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	float: left;
-	margin-left: 25px;
-	margin-top: 25px;
-	/*margin-left: 550px;*/
+	padding-top: 20px;
+	margin-left: 38%;
+	margin-top: auto;
 }
 .name{
 	width: 100px;
@@ -29,11 +29,12 @@ body{
 	float: left;
 	font-size: 24px;
 	line-height: 65px;
-	padding-left: 15px;
-	font-family: Courier New;
+	padding-left: 30px;
+	/*font-family: Courier New;*/
+	font-family: Optima;
 }
 .nav{
-	width: 450px;
+	width: 30%;
 	height: 100px;
 	float: right;
 }
@@ -53,41 +54,36 @@ body{
 	color: black;
 	/*font-family: Arial;*/
 }
+.nav1:hover{
+	text-decoration: underline;
+}
+.nav2:hover{
+	text-decoration: underline;
+}
+.nav3:hover{
+	text-decoration: underline;
+}
+.nav4:hover{
+	text-decoration: underline;
+}
 
 #home{
 	/*width: 1420px;*/
 	width: auto;
-	height: 680px;
-	background: rgb(121,189,203);
+	height: 800px;
+	background: rgb(0);
 	margin-top: 25px;
-	padding-top: 145px;
-}
-.gif{
-	/*background-image: url(dog.gif);*/
-	/*background-position: center button;*/
-	width: 100px;
-	height: 100px;
-	/*background: yellow;*/
-	margin-left: 324px;
-	margin-top: 120px;
-}
-.welcome p{
-	font-size: 70px;
-	font-family: Stencil Std, fantasy;
-	color: rgb(255,255,255);
-	text-align: center;
-	padding-top: 44px;
+	/*padding-top: 145px;*/
 }
 
 #portfolio{
-	width: 1220px;
-	height: 1030px;
-	background: rgb(255,255,255);
-	/*margin-top: 100px;*/
-	padding-top: 150px;
-	margin-left: auto;;
-	margin-right: auto;
+	/*width: 1300px;*/
+	height: 1600px;
+	padding-top: 100px;
+	padding-left: 70px;
+	/*padding-right: 50px;*/
 	display: block;
+
 }
 #portfolio #port_title{
 	text-align: center;
@@ -100,61 +96,126 @@ body{
 	font-size: 12px;
 	font-family:Optima, sans-serif;
 	/*margin-bottom: 50px;*/
+	/*text-align: center;*/
+	color: white;
 }
 
-#portfolio .box{
-	width: 250px;
-	height: 250px;
+#portfolio h3{
+	text-align: center;
+	margin-top: 140px;
+	font-family:Optima, sans-serif;
+	color: white;
+}
+.box{
+	width: 400px;
+	height: 320px;
 	/*background: rgb(100,100,100);*/
 	float: left;
-	margin-left: 27px;
-	margin-right: 27px;
-	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 50px;
+	background-size: 400px 320px;
 }
-.box img{
-	width: 250px;
-	height: 200px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+#box1{background-image: url(image/recipedia.png);}
+#box1 p{visibility: hidden;}
+#box1 h3{visibility: hidden;}
+#box1:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/recipedia.png);
+	 background-size: 400px 320px;
 }
+#box1:hover p{visibility: visible;}
+#box1:hover h3{visibility: visible;}
 
+#box2{background-image: url(image/animaze.png);}
+#box2 p{visibility: hidden;}
+#box2:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/animaze.png);
+	 background-size: 400px 320px;
+}
+#box2:hover p{visibility: visible;}
 
+#box3{background-image: url(image/t-shirt.jpg);}
+#box3 p{visibility: hidden;}
+#box3:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/t-shirt.jpg);
+	 background-size: 400px 320px;
+}
+#box3:hover p{visibility: visible;}
 
-/*
+#box4{background-image: url(image/cycleccoon.jpg);}
+#box4 p{visibility: hidden;}
+#box4:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cycleccoon.jpg);
+	 background-size: 400px 320px;
+}
+#box4:hover p{visibility: visible;}
 
-#portfolio div{
-	width: 250px;
-	height: 200px;
-	background: rgb(100,100,100);
-	float: left;
+#box5{background-image: url(image/moodi.png);}
+#box5 p{visibility: hidden;}
+#box5:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/moodi.png);
+	 background-size: 400px 320px;
 }
-.work1{
-	margin-left: 130px;
+#box5:hover p{visibility: visible;}
+
+#box6{background-image: url(image/river.png);}
+#box6 p{visibility: hidden;}
+#box6:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(mage/river.png);
+	 background-size: 400px 320px;
 }
-.work5{
-	margin-left: 130px;
+#box6:hover p{visibility: visible;}
+
+#box7{background-image: url(image/corner.png);}
+#box7 p{visibility: hidden;}
+#box7:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/corner.png);
+	 background-size: 400px 320px;
 }
-.workb{
-	margin-left: 50px;
+#box7:hover p{visibility: visible;}
+
+#box8{background-image: url(image/salton.jpg);}
+#box8 p{visibility: hidden;}
+#box8:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/salton.jpg);
+	 background-size: 400px 320px;
 }
-#portfolio .text{
-	width: 1250px;
-	height: 30px;
-	margin-bottom: 50px;
-	background: white;
+#box8:hover p{visibility: visible;}
+
+#box9{background-image: url(image/cool.png);}
+#box9 p{visibility: hidden;}
+#box9:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cool.png);
+	 background-size: 400px 320px;
 }
-#portfolio .text p{
-	float: left;
-	font-size: 12px;
+#box9:hover p{visibility: visible;}
+
+#box10{background-image: url(image/triangle.jpg);}
+#box10 p{visibility: hidden;}
+#box10:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/triangle.jpg);
+	 background-size: 400px 320px;
 }
-.text1{padding-left: 230px;}
-.text2{padding-left: 210px;}
-.text3{padding-left: 200px;}
-.text4{padding-left: 250px;}
-.text5{padding-left: 202px;}
-.text6{padding-left: 210px;}
-.text7{padding-left: 255px;}
-.text8{padding-left: 270px;}
-*/
+#box10:hover p{visibility: visible;}
+
+#box2 h3{visibility: hidden;}
+#box3 h3{visibility: hidden;}
+#box4 h3{visibility: hidden;}
+#box5 h3{visibility: hidden;}
+#box6 h3{visibility: hidden;}
+#box7 h3{visibility: hidden;}
+#box8 h3{visibility: hidden;}
+#box9 h3{visibility: hidden;}
+#box10 h3{visibility: hidden;}
+#box2:hover h3{visibility: visible;}
+#box3:hover h3{visibility: visible;}
+#box4:hover h3{visibility: visible;}
+#box5:hover h3{visibility: visible;}
+#box6:hover h3{visibility: visible;}
+#box7:hover h3{visibility: visible;}
+#box8:hover h3{visibility: visible;}
+#box9:hover h3{visibility: visible;}
+#box10:hover h3{visibility: visible;}
 
 #about_me{
 	height: 400px;
@@ -169,3 +230,12 @@ body{
 	/*background: rgb(200,200,200);*/
 	margin-top: 20px;
 }
+
+p{
+	font-size: 16px;
+	/*letter-spacing: 1px;*/
+	/*word-spacing: 1px;*/
+	line-height: 27px;
+}
+
+

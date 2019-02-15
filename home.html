@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<meta charset="UTF-8">
 	<title>Mona</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css"> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="flocking.js"></script>
 </head>
 <body>
 	<div id="header">
-		<div class="logo">
-			<img src="image/logo.jpg" width="100%"" height="100%">
-		</div>
+		
 		<div class="name">
-			<p>
+			<h2>
 				JIAYU&nbsp;LUO
-			</p>
+			</h2>
+		</div>
+		<div class="logo">
+			<img src="image/Mologo.png" width="100%"" height="100%">
 		</div>
 		
 		<div class="nav">
@@ -27,56 +31,49 @@
 		</div>
 	</div>
 	<div id="home">
-		<div class="gif">
+		<!-- <div class="gif">
 			<img class="gif" src="image/cat.gif" width="50%" height="50%">
 		</div>
 		<div class="welcome">
 			<p>WELCOME</p>
 		</div>
-		<img src="image/arrow.png", width="40px", style="margin-top: 135px;">
+ -->		<!-- <img src="image/arrow.png", width="40px", style="margin-top: 135px;"> -->
 	</div>
 	<div id="portfolio">
-		<p id="port_title">PORTFOLIO</p>
-			<div class="box">
-				<a href="animaze.html"><div> <img src="image/animaze.png" width="100%" height="100%"> </div></a>
-				<p>Animaze</p>
-			</div>
-			<div class="box">
-				<a href="crane.html"><div> <img src="image/t-shirt.jpg" width="100%" height="100%"></div></a>
-				<p>White Cranes And The Sea</p>
-			</div>
-			<div class="box">
-				<a href="cycleccoon.html"><div > <img src="image/cycleccoon.jpg" width="100%" height="100%"></div></a>
-				<p>Cycleccoon</p>
-			</div>	
-			<div class="box">
-				<a href="moodi.html"><div> <img src="image/moodi.png" width="100%" height="100%"></div></a>
-				<p>Moodi</p>
-			</div>
-			<div class="box">
-				<a href="flower_and_smoke.html"><div> <img src="image/corner.png" width="100%" height="100%"></div></a>
-				<p>Flower and Smoke</p>
-			</div>
-			<div class="box">
-				<a href="the_lost_city.html"><div><img src="image/salton.jpg" width="100%" height="100%"></div></a>
-				<p>The Lost City</p>
-			</div>
-			<div class="box">
-				<a href="cool.html"><div><img src="image/cool.png" width="100%" height="100%"></div></a>
-				<p>#Cool</p>
-			</div>
-			<div class="box">
-				<a href="triangle.html"><div><img src="image/triangle.jpg" width="100%" height="100%"></div></a>
-				<p>Triangle</p>
-			</div>
-			<div class="box">
-				<a href="https://www.youtube.com/watch?v=9SnSDZbdbus"><div><img src="image/river.png" width="100%" height="100%"></div></a>
-				<p>Follow The River</p>
-			</div>
-			<div class="box">
-				<a href="recipedia.html"><div><img src="image/recipedia.png" width="100%" height="100%"></div></a>
-				<p>Recipedia</p>
-			</div>
+		<!-- <p id="port_title">PORTFOLIO</p> -->
+			<a href="recipedia.html"><div class="box" id="box1">
+				<h3>Recipedia</h3><p>Recipe Generation Web App</p></div></a>
+				
+			<a href="animaze.html"><div class="box" id="box2">
+				<h3>Animaze</h3><p>Story-Driven Interactive Art</p></div></a>
+
+			<a href="crane.html"><div class="box" id="box3">
+				<h3>White Cranes And The Sea</h3><p>Graphic Design</p></div></a>
+
+			<a href="cycleccoon.html"><div class="box" id="box4">
+				<h3>Cycleccoon</h3><p>Speculative Design Featuring Raccoon VR Goggles </p></div></a>
+
+			<a href="moodi.html"><div class="box" id="box5">
+				<h3>Moodi</h3><p>Idea for Mood Recording App</p></div></a>
+
+			<a href="https://www.youtube.com/watch?v=9SnSDZbdbus"><div class="box" id="box6">
+				<h3>Follow The River</h3><p>Video of Contemporary Dance</p></div></a>
+
+			<a href="flower_and_smoke.html"><div class="box" id="box7">
+				<h3>Flower and Smoke</h3><p>Portrait Photography</p></div></a>
+
+			<a href="the_lost_city.html"><div class="box" id="box8">
+				<h3>The Lost City</h3><p>Photography - A Road Trip in Salton City</p></div></a>
+
+			<a href="cool.html"><div class="box" id="box9">
+				<h3>#Cool</h3><p>Street Photography</p></div></a>
+
+			<a href="triangle.html"><div class="box" id="box10">
+				<h3>Triangle</h3><p>Typography</p></div></a>
+
+
+
+		
 
 	</div>
 	<div id="about_me">
