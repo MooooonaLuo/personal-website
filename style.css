@@ -1,6 +1,7 @@
 
 body{
 	margin:0;
+	background: rgb(245,245,245);
 }
 #header{
 	/*width: 1430px;*/
@@ -198,6 +199,14 @@ body{
 }
 #box10:hover p{visibility: visible;}
 
+#box11{background-image: url(image/solemate.jpg);}
+#box11 p{visibility: hidden;}
+#box11:hover{
+	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);
+	 background-size: 400px 320px;
+}
+#box11:hover p{visibility: visible;}
+
 #box2 h3{visibility: hidden;}
 #box3 h3{visibility: hidden;}
 #box4 h3{visibility: hidden;}
@@ -207,6 +216,8 @@ body{
 #box8 h3{visibility: hidden;}
 #box9 h3{visibility: hidden;}
 #box10 h3{visibility: hidden;}
+#box11 h3{visibility: hidden;}
+
 #box2:hover h3{visibility: visible;}
 #box3:hover h3{visibility: visible;}
 #box4:hover h3{visibility: visible;}
@@ -216,6 +227,7 @@ body{
 #box8:hover h3{visibility: visible;}
 #box9:hover h3{visibility: visible;}
 #box10:hover h3{visibility: visible;}
+#box11:hover h3{visibility: visible;}
 
 #about_me{
 	height: 400px;
