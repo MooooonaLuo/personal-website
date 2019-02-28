@@ -78,7 +78,7 @@ body{
 }
 
 #portfolio{
-	/*width: 1300px;*/
+	width: 100%;
 	height: 1500px;
 	padding-top: 100px;
 	padding-left: 70px;
@@ -98,14 +98,14 @@ body{
 	font-family:Optima, sans-serif;
 	/*margin-bottom: 50px;*/
 	/*text-align: center;*/
-	color: white;
+	color: black;
 }
 
 #portfolio h3{
 	text-align: center;
 	margin-top: 140px;
 	font-family:Optima, sans-serif;
-	color: white;
+	color: black;
 }
 .box{
 	width: 400px;
@@ -121,8 +121,9 @@ body{
 #box1 p{visibility: hidden;}
 #box1 h3{visibility: hidden;}
 #box1:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/recipedia.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/recipedia.png);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box1:hover p{visibility: visible;}
 #box1:hover h3{visibility: visible;}
@@ -130,80 +131,90 @@ body{
 #box2{background-image: url(image/animaze.png);}
 #box2 p{visibility: hidden;}
 #box2:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/animaze.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/animaze.png);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box2:hover p{visibility: visible;}
 
 #box3{background-image: url(image/t-shirt.jpg);}
 #box3 p{visibility: hidden;}
 #box3:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/t-shirt.jpg);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/t-shirt.jpg);*/
 	 background-size: 400px 320px;
+	  background: white;
 }
 #box3:hover p{visibility: visible;}
 
 #box4{background-image: url(image/cycleccoon.jpg);}
 #box4 p{visibility: hidden;}
 #box4:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cycleccoon.jpg);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cycleccoon.jpg);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box4:hover p{visibility: visible;}
 
 #box5{background-image: url(image/moodi.png);}
 #box5 p{visibility: hidden;}
 #box5:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/moodi.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/moodi.png);*/
 	 background-size: 400px 320px;
+	  background: white;
 }
 #box5:hover p{visibility: visible;}
 
 #box6{background-image: url(image/river.png);}
 #box6 p{visibility: hidden;}
 #box6:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(mage/river.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(mage/river.png);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box6:hover p{visibility: visible;}
 
 #box7{background-image: url(image/corner.png);}
 #box7 p{visibility: hidden;}
 #box7:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/corner.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/corner.png);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box7:hover p{visibility: visible;}
 
 #box8{background-image: url(image/salton.jpg);}
 #box8 p{visibility: hidden;}
 #box8:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/salton.jpg);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/salton.jpg);*/
 	 background-size: 400px 320px;
+	  background: white;
 }
 #box8:hover p{visibility: visible;}
 
 #box9{background-image: url(image/cool.png);}
 #box9 p{visibility: hidden;}
 #box9:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cool.png);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cool.png);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box9:hover p{visibility: visible;}
 
 #box10{background-image: url(image/triangle.jpg);}
 #box10 p{visibility: hidden;}
 #box10:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/triangle.jpg);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/triangle.jpg);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box10:hover p{visibility: visible;}
 
 #box11{background-image: url(image/solemate.jpg);}
 #box11 p{visibility: hidden;}
 #box11:hover{
-	 background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
 	 background-size: 400px 320px;
+	 background: white;
 }
 #box11:hover p{visibility: visible;}
 
@@ -230,10 +241,11 @@ body{
 #box11:hover h3{visibility: visible;}
 
 #about_me{
+	float: left;
 	height: 500px;
 	background: rgb(90,90,90);
 	/*margin-top: 20px;*/
-	padding-top: 120px;
+	padding-top: 230px;
 	padding-left: 50px;
 	margin-top: 50px;
 }
@@ -242,6 +254,7 @@ body{
 	height: 80px;
 	/*background: rgb(200,200,200);*/
 	/*margin-top: 20px;*/
+	float: left;
 }
 
 p{
