@@ -1,7 +1,7 @@
 
 
 function setup() {
-  var m = createCanvas(windowWidth, windowHeight*90%);
+  var m = createCanvas(windowWidth, windowHeight);
   m.parent("home");
   background(20);
   strokeWeight(1);
