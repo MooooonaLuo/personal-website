@@ -218,6 +218,24 @@ body{
 }
 #box11:hover p{visibility: visible;}
 
+#box12{background-image: url(image/LB.jpg);}
+#box12 p{visibility: hidden;}
+#box12:hover{
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
+	 background-size: 400px 320px;
+	 background: white;
+}
+#box12:hover p{visibility: visible;}
+
+#box13{background-image: url(image/cdc.jpg);}
+#box13 p{visibility: hidden;}
+#box13:hover{
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
+	 background-size: 400px 320px;
+	 background: white;
+}
+#box13:hover p{visibility: visible;}
+
 #box2 h3{visibility: hidden;}
 #box3 h3{visibility: hidden;}
 #box4 h3{visibility: hidden;}
@@ -228,6 +246,8 @@ body{
 #box9 h3{visibility: hidden;}
 #box10 h3{visibility: hidden;}
 #box11 h3{visibility: hidden;}
+#box12 h3{visibility: hidden;}
+#box13 h3{visibility: hidden;}
 
 #box2:hover h3{visibility: visible;}
 #box3:hover h3{visibility: visible;}
@@ -239,6 +259,8 @@ body{
 #box9:hover h3{visibility: visible;}
 #box10:hover h3{visibility: visible;}
 #box11:hover h3{visibility: visible;}
+#box12:hover h3{visibility: visible;}
+#box13:hover h3{visibility: visible;}
 
 #about_me{
 	float: left;
