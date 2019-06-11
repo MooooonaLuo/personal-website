@@ -7,14 +7,47 @@
 	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
 	<link rel="stylesheet" href="style.css"> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="analytics.js"></script>
     <!-- <script src="flocking.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
-    	body{
-    			/*background: rgb(245,245,245);*/
-    	}
+    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
     </style>
 </head>
 <body>
+
+<label>
+	<input type='checkbox'>
+	<span class='menu'> <span class='hamburger'></span> </span>
+	<ul onclick="disappear()">
+	  <li> <a href='#portfolio'>PORTFOLIO</a> </li>
+	  <li> <a href='#about_me'>ABOUT ME</a> </li>
+	  <li> <a href='#contact'>CONTACT</a> </li>
+	</ul>
+	<script>
+		function disappear(){
+			$("label input").prop("checked", false);
+		}
+		
+	</script>
+	
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','analytics.js','ga');
+
+	  ga('create', 'UA-46156385-1', 'cssscript.com');
+	  ga('send', 'pageview');
+
+	</script>
+</label>
+
 	<div id="header">
 		
 		<div class="name">
@@ -22,12 +55,10 @@
 				JIAYU&nbsp;LUO
 			</h2>
 		</div>
-		<div class="logo">
-			<!-- <img src="image/Mologo.png" width="100%"" height="100%"> -->
-		</div>
+
 		
 		<div class="nav">
-			<ul>
+			<ul class="navitems">
 				<li class="nav1"> <a href="#home">HOME</a> </li>
 				<li class="nav2"> <a href="#portfolio">PORTFOLIO</a> </li>
 				<li class="nav3"> <a href="#about_me">ABOUT ME</a> </li>
@@ -39,59 +70,73 @@
 		<a href=""><img id="gif" src="image/hashtag.gif" onmousedown="document.getElementById('gif').src='image/hashtag.gif'" width="100%"></a>
 	</div>
 	<div id="portfolio">
-		<!-- <p id="port_title">PORTFOLIO</p> -->
+		<h2 id="port_title">PORTFOLIO</h2>
 			<a href="solemate.html"><div class="box" id="box11">
 				<h3>SoleMate</h3><p>UI/UX | Assisting Lower Extremity Injury Rehabilitation</p></div></a>
+			<div class="description"><h3>SoleMate</h3><p>UI/UX | Assisting Lower Extremity Injury Rehabilitation</p></div>
 			<a href="recipedia.html"><div class="box" id="box1">
 				<h3>Recipedia</h3><p>UI/UX | Recipe Generation Web App</p></div></a>
+			<div class="description"><h3>Recipedia</h3><p>UI/UX | Recipe Generation Web App</p></div>
 			<a href="LB.html"><div class="box" id="box12">
 				<h3>Leo Burnett Internship</h3><p>Graphic Design | Audi Automobile Advertising </p></div></a>
+			<div class="description"><h3>Leo Burnett Internship</h3><p>Graphic Design | Audi Automobile Advertising </p></div>
 			<a href="CDC.html"><div class="box" id="box13">
 				<h3>Chinese Drama Club</h3><p>Graphic Design | Advertising for shows </p></div></a>
+			<div class="description"><h3>Chinese Drama Club</h3><p>Graphic Design | Advertising for shows </p></div>
 				
 			<a href="animaze.html"><div class="box" id="box2">
 				<h3>Animaze</h3><p>Digital Art | Story-Driven Interactive Art</p></div></a>
+			<div class="description"><h3>Animaze</h3><p>Digital Art | Story-Driven Interactive Art</p></div>
 
 			<a href="moodi.html"><div class="box" id="box5">
 				<h3>Moodi</h3><p>Early UI/UX Work | Idea for Mood Recording App</p></div></a>
+			<div class="description"><h3>Moodi</h3><p>Early UI/UX Work | Idea for Mood Recording App</p></div>
 
 			<a href="crane.html"><div class="box" id="box3">
 				<h3>White Cranes And The Sea</h3><p>Graphic Design | T-shirt Design in Chinese Style</p></div></a>
+			<div class="description"><h3>White Cranes And The Sea</h3><p>Graphic Design | T-shirt Design in Chinese Style</p></div>
 
 			<a href="cycleccoon.html"><div class="box" id="box4">
 				<h3>Cycleccoon</h3><p>Speculative Design | Raccoon Working VR Goggles<br>to Consume Food Waste</p></div></a>		
+			<div class="description"><h3>Cycleccoon</h3><p>Speculative Design | Raccoon Working VR Goggles<br>to Consume Food Waste</p></div>
 
 			<a href="https://www.youtube.com/watch?v=9SnSDZbdbus"><div class="box" id="box6">
 				<h3>Follow The River</h3><p>Video Making | Contemporary Dance</p></div></a>
+			<div class="description"><h3>Follow The River</h3><p>Video Making | Contemporary Dance</p></div>
 
 			<a href="flower_and_smoke.html"><div class="box" id="box7">
 				<h3>Flower and Smoke</h3><p>Analogue Photography | Portrait Photography</p></div></a>
+			<div class="description"><h3>Flower and Smoke</h3><p>Analogue Photography | Portrait Photography</p></div>
 
 			<a href="the_lost_city.html"><div class="box" id="box8">
 				<h3>The Lost City</h3><p>Analogue Photography | A Road Trip in Salton City</p></div></a>
+			<div class="description"><h3>The Lost City</h3><p>Analogue Photography | A Road Trip in Salton City</p></div>
 
 			<a href="cool.html"><div class="box" id="box9">
 				<h3>#Cool</h3><p>Digital Photography | How Do People Tag Themselves</p></div></a>
+			<div class="description"><h3>#Cool</h3><p>Digital Photography | How Do People Tag Themselves</p></div>
 
 			<a href="triangle.html"><div class="box" id="box10">
 				<h3>Triangle</h3><p>Typography</p></div></a>
+			<div class="description"><h3>Triangle</h3><p>Typography</p></div></div>
 
 
 
 		
 
 	</div>
+
 	<div id="about_me">
-	<img src="image/photo.png" style="float: left; margin-left: 200px;" width="300px;">
-	<p style="color: white; font-size:20px; font-family: Optima, sans-serif; float: left; margin-left: 100px; line-height: 30px; margin-top: 80px">Hi! My Name is Jiayu Luo. People usually call me Mona.<br>I am a designer and artist, focusing on UIUX, digital art, and graphic design.<br>I am currectly studying at UCSD Visual Art Department.</p>
-	<a href="Jiayu's Resume.pdf" style="color: white; font-size:20px; font-family: Optima, sans-serif; float: left; margin-left: 100px; line-height: 30px; ">Resume</a>
+	<img src="image/photo.png" width="300px;">
+	<p>Hi! My Name is Jiayu Luo. People usually call me Mona.<br>I am a designer and artist, focusing on UIUX, digital art, and graphic design.<br>I am currectly studying at UCSD Visual Art Department.</p>
+	<a href="Jiayu's Resume.pdf">Resume</a>
 	</div>
-	<div id="contact" style="font-family: Optima, sans-serif; color: black; padding-left: 500px; padding-top: 30px; width: auto; background: white;">
-		<div style="width: 250px; height: 50px; float: left; margin-left: 30px;">
+	<div id="contact">
+		<div id="email">
 			<img src="image/outlook.png", height="30px;", style="float: left; margin-top: 10px;">
-			<p style="float: left; margin-left: 10px; line-height: 18px;">mona_luo@outlook.com</p>
+			<p style="float: left; margin-left: 10px; line-height: 18px; color: rgb(100,100,100);">mona_luo@outlook.com</p>
 		</div>
-		<div style="width: 250px; height: 50px; float: left; margin-left: 30px;">
+		<div id="linkedin" style=" height: 50px; float: left; margin-left: 50px;">
 			<a href="https://www.linkedin.com/in/jiayu-luo-aa48a217b/"><img src="image/linkedin.png", height="28px;", style="float: left; margin-top: 10px;"></a>
 		</div>
 	</div>
