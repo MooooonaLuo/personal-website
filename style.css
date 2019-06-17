@@ -536,7 +536,8 @@ p{
 	}
 
 	label input:checked + .menu + ul { 
-		opacity: 1; 
+		/*opacity: 1; */
+		display: block;
 	}
 
 
@@ -554,7 +555,8 @@ p{
 	  left: 45%;
 	  -webkit-transform: translate(-50%, -50%);
 	  transform: translate(-50%, -50%);
-	  opacity: 0;
+	  /*opacity: 0;*/
+	  display: none;
 	  -webkit-transition: .25s 0s ease-in-out;
 	  transition: .25s 0s ease-in-out;
 	  list-style: none;
