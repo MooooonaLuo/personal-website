@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Animaze</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css"> 
 	<style type="text/css">
 		.title{
@@ -64,10 +65,41 @@
 			float: left;
 			margin-left: 300px;
 		}
+		iframe{
+			height: 563px;
+		}
+		@media only screen and (max-width: 450px){
+			.content{
+				width: 80%;
+			}
+			.ani{
+				width: 150px;
+				height: 135px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding-top: 20px;
+			}
+			iframe{
+				height: 200px;
+			}
+			#description{
+				height: 700px;
+			}
+			#des1{
+				float: left;
+			}
+			#des2{
+				margin-left: 0px;
+			}
+			#des3{
+				margin-left: 0px;
+			}
+		}
 	</style>
 </head>
 <body>
-	<img src="image/animaze_cover.jpg" width="100%">
+	<!-- <img src="image/animaze_cover.jpg" width="100%"> -->
 	<div class="title">
 		 <h1>ANIMAZE</h1>
 		 <p>Interactive Art &#183; 2017</p>
@@ -90,8 +122,7 @@
 			</div>
 		</div>
 		<p style="font-size: 25px; text-align: center; margin-top: 100px;">The Making Process &amp; Output</p>
-		<iframe width="1000" height="563" src="https://www.youtube.com/embed/AU07XitRX2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</iframe>
+		<iframe width="100%"  src="https://www.youtube.com/embed/AU07XitRX2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 		<p style="margin-top: 100px;">Designed cartoon characters and animation with Piskel. Used Processing to put all elements together to make the whole interactive animation.</p>
 		<img src="image/piskel.jpg" width="100%">
@@ -106,7 +137,7 @@
 		<p style="font-size: 25px; text-align: center;">How Do You Play?</p>
 		<p>
 		Animaze is as simple as simply picking it up and playing! Do your best to get from the start to the finish! However, that is only the half of it. Watch the screen as an animated story plays along with you! The mean Cat has stolen Dog's favorite stuffed toy! Traverse through the maze and help Dog retrieve his toy. As you progress through the maze, so does the story. Just be careful, the mean Cat does not like to play nice. Can you help Dog retrieve his precious toy? He needs you! <br /><br /></p>
-		<img src="image/animaze1.png" width=1000px >
+		<img src="image/animaze1.png" width=100% >
 		<p style="font-size: 25px; text-align: center; margin-top: 100px;">What are kids saying about Animaze?</p>
 		<p class="comment">
 		"I love mazes and now I love them even more!" <br/>
