@@ -73,7 +73,7 @@ body{
 	/*width: 100%;*/
 	height: 1500px;
 	margin-top: 50px;
-	padding-top: 10%;
+	padding-top: 2%;
 	padding-left: 70px;
 	/*padding-right: 50px;*/
 	display: block;
@@ -234,6 +234,26 @@ body{
 }
 #box13:hover p{visibility: visible;}
 
+#box14{background-image: url(image/youtuber_hunter.jpg);}
+#box14 p{visibility: hidden;}
+#box14:hover{
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
+	 background-size: 400px 320px;
+	 background: white;
+}
+#box14:hover p{visibility: visible;}
+
+#box15{background-image: url(image/meetful.jpg);}
+#box15 p{visibility: hidden;}
+#box15:hover{
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
+	 background-size: 400px 320px;
+	 background: white;
+}
+#box15:hover p{visibility: visible;}
+
+
+
 #box2 h3{visibility: hidden;}
 #box3 h3{visibility: hidden;}
 #box4 h3{visibility: hidden;}
@@ -246,6 +266,8 @@ body{
 #box11 h3{visibility: hidden;}
 #box12 h3{visibility: hidden;}
 #box13 h3{visibility: hidden;}
+#box14 h3{visibility: hidden;}
+#box15 h3{visibility: hidden;}
 
 #box2:hover h3{visibility: visible;}
 #box3:hover h3{visibility: visible;}
@@ -259,6 +281,8 @@ body{
 #box11:hover h3{visibility: visible;}
 #box12:hover h3{visibility: visible;}
 #box13:hover h3{visibility: visible;}
+#box14:hover h3{visibility: visible;}
+#box15:hover h3{visibility: visible;}
 }
 
 .description{
@@ -427,6 +451,8 @@ p{
 	#box11{background-image: url(image/solemate.jpg);}
 	#box12{background-image: url(image/LB.jpg);}
 	#box13{background-image: url(image/cdc.jpg);}
+	#box14{background-image: url(image/youtuber_hunter.jpg);}
+	#box15{background-image: url(image/meetful.jpg);}
 
 	#port_title{
 	visibility: visible;
