@@ -45,6 +45,7 @@ body{
 	text-decoration: none;
 	font-family: Optima, sans-serif;
 	font-size: 14px;
+	letter-spacing: 0.7px;
 	color: black;
 	/*font-family: Arial;*/
 }
@@ -338,7 +339,7 @@ body{
 	margin-left: 30px;
 }
 p{
-	font-size: 16px;
+	font-size: 17px;
 	/*letter-spacing: 1px;*/
 	/*word-spacing: 1px;*/
 	line-height: 27px;
