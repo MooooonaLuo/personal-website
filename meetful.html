@@ -112,6 +112,19 @@
 			line-height: 27px;
 
 		}
+		#gif1{
+			margin-left: 0;
+			margin-right: 0;
+			float: left;
+		}
+		#gif2{
+			margin-left: 100px;
+			margin-right: 0;
+			float: left;
+		}
+		#gif{
+			height: 450px;
+		}
 				
 		@media only screen and (max-width: 450px){
 			.content{
@@ -134,6 +147,13 @@
 			#concepts{
 				margin-bottom: 0px;
 			}
+			#gif2{
+				margin-left: 30px;
+			}
+			#gif{
+				height: 130px;
+			}
+
 
 		}
 		
@@ -148,7 +168,7 @@
 			 <p>UI/UX &#183; 2019</p>
 		</div>
 		<div class="content">
-			<p>Meetful is a website that aims to help college students or companies to make meeting planning easier. This project is initialized by UCSD <a style="color: rgb(90,90,90);" href="http://ucsdtriplec.org/"> Chinese Computer Community (Triple C)</a>. We have published the website online in June 2019. This project is still in progress. <a style="color: #3227A1; font-weight: bold; text-decoration: none;" href="http://meetful.ucsdtriplec.org/">Click to try Meetful!</a></p>
+			<p>Meetful is a website that aims to help college students to make meeting planning easier. This project is initialized by UCSD <a style="color: rgb(90,90,90);" href="http://ucsdtriplec.org/"> Chinese Computer Community (Triple C)</a>. We have published the website online in June 2019. This project is still in progress. <a style="color: #3227A1; font-weight: bold; text-decoration: none;" href="http://meetful.ucsdtriplec.org/">Click to try Meetful!</a></p>
 			<br><br>
 			<div id="description">
 				<div id="des1">
@@ -163,28 +183,37 @@
 
 			<p id="concepts">Concepts &amp; Background</p><br>
 			<p id="subtitle">Why Meetful?</p>
-			<p>The existing meeting planning websites all have some problems. They are either too complex, inflexible, not visually pleasant, or not mobile friendly. We aimed to design Meetful to be the best website that people would use for meeting planning!</p>	
+			<p>The existing meeting planning websites all have some problems. They are either too complex, inflexible, not visually pleasant, or not mobile friendly.</p>	
 			<img id="problem_img" src="image/meetful1.png" width="100%">
 			<br><br>
-			<p id="subtitle">Our Solution</p>	
-			<p>Our project is inspired by When2Meet, while we made improvements based on its flaws. When2Meet is the most popular websites used by college students. It is convenient and flexible for users to choose their available time. However, the UI is not visually pleasant, and some parts of design are not user-friendly.</p>
-			<br>
+			<p>When2Meet is the most popular website used by college students. It is convenient and flexible for event participants to choose their available time. Based on participants' schedule, the event organizer is able to come up with most ideal scedule to hold the event. Nonetheless, many users complained that the UI is not visually pleasant, and some parts of design are not user-friendly.</p><br>
 			<img src="image/When2meet.jpg" width="60%">
-			<p id="pic_des">Screenshot of When2Meet</p>
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Wireframe</p><br>
-			<img id="wireframe" src="image/meetful_w1.png">
-			<br><br>
-			<img id="wireframe" src="image/meetful_w2.png">
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">High Fidelity Prototype</p><br>
-			<img id="wireframe" src="image/meetful_hifi.png">
-			<p style="margin-top: 120px; margin-bottom: 0px;font-size: 30px; font-weight: bold">Feature Highlights</p><br>
-			<p style="margin-bottom: 0px;">We made several improvements compared to When2Meet:<br><br></p>
+			<p id="pic_des">Screenshot of When2Meet</p><br><br>
+			<p>Our project is inspired by When2Meet, while we made considerable improvements of visual design and interaction experience. </p>
+			<br>
+			
+			<p style="margin-top: 120px; margin-bottom: 0px;font-size: 30px; font-weight: bold">Main Improvements</p><br>
+			<p style="margin-bottom: 0px;">We made several improvements based on When2Meet:<br><br></p>
 			<ol type="I" id="improvement">
-				<li>We made great improvements in UI design. We even added some illustration to make the website look fun.</li>
-				<li>On When2Meet, users drag on the time table to choose a period, which causes inconvenience on mobile version. To improve this function, on Meetful, users click on the beginning and on the end to choose a period.</li>
-				<li>We offer both Top 5 Result and All Result to users and have more readable UI design.</li>
+				<li>We put efforts on UI design, making the website visually pleasant by using comfortable color palette, delightful illustrations, and appropriate spacing.</li>
+				<li>On When2Meet (left), users drag on the time table to choose a period. This feature is great on computer screen but causes inconvenience on phone screen. The small time table makes it hard to accurately choose a time period with fingers. On Meetful (right), users click on the beginning and on the end to choose a period. Besides, the time table on Meetful almost occupies the whole screen, making it easier to use on mobile phones.</li>
+				<br>
+				<div id="gif">
+					<img id="gif1" src="image/when2meet_vs.gif" width="40%">
+					<img id="gif2" src="image/meetful_vs.gif" width="40%">
+				</div>
+				<li>On When2Meet's result page, different shades of green indicates different availabilities (if there are 6 participants, it will have 6 different shades). The problem is that if the number of participants is big, the difference of shades is hard to perceive. In comparison, Meetful uses only 4 different shades to represent different availabilities —— all available, >75% available, >50% available, and <50% available. Besides, Meetful also provides Top 5 Results, since these are what the organizer cares about the most.</li>
+				<br><br>
+				<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);" src="image/when2meet_vs-01.jpg" width="70%">
+				<p style="font-size: 16px; text-align: center;">When2Meet</p>
+				<br><br>
+				<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);" src="image/meetful_vs-01.jpg" width="70%">
+				<br><br>
+				<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);" src="image/meetful_vs.png" width="70%">
+				<p style="font-size: 16px; text-align: center;">Meetful</p>
 			</ol>
-
+			<br><br>
+			<p style="margin-top: 120px; margin-bottom: 0px;font-size: 30px; font-weight: bold">Feature Highlights</p><br>
 			<img id="meetful_f" src="image/meetful_f1.jpg">
 			<p style="font-size: 20px; text-align: center;">Starting Page</p>
 			<img id="meetful_f" src="image/meetful_f2.jpg">
@@ -195,6 +224,14 @@
 			<p style="font-size: 20px; text-align: center;">Top 5 results for ideal meeting time</p>
 			<img id="meetful_f" src="image/meetful_f5.jpg">
 			<p style="font-size: 20px; text-align: center;">All results for ideal meeting time</p>
+			
+			
+			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Wireframe</p><br>
+			<img id="wireframe" src="image/meetful_w1.png">
+			<br><br>
+			<img id="wireframe" src="image/meetful_w2.png">
+			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">High Fidelity Prototype</p><br>
+			<img id="wireframe" src="image/meetful_hifi.png">
 			
 
 
