@@ -311,15 +311,31 @@ body{
 	margin-top: 30px;
 }
 #about_me a{
-	color: white;
 	font-size:20px;
 	float: left;
 	margin-right: 30px;
 	font-family: Optima, sans-serif;
 	line-height: 30px;
 }
+#about_me p{
+	color: white;
+}
 .contact{
 	padding-left: 300px;
+}
+
+.contact a{
+	background: white;
+	width: 100px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	text-align: center;
+	color: rgb(90,90,90);
+}
+.contact a:hover{
+	background: rgb(90,90,90);
+	color: white;
 }
 
 #contact{
@@ -334,6 +350,7 @@ body{
 	width: auto;
 	background: white;
 }
+
 #email{
 	height: 50px;
 	float: left;
