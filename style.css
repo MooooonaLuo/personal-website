@@ -4,7 +4,7 @@ html {
 
 
 
-@media only screen and (min-width: 451px){
+@media only screen and (min-width: 1031px){
 
 body{
 	margin:0;
@@ -377,7 +377,262 @@ p{
 
 
 /*-------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 450px){
+@media only screen and (min-width: 760px) and (max-width: 1030px){
+	body{
+	margin:0;
+}
+
+#home_body{
+	background: black;
+}
+
+#about_me{
+	height: auto;
+	margin-left: 50px;
+	margin-bottom: 400px;
+	margin-top: 100px
+	
+}
+
+#about_me h3{
+	padding-top: 25px;
+	font-family: PT Sans;
+	font-size: 40px;
+	color: white;
+	letter-spacing: 0.05em;
+}
+
+#about_me p{
+	font-family: PT Sans;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+	letter-spacing: 0.05em;
+	width: 600px;
+	margin-bottom: 30px;
+}
+
+#img1{
+	float: left;
+	width: 3%
+}
+
+#img2{
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	width: 4%;
+}
+
+#img3{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	margin-top: 50px;
+}
+
+#img4{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	margin-left: 20px;
+	margin-top: 52px;
+}
+
+#home{
+	width: auto;
+	height: auto;
+	background: black;
+}
+
+#home p{
+	font-family: PT Sans;
+	letter-spacing: 0.05em;
+}
+
+#neon{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 50%;
+}
+
+#home .title{
+	color: rgb(220,220,220);
+	font-size: 14px;
+}
+
+#portfolio{
+	height: auto;
+	margin-bottom: 100px;
+	padding-top: 20px;
+	padding-left: 15px;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#navigation{
+	width: 700px;
+	/*height: 725px;*/
+	/*background: red;*/
+	float: left;
+	padding-top: 100px;
+	padding-left: 20px;
+}
+
+#navigation p{
+	text-align: left;
+	font-size: 14px;
+	font-family:PT Sans;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+	float: left;
+	padding-left: 20px;
+}
+#port_title{
+	visibility: hidden;
+	text-align: center;
+	font-size: 20px;
+	font-family:Optima, sans-serif;
+	/*margin-bottom: 50px;*/
+}
+#portfolio p{
+	text-align: center;
+	font-size: 13px;
+	font-family:PT Sans;
+	/*margin-bottom: 50px;*/
+	/*text-align: center;*/
+	color: white;
+	letter-spacing: 0.05em;
+	visibility: hidden;
+}
+
+#portfolio h3{
+	text-align: center;
+	margin-top: 40px;
+	font-family:PT Sans;
+	color: white;
+	letter-spacing: 0.05em;
+	visibility: hidden;
+}
+
+
+.description p{
+	color: white;
+	letter-spacing: 0.05em;
+}
+
+#uiux_nav{
+	cursor: pointer;
+	color: rgb(250,250,250);
+}
+#artwork_nav{
+	cursor: pointer;
+	color: rgb(160,160,160);
+}
+#graphic_design_nav{
+	cursor: pointer;
+	color: rgb(160,160,160);
+}
+#uiux{
+	display: initial;
+}
+
+#artwork{
+	display: none;
+}
+
+
+#graphic_design{
+	display: none;
+}
+
+#navigation #copyright{
+	display: none;
+	margin-top: 470px; 
+	color: white; 
+	font-weight: normal; 
+	font-size: 15px; 
+	color: rgb(160,160,160);
+}
+
+#copyright2{
+	float: left;
+	font-family:PT Sans;
+	color: white;
+	letter-spacing: 0.05em;
+	font-size: 15px;
+	color: rgb(160,160,160);
+	padding-left: 20%;
+}
+
+
+
+	.box{
+		width: 340px;
+		height: 272px;
+		/*background: rgb(100,100,100);*/
+		float: none;
+		margin-left: 0px;
+		margin-right: 20px;
+		margin-top: 10px;
+		background-size: 100% 100%;
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+	}
+	
+
+
+	#box1{background-image: url(image/recipedia.png);}
+	#box2{background-image: url(image/animaze.png);}
+	#box4{background-image: url(image/cycleccoon.jpg);}
+	#box5{background-image: url(image/moodi.png);}
+	#box6{background-image: url(image/river.png);}
+	#box7{background-image: url(image/corner.png);}
+	#box8{background-image: url(image/salton.jpg);}
+	#box9{background-image: url(image/cool.png);}
+	#box10{background-image: url(image/triangle.jpg);}
+	#box11{background-image: url(image/solemate.jpg);}
+	#box12{background-image: url(image/LB.jpg);}
+	#box13{background-image: url(image/t-shirt.jpg);}
+	#box14{background-image: url(image/youtuber_hunter.jpg);}
+	#box15{background-image: url(image/meetful.jpg);}
+
+	#port_title{
+		visibility: visible;
+		font-weight: normal;
+		font-size: 18px;
+	}
+	.description{
+			display: block;
+	}
+	#portfolio .description h3{
+		visibility: visible;
+		text-align: left;
+		margin-top: 8px;
+		margin-bottom: 0;
+		font-size: 18px;
+	}
+
+	#portfolio .description p{
+		visibility: visible;
+		text-align: left;
+		margin: 0;
+	}
+	
+	
+
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 759px){
 	body{
 	margin:0;
 }
@@ -519,16 +774,7 @@ p{
 	letter-spacing: 0.05em;
 	visibility: hidden;
 }
-.box{
-	width: 360px;
-	height: 288px;
-	/*background: rgb(100,100,100);*/
-	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 40px;
-	background-size: 360px 288px;
-}
+
 
 .description p{
 	color: white;
@@ -636,6 +882,13 @@ p{
 	
 
 }
+
+
+
+
+
+
+
 
 
 
