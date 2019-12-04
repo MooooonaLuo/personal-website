@@ -6,6 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css"> 
 	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
+	<!-- loader -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<style type="text/css">
+    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
+    	.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+		.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(image/neon-rocket.gif) center no-repeat #000;
+			background-size: 25%;
+		}
+    </style>
+      <script type="text/javascript"> //loader
+    	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
 	<style type="text/css">
 		body{
 			margin:0;
@@ -160,6 +184,7 @@
 	</style>
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<img id="intro" src="image/meetful_cover.jpg", width=100%>
 
 	
