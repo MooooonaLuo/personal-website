@@ -131,6 +131,9 @@
 			font-size: 30px;
 			font-weight: bold;
 		}
+		#emily{
+			width: 50%;
+		}
 		
 		@media only screen and (max-width: 450px){
 			.content{
@@ -160,13 +163,17 @@
 				margin-bottom: 50px;
 			}
 
+			#emily{
+				width: 80%;
+			}
+
 		}
 		
 	</style>
 </head>
 <body>
 	<div class="se-pre-con"></div>
-	<img id="intro" src="image/solemate1.png", width=100%>
+	<img id="intro" src="image/solemate1.jpg", width=100%>
 
 	
 		<div class="title">
@@ -174,78 +181,85 @@
 			 <p>UI/UX &#183; 2018-2019</p>
 		</div>
 		<div class="content">
-			<p>After a severe lower extremity injury, how to recover faster and avoid reinjury during the recovery? SoleMate is an app designed to solve this problem. Connected with smart shoe insoles via Bluetooth, the app enables patients to receive real-time feedback and to view summaries of their activity.</p>
-			<p>SoleMate is developed by SoleMate Solutions, a startup located in San Diego. I was first recruited by them in November 2018 as a graphic designer for their pitch competition presentations. By June 2019, my fellow designer and I finished the UI/UX design of the app, and now we are in the process of programming.</p>
+			<p>After a severe lower-extremity injury, how to recover faster and avoid reinjury during the recovery? SoleMate is here to solve this problem. It is a product composed of a smart shoe insole and a mobile app. The smart insole monitors weight applied to the injured foot and provides real time feedback via the mobile app.</p>
+			<p>SoleMate is developed by SoleMate Solutions, a startup located in San Diego. I was first recruited by them in November 2018 as a graphic designer. I visualized ideas in Arizona State University pitch competition and helped them won top 5 finalists. By June 2019, my fellow designer and I finished the UI/UX design of the app, and now the team is working on programming and hardwares.</p>
 			<br><br>
 			<div id="description">
 				<div id="des1">
 					<h4 style="font-family: PT Sans;">The Team</h4>
 				<!-- 	<a style="text-decoration-color: rgb(90,90,90);" href="https://www.solematesolutions.com/"><p style="font-size: 25px">SoleMate Solutions</p></a> -->
 					<!-- <p style="font-size: 25px">SoleMate Solutions</p> -->
-					<p>Kristine Khieu <br>Surabhi Kalyan<br>Jiayu Luo<br>Roy Zhang<br>Steven Tran<br>Patrick Lee</p>
+					<p>Kristine Khieu <br>Surabhi Kalyan<br>Jiayu Luo<br>Roy Zhang<br>Steven Tran<br>Patrick Pei</p>
 
 				</div>
 				<div id="des2">
 					<h4 style="font-family: PT Sans;">My Role</h4>
-					<p>UI/UX Design, including but not limited to wireframe, prototypes, testing, and visual design. <br>Communicate and collaborate with team leaders, developers, and my fellow designer.</p>
+					<p>UI/UX Design, including but not limited to wireframe, prototypes, user testing, and visual design. <br>Brainstorm and coordinate with team leaders, developers, and my fellow designer.</p>
 				</div>
 			</div>
 
-			<p id="concepts">Concepts &amp; Background</p><br>
+			<p id="concepts">Concept &amp; Background</p>
 			<p id="subtitle">The Problem</p>
-			<p>Patients with lower extremity injury spend most of their time rehabilitation without being watched by their doctors. Usually, they are required by their doctors to put certain amount of weight on their injured lower extremities, but it is challenging for them to accurately follow the instruction. There are high posibility that patients will reinjure during rehabilitation, since they almost receive no feedback after clinic.</p>	
+			<p>Emily is a 15-year-old girl in the school basketball team. She broke her ankle during the training and was sent to the hospital. Except regular examinations in clinic, she spent most time recovering without monitoring by her physical therapist. She had an urgent need to recover and return to training, but unfortunately, she got reinjured during exercise.</p>
+			<img id="emily" src="image/emily.jpg">
+			<br><p>In fact, this kind of case is not occasional. <b>Every year, 5.5 million patients return to hospitals for the exact same problem, and the major cause is poor rehabilitation</b>. Usually, patients with lower-extremity injuries are required by their doctors to apply a certain amount of weight to the injured side, but it is challenging for them to follow the instruction and they almost receive no feedback after clinic. <b>When they walk out of the hospital door, care stops there.</b></p>	
 			<img id="problem_img" src="image/problem.png" width="100%">
 			<br><br>
 			<p id="subtitle">Our Solution</p>	
-			<p>We designed a device composed of two parts, a mobile app and smart shoe insoles . The mobile app provides patients with real-time feedbacks of how much weight they are puting on their lower extremities, based on data transmitted from pressure sensors on the insoles. Thereby, patients are able to adjust the way they walk. The app will also summarize patients' data, so that doctors can give them useful advice based on the summary.</p>
+			<p>We designed a product composed of two parts, a mobile app and a pair of smart shoe insoles. The mobile app provides patients with real-time feedback of how much weight they are putting on their injured foot, based on data transmitted from pressure sensors on the smart insoles. Thereby, patients are able to adjust the way they walk. The app will also summarize patients' activity data, so that physical therapist can give them useful advice based on the summary.</p>
 			<img src="image/solution.png" width="100%">
-			<img src="image/insole.png" width="100%">
-			<p style="text-align: center;">Smart insole with three pressure sensors embeded</p>
+			<img src="image/insole.png" width="80%">
+			<p style="text-align: center; font-size: 15px;">Smart shoe insole with three pressure sensors embeded</p>
 			<br><br>
 			
+
+			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">The App Design Process</p>
+			<p>We has partnership with Rady Children's Hospital and receives professional advice from the doctors. In this way, we are able to comprehensively understand the process of treatment and to build an app that satisfy users’ need in the real world.</p><br>
+			<p id="subtitle">Storyboard</p>
+			<img src="image/solemate_storyboard.jpg" width="100%">
+			<br><br>
+			<p id="subtitle">Information Architecture</p>
+			<p>The trickiest thing about this step is to decide what to include in Onboarding. When people use this app for the first time, they need to understand the use of this app and enter their personal information as well. However, this is just too much for Onboarding and we don’t want to burden our users with so many tasks at once. Then we decided not to include explanation of this app in Onboarding and to provide clear instructions when users actually start to use the app. Another reason we made this decision is that in most cases, the product would be introduced by doctors to patients, and there is no need for the app to introduce itself again.</p>
+			<img src="image/info_arch.png" width="100%">
+			<p id="subtitle">Low-Fidelity Prototype</p>
+			<img id="wireframe" src="image/wireframe.jpg">
 			
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Feature Highlights</p><br>
+			
+			<p id="subtitle">Usability Testing</p>
+			<p>So far, we have done two usability tests, one with low-fidelity prototype and one with high-fidelity prototype. For each time, we selected 6-8 participants. Half of them have experienced lower-extremity injuries before, and the other half have not. In this way, we got insights from participants who are familiar with the rehab process and those who are not as well.</p>
+
+			<p>We found several problems after the first round. The first problem is that the information on Activity page is a little overwhelming. So we split the information on that page and put them in two "cards," the first one showing statistics and the second one showing the current rehabilitation plan. We put "percentage within target range" to the second page of the first card, since this information has lower priority.</p>
+			<img src="image/redesign1.png" width="80%">
+
+			<p>Inspired by the participants, we added on Tips to the Result page. Although numbers are important in terms of statistics, users have no idea how to interpret the numbers. In contrary, textual tips about how to improve users' rehabilitation activities are and more straighforward and helpful for users. </p>
+			<img src="image/redesign2.png" width="80%">
+
+			
+			<p id="subtitle">Visual Design</p>
+			<p>When making decision on visual design, we thought of SoleMate as a person, and each of us chose a few words to describe the characteristics of it. In general, we considered it to be <b>tranquil, professional, and friendly</b>. Then we followed these characteristics to make decision on the colors, shapes, fonts, and illustration styles. </p><br>
+			<img id="visual" src="image/visual.png" width="100%">
+
+
+
+			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Feature Highlights</p>
 			<p id="subtitle">Onboarding</p>
 			<p>Users create new accounts, put in their personal information, and add rehabilitation plan. The rehabilitation plan can have multiple sessions. Users will be asked to put in their goal body weight (the percentage of body weight that users should apply to their injured lower extremities per doctors' instructions) when adding each session.</p>
 			<img id="onboarding" src="image/onboarding.jpg">
 			
 			<br><br>
 			<p id="subtitle">Statistics & Device Status</p>
-			<p>The home page has two parts, users' activity statistics and the status of smart insoles. On the Activity page, the average percentages of body weight applied by users are displayed in linear charts. Users can also find information about their current rehabilitation session. On the Insole page, the battery condition and Bluetooth connection status are provided.</p>
+			<p>The Home page has two parts, users' activity statistics and the status of smart insoles. On the Activity page, the average percentages of body weight applied by users are displayed in linear charts. Users can also find information about their current rehabilitation session. On the Insole page, the battery condition and Bluetooth connection status are provided.</p>
 			<img id="statistics" src="image/statistics.jpg">
 
 			<br><br>
 			<p id="subtitle">Real-Time Feedback Testing</p>
 			<p>This function is aimed to help users to learn the appropriate way of walking. If users apply weight to their injured lower extremities that exceeds the target range, they will receive sonic feedbacks immediately. The summary and tips will be provided after testings.</p>
 			<img id="testing" src="image/testing.jpg">
+
+
+			<p style="margin-top: 120px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Takeaways</p>
+			<p>Designing and developing SoleMate in a team is very inspiring and fruitful for me. I realized that the most significant qualities for a designer is the ability to always clearly see the ultimate design goal and the willingness to actively communicate with the rest of the team. The two founders of SoleMate Solutions are very confident about what they want for every step of the project. At first, I just did whatever they wanted me to do. But later I realized that they were not always right and that my insights as a designer are valuable to achieve the goal. I was not helping them to finish a bunch of trivial tasks but to reach their ultimate goal.</p>
 			
-
-			<p id="concepts">Visual Design</p><br>
-			<img id="visual" src="image/visual.png" width="100%">
-
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">The Making Process</p>
-			<p id="subtitle">Storyboard</p>
-			<img src="image/solemate_storyboard.jpg" width="100%">
-			<br><br>
-			<p id="subtitle">Information Architecture</p>
-			<img src="image/info_arch.png" width="100%">
-			<p id="subtitle">Low-Fidelity Prototype</p>
-			<img id="wireframe" src="image/wireframe.jpg">
-			<p id="subtitle">High-Fidelity Prototype</p>
-			<p>High-fidelity prototype is much the same with the pages shown in Feature Hilights above. Below is a screenshort of interactive hight-fidelity prototype we made in Adobe XD.</p>
-			<img id="wireframe" src="image/xd.png">
-			
-			<p id="subtitle">Usability Testing</p>
-			<p>So far, we have done two usability testings, one with low-fidelity prototype and one with high-fidelity prototype. For each time, we selected 6-8 participants. Half of them have experienced lower extremity injury before, and the other half have not. In this way, we got objects who are familiar with lower extremity injury and those who are not as well.</p>
-
-			<p>We found several problems after the first testing. The first problem is that the information on Activity page is a little overwhelming. So we split the information on that page and put them in two "cards," the first one showing statistics and the second one showing the current rehabilitation plan. We put "percentage within target range" to the second page of the first card, since this information has lower priority.</p>
-			<img src="image/redesign1.png" width="80%">
-
-			<p>Inspired by the participants, we added on Tips on the Result page. Although numbers are important, tips of how to improve users rehabilitation activities are clearer and more direct for users. </p>
-			<img src="image/redesign2.png" width="80%">
-
-			<p style="margin-top: 120px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Takeaways</p><br>
-			<p>Working on SoleMate in a team is very inspiring and fruitful for me. I realized that the most significant qualities for a designer is the ability to always clearly see the ultimate design goal and the willingness to actively communicate with the rest of the team. The two founders of SoleMate Solutions are very clear about what they want in every step of the project. At first, I just do whatever they want me to do. Later, I realized that they are not always right and that as a designer, I can provide them with my own insights and opinions from a fresh perspective. I am not helping them to finish a bunch of trivial tasks but to achieve their ultimate goal. A good designer is both a careful listener and an active expresser.</p>
 			
 			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold; text-align: center;"></p>
 
