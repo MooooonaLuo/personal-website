@@ -125,11 +125,12 @@ body{
 	/*text-align: center;*/
 	color: white;
 	letter-spacing: 0.05em;
+	line-height: 18px;
 }
 
 #portfolio h3{
 	text-align: center;
-	margin-top: 140px;
+	margin-top: 120px;
 	font-family:PT Sans;
 	color: white;
 	letter-spacing: 0.05em;
@@ -508,6 +509,7 @@ p{
 	color: white;
 	letter-spacing: 0.05em;
 	visibility: hidden;
+	line-height: 17px;
 }
 
 #portfolio h3{
@@ -762,6 +764,7 @@ p{
 	color: white;
 	letter-spacing: 0.05em;
 	visibility: hidden;
+	line-height: 18px;
 }
 
 #portfolio h3{
@@ -771,6 +774,7 @@ p{
 	color: white;
 	letter-spacing: 0.05em;
 	visibility: hidden;
+	line-height: 42px;
 }
 
 
