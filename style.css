@@ -22,7 +22,7 @@ body{
 	padding-top: 200px;
 	font-family: PT Sans;
 	font-size: 50px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	margin-top: 0;
 }
@@ -31,7 +31,7 @@ body{
 	font-family: PT Sans;
 	font-size: 20px;
 	line-height: 30px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	width: 700px;
 	margin-bottom: 80px;
@@ -123,7 +123,7 @@ body{
 	font-family:PT Sans;
 	/*margin-bottom: 50px;*/
 	/*text-align: center;*/
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	line-height: 18px;
 }
@@ -132,7 +132,7 @@ body{
 	text-align: center;
 	margin-top: 120px;
 	font-family:PT Sans;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 .box{
@@ -147,7 +147,7 @@ body{
 }
 
 .description p{
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 
@@ -178,7 +178,7 @@ body{
 
 #navigation #copyright{
 	margin-top: 470px; 
-	color: white; 
+	color: #F0F0F0; 
 	font-weight: normal; 
 	font-size: 15px; 
 	color: rgb(160,160,160);
@@ -397,7 +397,7 @@ p{
 	padding-top: 25px;
 	font-family: PT Sans;
 	font-size: 40px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 
@@ -405,7 +405,7 @@ p{
 	font-family: PT Sans;
 	font-size: 16px;
 	line-height: 30px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	width: 600px;
 	margin-bottom: 30px;
@@ -506,7 +506,7 @@ p{
 	font-family:PT Sans;
 	/*margin-bottom: 50px;*/
 	/*text-align: center;*/
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	visibility: hidden;
 	line-height: 17px;
@@ -516,14 +516,14 @@ p{
 	text-align: center;
 	margin-top: 40px;
 	font-family:PT Sans;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	visibility: hidden;
 }
 
 
 .description p{
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 
@@ -555,7 +555,7 @@ p{
 #navigation #copyright{
 	display: none;
 	margin-top: 470px; 
-	color: white; 
+	color: #F0F0F0; 
 	font-weight: normal; 
 	font-size: 15px; 
 	color: rgb(160,160,160);
@@ -564,7 +564,7 @@ p{
 #copyright2{
 	float: left;
 	font-family:PT Sans;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	font-size: 15px;
 	color: rgb(160,160,160);
@@ -652,7 +652,7 @@ p{
 	padding-top: 25px;
 	font-family: PT Sans;
 	font-size: 40px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 
@@ -660,7 +660,7 @@ p{
 	font-family: PT Sans;
 	font-size: 16px;
 	line-height: 30px;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	width: 300px;
 	margin-bottom: 30px;
@@ -761,7 +761,7 @@ p{
 	font-family:PT Sans;
 	/*margin-bottom: 50px;*/
 	/*text-align: center;*/
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	visibility: hidden;
 	line-height: 18px;
@@ -771,7 +771,7 @@ p{
 	text-align: center;
 	margin-top: 40px;
 	font-family:PT Sans;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	visibility: hidden;
 	line-height: 42px;
@@ -779,7 +779,7 @@ p{
 
 
 .description p{
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 }
 
@@ -811,7 +811,7 @@ p{
 #navigation #copyright{
 	display: none;
 	margin-top: 470px; 
-	color: white; 
+	color: #F0F0F0; 
 	font-weight: normal; 
 	font-size: 15px; 
 	color: rgb(160,160,160);
@@ -820,7 +820,7 @@ p{
 #copyright2{
 	float: left;
 	font-family:PT Sans;
-	color: white;
+	color: #F0F0F0;
 	letter-spacing: 0.05em;
 	font-size: 15px;
 	color: rgb(160,160,160);
