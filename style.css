@@ -63,6 +63,7 @@ body{
 	width: auto;
 	height: auto;
 	background: #121314;
+	margin-bottom: 15px;
 }
 
 #home p{
@@ -85,7 +86,7 @@ body{
 
 #portfolio{
 	height: auto;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	padding-top: 80px;
 	padding-left: 120px;
 	display: block;
