@@ -776,12 +776,16 @@ p{
 	letter-spacing: 0.05em;
 	visibility: hidden;
 	line-height: 42px;
+	line-height: 20px;
 }
 
 
 .description p{
 	color: #F0F0F0;
 	letter-spacing: 0.05em;
+}
+a{
+	text-decoration: none;
 }
 
 #uiux_nav{
