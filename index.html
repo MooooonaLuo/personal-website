@@ -2,7 +2,22 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta charset="UTF-8">
+	<title>Jiayu Luo</title>
+	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
+	<link rel="stylesheet" href="style.css"> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="analytics.js"></script>
+    <!-- <script src="flocking.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -11,19 +26,6 @@
 
 	  gtag('config', 'UA-150477387-1');
 	</script>
-	<meta charset="UTF-8">
-	<title>Jiayu Luo</title>
-	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
-	<link rel="stylesheet" href="style.css"> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="analytics.js"></script>
-    <!-- <script src="flocking.js"></script> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
     
     <script type="text/javascript">
@@ -31,10 +33,32 @@
                 window.open("home.html#home"); 
             } 
     </script>
-  
+  	
+  	<style type="text/css">
+    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
+    	.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+		.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(image/neon-rocket.gif) center no-repeat #121314;
+			background-size: 25%;
+		}
+    </style>
+      <script type="text/javascript"> //loader
+    	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
+
 </head>
 <body id="home_body">
-
+	<div class="se-pre-con"></div>
 	<div id="about_me">
 		<h3>Hi! My name is Jiayu Luo.<br>You can call me Mona. </h3>
 		<p>I am a UI/UX Designer and New Media Artist. As a designer, I solve problems through reason; as an artist, I express myself through emotion. <br>I am interested in creating interactive experience that is both pleasant and innovative. I am currenly studying in UC San Diego, Visual Arts Department.</p>
