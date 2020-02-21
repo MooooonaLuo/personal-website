@@ -17,6 +17,10 @@ html {
 	background-image: url(image/home_dark.png);
 	opacity: 1;
 }
+#home_logo:active{
+	background-image: url(image/home_dark.png);
+	opacity: 1;
+}
 
 @media only screen and (min-width: 1031px){
 
