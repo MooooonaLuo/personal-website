@@ -205,11 +205,11 @@ body{
 
 
 
-#box1{background-image: url(image/recipedia.png);}
+#box1{background-image: url(image/cdcweb.jpg);}
 #box1 p{visibility: hidden;}
 #box1 h3{visibility: hidden;}
 #box1:hover{
-	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/recipedia.png);*/
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cdcweb.jpg);*/
 	 background-size: 400px 320px;
 	 background: #121314;
 }
@@ -605,7 +605,7 @@ p{
 	
 
 
-	#box1{background-image: url(image/recipedia.png);}
+	#box1{background-image: url(image/cdcweb.jpg);}
 	#box2{background-image: url(image/animaze.png);}
 	#box4{background-image: url(image/cycleccoon.jpg);}
 	#box5{background-image: url(image/moodi.png);}
@@ -857,7 +857,7 @@ a{
 	
 	
 
-	#box1{background-image: url(image/recipedia.png);}
+	#box1{background-image: url(image/cdcweb.jpg);}
 	#box2{background-image: url(image/animaze.png);}
 	#box4{background-image: url(image/cycleccoon.jpg);}
 	#box5{background-image: url(image/moodi.png);}
