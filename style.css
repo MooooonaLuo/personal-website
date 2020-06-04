@@ -273,7 +273,7 @@ body{
 }
 #box8:hover p{visibility: visible;}
 
-#box9{background-image: url(image/cool.png);}
+#box9{background-image: url(image/du_cover.jpg);}
 #box9 p{visibility: hidden;}
 #box9:hover{
 	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/cool.png);*/
@@ -617,7 +617,7 @@ p{
 	#box6{background-image: url(image/river.png);}
 	#box7{background-image: url(image/corner.png);}
 	#box8{background-image: url(image/salton.jpg);}
-	#box9{background-image: url(image/cool.png);}
+	#box9{background-image: url(image/du_cover.jpg);}
 	#box10{background-image: url(image/triangle.jpg);}
 	#box11{background-image: url(image/solemate.jpg);}
 	#box12{background-image: url(image/LB.jpg);}
@@ -875,7 +875,7 @@ p{
 	#box6{background-image: url(image/river.png);}
 	#box7{background-image: url(image/corner.png);}
 	#box8{background-image: url(image/salton.jpg);}
-	#box9{background-image: url(image/cool.png);}
+	#box9{background-image: url(image/du_cover.jpg);}
 	#box10{background-image: url(image/triangle.jpg);}
 	#box11{background-image: url(image/solemate.jpg);}
 	#box12{background-image: url(image/LB.jpg);}
