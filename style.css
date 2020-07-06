@@ -162,6 +162,7 @@ body{
 	margin-right: 20px;
 	margin-top: 40px;
 	background-size: 360px 288px;
+	border-radius: 5px;
 }
 
 .description p{
@@ -606,6 +607,7 @@ p{
 		margin-top: 10px;
 		background-size: 100% 100%;
 		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+		border-radius: 5px;
 	}
 	
 
@@ -863,6 +865,7 @@ p{
 		margin-top: 10px;
 		background-size: 100% 100%;
 		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+		border-radius: 5px;
 
 		}
 	
