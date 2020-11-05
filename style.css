@@ -247,7 +247,7 @@ body{
 }
 #box5:hover p{visibility: visible;}
 
-#box6{background-image: url(image/river.png);}
+#box6{background-image: url(image/the_eye.jpg);}
 #box6 p{visibility: hidden;}
 #box6:hover{
 	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(mage/river.png);*/
@@ -256,7 +256,7 @@ body{
 }
 #box6:hover p{visibility: visible;}
 
-#box7{background-image: url(image/corner.png);}
+#box7{background-image: url(image/data_explosion.jpg);}
 #box7 p{visibility: hidden;}
 #box7:hover{
 	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/corner.png);*/
@@ -616,8 +616,8 @@ p{
 	#box2{background-image: url(image/animaze.png);}
 	#box4{background-image: url(image/cycleccoon.jpg);}
 	#box5{background-image: url(image/moodi.png);}
-	#box6{background-image: url(image/river.png);}
-	#box7{background-image: url(image/corner.png);}
+	#box6{background-image: url(image/the_eye.jpg);}
+	#box7{background-image: url(image/data_explosion.jpg);}
 	#box8{background-image: url(image/salton.jpg);}
 	#box9{background-image: url(image/du_cover.jpg);}
 	#box10{background-image: url(image/oldtownhouse_cover.png);}
@@ -875,8 +875,8 @@ p{
 	#box2{background-image: url(image/animaze.png);}
 	#box4{background-image: url(image/cycleccoon.jpg);}
 	#box5{background-image: url(image/moodi.png);}
-	#box6{background-image: url(image/river.png);}
-	#box7{background-image: url(image/corner.png);}
+	#box6{background-image: url(image/the_eye.jpg);}
+	#box7{background-image: url(image/data_explosion.jpg);}
 	#box8{background-image: url(image/salton.jpg);}
 	#box9{background-image: url(image/du_cover.jpg);}
 	#box10{background-image: url(image/oldtownhouse_cover.png);}
