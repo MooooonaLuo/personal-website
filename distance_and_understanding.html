@@ -10,6 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<style type="text/css">
     	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
     	.no-js #loader { display: none;  }
@@ -23,6 +24,17 @@
 			z-index: 9999;
 			background: url(image/neon-rocket.gif) center no-repeat #121314;
 			background-size: 25%;
+		}
+		@media only screen and (max-width: 450px){
+			.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(image/neon-rocket.gif) center no-repeat #121314;
+			background-size: 65%;
 		}
     </style>
       <script type="text/javascript"> //loader
@@ -38,12 +50,15 @@
 		}
 
 		.title{
-			/*margin-bottom: 30px;*/
+			margin-bottom: 30px;
 			margin-top: 50px;	
 		}
 		h1{
 			text-align: center;
 			font-family: PT Sans;
+		}
+		.title h1{
+			margin-bottom: 20px;
 		}
 		.title p{
 			text-align: center;
@@ -186,30 +201,52 @@
 			 <h1>Distance and Understanding</h1>
 			 <p>Digital Interactive Art &#183; 2020</p>
 		</div>
+		<br>
 		<div class="content">
-			<p>	<i>Distance and Understanding</i> is a digital interactive installation that reflects the process of knowing and understanding a person with the change of the psychological distance to that person. It is mainly composed by two parts, a distance sensor and an animation series, As viewers approach to the screen, they become more intimate to the person in the animation.</p> 
+			<p>	<i>Distance and Understanding</i> is a digital interactive installation that reflects the process of knowing and understanding a person with the change of the psychological distance to that person. It is mainly composed by two parts, a distance sensor and an animation series. As viewers approach to the screen, they become more intimate to the person in the animation.</p> 
 
-			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 25px; font-weight: bold">Video Documentation</p>
+			<p style="margin-top: 90px; margin-bottom: 30px; font-size: 25px; font-weight: bold">Video Documentation</p>
 
 			<iframe width="100%" height="630" src="https://www.youtube.com/embed/mdIM0i3WGlI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 25px; font-weight: bold">Concept</p>
-			<p>	As social beings, people behave in a way that conforms social norms and expectation when interacting with others, but deep down, they are more complex than they appear to be. In public, especially on social media, people’s behaviors are usually performative, which means they behave in a certain way that fulfills their social roles; while in private, they are more likely to follow their instincts. The contemplation on the process of how we know a person in our life is meaningful, since this process reflects how we perceive the signs created by others and how we create signs to present ourselves. </p>
+			<p style="margin-top: 80px; margin-bottom: 30px; font-size: 25px; font-weight: bold">Concept</p>
+			<p>	As social beings, we tend to behave in a way that conforms social norms and expectation when interacting with others, but deep down, we are more complex than we appear to be. In public, especially on social media, our behaviors are usually more performative, as we attempt to build a self-identities that we wish to present to others. While in private, we are more likely to follow our instincts and to reveal our true thoughts. It is meaningful to contemplate the process of how we know a person in our daily life, since it reflects the way we perceive the signs presented by others as well as the way we create signs to signify ourselves. </p>
 
-			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 25px; font-weight: bold">How does it work?</p>
+			<p style="margin-top: 90px; margin-bottom: 30px; font-size: 25px; font-weight: bold">How does it work?</p>
 			<img id="emily" src="image/du3.png" alt="Icons of Arduino, After Effects, and Python">
-			<p>I use Arduino, Adobe After Effects, and Python for this project. It is mainly composed by two parts, a distance sensor and six clips of short animations in abstract hand-drawing style. Each clip is approximately two-second long and represents a distinct level of knowing the fictional person in the animations. The distance sensor measures the distance between the installation and the viewer, a physical representation of the psychological distance between the viewer and the person in the animations. </p>
+			<p>I employed Arduino, Adobe After Effects and Python to create this installation. It is mainly composed by two parts, a distance sensor and six clips of short animations in abstract hand-drawing style. Each clip is approximately two-second long and represents a different stage of knowing the animated person. The distance sensor measures the physical distance between the installation and the viewer, a concrete representation of the psychological distance between the viewer and the animated person. </p>
 
 		
-			<br><p>As the distance changes, different clips will be triggered. When the viewer is standing far away from the installation, the animation only shows the person presenting himself or herself on social media or with the physical presence of other people. As the viewer approaches to the installation, the more personal and emotional side of the person is revealed. </p>
+			<br><p>As the distance changes, different clips will be triggered. When the viewer is standing far away from the installation, the animation only shows the person sharing their happy moments on social media or performing on the stage. As the viewer approaches to the installation, the more personal and vulnerable side of the person is revealed. </p>
 			<img id="problem_img" src="image/du2.png" alt="An illustration of an audience standing infront of the installation" width="50%">
 			<img style="margin-top: 50px;" src="image/du6.JPG" alt="A photo of the installation" width="70%">
 			
-			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 25px; font-weight: bold">Animation Draft</p>
+			<p style="margin-top: 90px; margin-bottom: 0px; font-size: 25px; font-weight: bold">Animation Draft</p>
 			<img src="image/du4.jpg" alt="Animation drafts" width="100%">
 
+			<p style="margin-top: 50px; margin-bottom: 30px; font-size: 25px; font-weight: bold">Research & Inspiration</p>
+			<p>Jim Campbell is known for his LED light works such as <i>Vertical Repixelated</i> and <i>7344 Stills</i>. He probed into questions of human perception via displaying videos on screens composed of LED lights. On the contrary to my work, the further the audience stand from Campbell's screens, the clearer they see the whole picture, because they can only see meaningless LED light dots if standing too close to the screens. In an age when everyone is pursuing high resolution, Campbell provoked a discussion on the relation between the quantity of information and human perception.</p>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="image/Vertical_Repixelated.jpg" alt="Vertical Repixelated" width="100%">
+						<p style="font-size: 14px;"><i>Vertical Repixelated</i> (2019), Jim Campbell</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="image/7344_Stills.jpg" alt="7344 Stills" width="100%">
+						<p style="font-size: 14px;"><i>7344 Stills</i> (2003), Jim Campbell</p>
+					</div>
+				</div>
+			</div>
+			
+			
 
-			<div style="height: 60px;">
+			<p style="margin-top: 90px; margin-bottom: 30px; font-size: 25px; font-weight: bold">Exhibition</p>
+			<p>Due to the impact of COVID-19, the exhibition of my project along with other students' was curated online. During the opening, I gave a five-minute presentation of my project in front of all students and faculty in our program. I will continue refining the installation and have more people interact with it after the pandemic.</p>
+
+
+			<div style="height: 60px; margin-top: 120px;">
 				<div>
 					<a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/" target="_blank"><img src="image/linkedin.png" alt="View my LinkedIn" height="23px;", style="float: left;"></a>
 				</div>

@@ -10,7 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 	<style type="text/css">
     	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
     	.no-js #loader { display: none;  }
@@ -24,6 +24,17 @@
 			z-index: 9999;
 			background: url(image/neon-rocket.gif) center no-repeat #121314;
 			background-size: 25%;
+		}
+		@media only screen and (max-width: 450px){
+			.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(image/neon-rocket.gif) center no-repeat #121314;
+			background-size: 65%;
 		}
     </style>
       <script type="text/javascript"> //loader
@@ -275,9 +286,11 @@
 			 <h1>LaunchIt</h1>
 			 <p>Product Design &#183; 2020</p>
 		</div>
+		<br>
 		<div class="content">
-			<p>LaunchIt is a website platform that helps college students to form teams for extracurricular projects through the form of posts. Learning experience outside of class is pretty valuable, and many college students hope to practice the subjects they have learned through extracurricular projects. Nonetheless, many of them lack resources to find projects they are fond of or have brilliant ideas but cannot find teammates. On LaunchIt, through a streamlined experience, project leaders can post their ideas and recruit teammates; students who wish to join projects can easily find all kinds of projects within seconds.</p>
-			<p>I joined LaunchIt in January 2020. The former designer left the team, and they hoped to find new designers to redesign the platform. Since January, my fellow designer and I have made 3 iterations on the user interface. We are dedicated to make the platform more user-friendly and engaging.</p>
+			<p>LaunchIt is a website platform that bridges innovative student start-ups with college students from various academic backgrounds. Students are eager to practice what they have learned from class through extracurricular projects. Nonetheless, many of them lack project resources or have troubles finding collaborators to propel their ongoing projects. On LaunchIt, through a streamlined experience, project leaders can post their ideas and recruit teammates; students who wish to build something big via collaboration can easily find projects of all kinds within seconds.</p>
+			<img src="image/launchit_needs.jpg" width="100%">
+			<p>I have joined the team LaunchIt since January of 2020 as the Experience Design Lead. With the goal of refining LaunchIt's user experience, I closely cooperate with my fellow designer, the PM, and the Tech Lead to create strategies in product development. Through an iterative design process, I have improved the website structure, designed new functions, and refined the notification system. I am dedicated to make the platform more user-friendly and engaging.</p>
 			<p style="font-weight: bold;">Live at <a style="color: #FF6A6A; font-weight: bold; text-decoration: none;" href="https://www.launchitnow.org/" target="_blank">www.launchitnow.org/</a></p>
 
 			<br><br>
@@ -289,14 +302,14 @@
 				</div>
 				<div id="des2">
 					<h4 style="font-family: PT Sans;">My Role</h4>
-					<p>Redesign user interface with my fellow designer<br>Conduct user interviews and usability tests<br>Ideate with my fellow designer and PM</p>
+					<p>Redesign the entire user interface and prototype mobile view<br>Conduct user interviews and usability tests<br>Ideate with the team for smart solutions<br>Create illustrations</p>
 				</div>
 			</div>
 
 			<p style="margin-top: 30px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Feature Highlights</p>
 			<br>
 			<img src="image/launchit_feature_1.gif" alt="LaunchIt homepage and post details" width="100%"><br>
-			<p style="text-align: center;">Explore interesting projects of all kinds and apply to join</p>
+			<p style="text-align: center;">Explore interesting projects of all kinds and apply to join in a few clicks</p>
 			<br><br>
 			<img src="image/launchit_feature_2.gif" alt="LaunchIt manage applicants page and personal profiles" width="100%"><br>
 			<p style="text-align: center;">As project leaders, manage applicants and get to know about them comprehensively</p>
@@ -308,33 +321,33 @@
 
 			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase I</p>
 
-			<p>Although LaunchIt was originally designed by another designer, the user interface was way different from the original design at the point I joined, because the team decided to reposition the product, and many features have been changed.<p>
-			<p>Product repositioning means that another user need research needs to be conducted. But instead of doing user research first, I chose to trust my own skills and experience and to redesign minor components that did not require much efforts for the front-end developers to fix. There were two reasons for this: first, I didn’t want the developers to wait for too long; second, I can use the time to prepare for user interviews while they were coding.</p>
+			<p>Although LaunchIt was originally prototyped by another designer, the user interface was way different from the original design at the point I joined, because the team decided to reposition the product, and many features have been changed.<p>
+			<p>Product repositioning means that another user research needs to be conducted. However, instead of doing user research first, I chose to tackle obvious design flaws that did not require much efforts for front-end developers to fix. There were two reasons for this decision: first, I didn’t want the developers to wait for too long; second, I could prepare for user interviews while they were fixing those flaws.</p>
 
 
 			
 			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase II</p>
 			<p id="subtitle">User Interview</p>
-			<p>We interviewed 6 college students with different academic backgrounds, asking about their decision-making process when looking for projects to join or recruiting people for their own projects. At the end of the interviews, we also asked them to play around on LaunchIt and to give us feedback.</p>
+			<p>We interviewed 6 college students with different academic backgrounds, asking about their decision-making process when seeking projects to join or when recruiting people for their own projects. At the end of the interviews, we also asked them to play around with LaunchIt and to provide some feedback.</p>
 			<br>
 			<p id="subtitle">Outcome</p>
-			<p>Through the interviews, we found out that users really care about the details of projects/positions posted and other users’ profiles. We need a way to guide users to fill out more useful information that other users hope to see.</p>
+			<p>Through the interviews, we found out that users care a lot about the details of projects/positions on posts and other users’ profiles. We need a way to guide users to fill out more useful information that other users desire to see.</p>
 			<img src="image/launchit_phase2.jpg" alt="Comparision between the previous and redesigned versions" width="100%">
 
 
 			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase III</p>
 			<p id="subtitle">Usability Testing</p>
-			<p>We found 6 people to participate in our usability tests. They were assigned several tasks to go through key features on our design. We gathered lots of useful findings this time. And from the usability tests, we got confidence to make more significant changes on our design, such as the changes of user flows, information structure, and key functions. Below are the main problems we found through the usability tests and our solutions for them.</p>
+			<p>We found 6 people to participate in our usability tests. They were assigned several tasks to go through key features on our design. We acquired a plenty of useful findings. With a solid base of the usability tests, we became confident to create more significant changes on our design, such as navigation, information architecture, and key functions. Below are the main problems we found through the usability tests and corresponding solutions.</p>
 			<br>
 
 			<p id="subtitle">Problems and Solutions</p>
-			<p><span style="color: #FF6A6A">&diams;</span> <b>How can we create more intuitive navigation?</b></p>
-			<p>In the original version, there are two navigation bars, one on the top and one on the left. During the usability tests, we found that having two navigation bars is distracting for users, so we decided to put all navigation components on one side bar. We designed at least 5 versions of navigation bars and conducted mini usability tests to come up with the most intuitive one. I realized that users’ conceptual models are very different from designers’, especially regarding navigation, since many users favored the version that I didn’t think would work at first.</p>
+			<p><span style="color: #FF6A6A">&diams;</span> <b>How can we design more intuitive navigation?</b></p>
+			<p>In the original version, there are two navigation bars, one on the top and one on the left. During the usability tests, we found that having two navigation bars is distracting for users, so we decided to put all navigation components on one side bar. We designed at least 5 versions of navigation bars and conducted mini usability tests to find out which one is the most intuitive. I realized that users’ conceptual models on navigation are very different from mine, since many users favored the version that I didn’t think would work at first.</p>
 			<img src="image/launchit_phase3_1.png" alt="different versions of the navigation bar" width="100%">
 			<br><br><br>
 
 			<p><span style="color: #FF6A6A">&diams;</span> <b>How can we encourage users to complete user profiles without affecting their onboarding experience?</b></p>
-			<p>When signing up for the first time, users are only asked to fill out some basic information. At the end of sign up process, they can choose to either complete their profiles or skip this part. If they choose to skip, the system will later encourage them to complete profiles when they apply for project positions. </p>
+			<p>When signing up for the first time, users are only asked to fill out some basic information. At the last step of signing up, they have the freedom to choose to either complete their profiles or skip this part for now. If they choose to skip, the system will later encourage them to complete profiles when they apply for project positions. </p>
 			<img src="image/launchit_phase3_2.gif" alt="Onboarding process" width="100%">
 			<br><br><br>
 
@@ -345,12 +358,12 @@
 
 			<br><br><br>
 			<p><span style="color: #FF6A6A">&diams;</span> <b>How can we help project leaders efficiently manage their applicants, learn about them, and contact them?</b></p>
-			<p>We added a new page for managing applicants with new functions. Project owners are able to see all applicants’ information on this page from the applicant list. They can modify their application status and contact them via email. They can easily reorder the list by choosing the title of each column. </p>
+			<p>We added a new page for project leaders to manage applicants. They are able to see all applicants’ information on this page from the applicant list. They can modify their application status and contact them via email. Click on a title at the first row, and the list will be reordered based on that title. </p>
 			<img src="image/launchit_phase3_4.png" alt="Manage Applicants page" width="100%">
 
 
 			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Illustrations for Empty Pages</p>
-			<p>To provide more delightful feedback when users reach empty pages, I designed a few illustrations with the theme of spacemen, which matches our brand "LaunchIt."</p>
+			<p>To provide more delightful feedback when users reach empty pages, I designed a few illustrations with the theme of spacemen, which matches our brand identity.</p>
 			<img src="image/launchit_illustrations.png" alt="Style guide" width="100%">
 
 			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Style Guide</p>
@@ -358,8 +371,8 @@
 			<img src="image/launchit_styleguide.png" alt="Style guide" width="100%">
 
 			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Outcome</p>
-			<p>One of my main takeaways from this project is the strategy to efficiently collaborate with engineers. I used to take a long time doing design and usability tests, and only until I completed them, I delivered my design to front-end developers. However, the usage of time for the whole team is inefficient in this way. During the development of LaunchIt, we streamlined the process through more frequent and more efficient communication between designers and developers.  For instance, we regularly talk to the PM and together create task priority list for the developers.</p>
-			<p>The team is working on the 3rd release now. Our user base is expanding as we put great efforts into promotion. In the future, we are going to design the mobile version and add more exciting functions!</p>
+			<p>One of my main takeaways from this project is the strategy of efficiently collaborating with computer engineers during product development. I used to spend a long time on prototyping and usability tests. Only until I completed them, I was willing to deliver my design to front-end developers. In this way, time was not used wisely for the whole team, and developers easily lost patience while waiting for my design. In contrast, the process of developing LaunchIt is considerably efficient, as we streamline the process through frequent and concise communication between designers and developers. One of the crucial thing I have been doing every week is to work with the PM to create task priority list for the developers. This allows me to trace my design progress and enables developers to schedule their tasks.</p>
+			<p>The team has recently accomplished the 3rd release. We are aiming at expanding our user base through smarter marketing strategies and more engaging user onboarding experience.</p>
 
 
 			

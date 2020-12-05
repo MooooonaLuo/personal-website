@@ -24,6 +24,17 @@
 			background: url(image/neon-rocket.gif) center no-repeat #121314;
 			background-size: 25%;
 		}
+		@media only screen and (max-width: 450px){
+			.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(image/neon-rocket.gif) center no-repeat #121314;
+			background-size: 65%;
+		}
     </style>
       <script type="text/javascript"> //loader
     	$(window).load(function() {
@@ -192,6 +203,7 @@
 			 <h1>Flap.js</h1>
 			 <p>UI/UX Redesign &#183; 2019</p>
 		</div>
+		<br>
 		<div class="content">
 			<p>Flap.js is a web app for computer science students to explore and construct formal languages and automata with real-time analysis and error checking. It is initiated by Professor Mia Minnes in Computer Science and Engineering Department at UC San Diego. I joined the team to redesign the user interface of Flap.js. This project is challenging for me, since the computer science concepts involved are completely new to me. I managed to overcome this difficulty and successfully enhanced the efficiency of interaction.</p>
 			<br><br>
@@ -209,28 +221,28 @@
 
 			<p id="concepts">Understand the web app Flap.js</p>
 			<p>As mentioned before, Flap.js is a web app for computer science students to explore and construct formal languages and automata. <b>You may ask: What exactly does this web app do? What on earth is formal languages and automata? To be honest, at beginning I was as confused as you might be now. </b> In fact, this subject is only taught in a specific computer science course, and even most computer science students who haven’t taken that course do not understand the subject.</p>
-			<p>I had a long conversation with one of computer science engineers in the team. She tried to explained the computing theories to me and showed me what they can do with the web app. But in the end, I still didn’t quite get it. She said that she could borrow me the textbook, which is about 5-inch thick. I turned down her “favor”. <b>To better understand the web app and computer science concepts it involves, I watched a few tutorials on YouTube and played with the web app for a long time.</b> Finally, I was able to understand the basic concepts and what users would normally do on the web app.</p>	
+			<p>I had a long conversation with one of computer science engineers in the team. She tried to explained the computing theories to me and showed me what they can do with the web app. But in the end, I still didn’t quite get it. She said that she could borrow me the textbook, which is about 2-inch thick. I turned down her “favor”. <b>To better understand the web app and computer science concepts it involves, I watched a few tutorials on YouTube and played with the web app for a long time.</b> Finally, I was able to understand the basic concepts and what users would normally do on the web app.</p>	
 			<p>Simply speaking, <b>users would draw diagrams of finite automata (a simple idealized machine used to recognize patterns), and they would run tests to see if character sets of the input have passed through.</b></p>
 			<img src="image/diagram.png" alt="Final automata diagram" width="40%">
-			<p style="text-align: center; font-size: 15px;">A diagram drawn at Flap.js</p>
+			<p style="text-align: center; font-size: 15px;">A diagram drawn with Flap.js</p>
 			
 
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">User Interview &amp; Usability Testing</p>
-			<p>Before I conducted the user interview and usability test, I talked to all my teammates and collected painpoints that they thought Flap.js had. I also played with the web app and recorded my concerns. </p>
-			<p>With help from Professor Minnes, I sent recruiting emails to students in CSE 105 class (The Mathematical Theory of Computability) and found 4 participants. Since I did not know much about the subject, I had a programmer from the team to accompany me during each interview and test. In this way, if the conversation got too professional for me, I would have my partner to handle it, and we could receive more valuable feedback from the participant.</p>
+			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 30px; font-weight: bold">User Interview &amp; Usability Testing</p>
+			<p>Before jumping into user interview and usability test, I wanted to get some early feedback on Flap.js, so I talked to the team one-on-one and collected their opinions on the current design. I also played with Flap.js myself and recorded my initial thoughts as a first-time user. </p>
+			<p>With help from Professor Minnes, I sent recruiting emails to students in CSE 105 class (The Mathematical Theory of Computability) and found 4 participants for interviews and usability tests. Since I did not holistically learn about the computer science subject, I had a computer engineer from the team to accompany me during each interview and test. If my conversation with the participants got too professional for me, I asked my partner to handle it. Thereby, we would not miss any valuable feedback from them.</p>
 			<p>Below is the process of the user interview and usability test.</p>
 			<img id="testing_plan" src="image/testing_plan.png" alt="A graph showing the usability test process">
-			<p>I summarized the my findings and put all problems into four categories based on their severity.</p>
+			<p>I summarized my findings and put all problems into four categories based on their severity.</p>
 			<p style="color: rgb(247,52,53); line-height: 10px;">I (Must be fixed)</p>
 			<p style="color: rgb(255,112,1); line-height: 10px;">II (Should be fixed)</p>
 			<p style="color: rgb(255,198,1); line-height: 10px;">III (Could be fixed if we have time)</p>
 			<p style="color: rgb(153); line-height: 10px;">IIII (Debatable opinions of mine).</p>
-			<br><p>I shared my findings and discussed solutions with the rest of the team. Beside the severity of a problem, the difficulty of solving a problem was also a factor I took into consideration for redesign.</p>
+			<br><p>I shared my findings and mapped out our future plan with the team. Besides the severity of a problem, the difficulty of fixing a problem was also a factor I took into consideration for redesign.</p>
 			<p>I will talk about my findings and how I fixed the problems in the next section.</p>
 
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Redesign Highlights</p>
+			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Redesign Highlights</p>
 			<p id="subtitle">Part 1 Tutorial vs. Toolbar</p>
-			<p>There are two ways to draw a diagram on Flap.js, and I was wondering which way will users choose. The first way is to switch between Action Mode and Move Mode by clicking the toolbar, and the gestures are intuitive (users only need to left-click or left-hold). In the second way, there is no bother to switch between the two modes, but users have to read the tutorial first, because some gestures are not very intuitive (e.g. they need to right-hold to draw a line). Only one of the two ways should remain, since having them two at the same time causes great confusion.</p>
+			<p>There are two ways for users to draw a diagram on Flap.js, and I was wondering which way they prefer. The first way is to switch between Action Mode and Move Mode by clicking the toolbar, and the gestures are intuitive (users only need to left-click or left-hold). In the second way, there is no bother to switch between the two modes, but users have to read the tutorial first, because some gestures are not very intuitive (e.g. they need to right-hold to draw a line). Only one of the two ways should be adopted, since having them both causes great confusion.</p>
 			<img id="vs" src="image/vs.png" alt="A more concise explanation of the two ways">
 			<img src="image/tutorial_problem.jpg" alt="The original version of the homepage" width="100%">
 			<p style="text-align: center; font-size: 15px;">Original version of the homepage</p>
@@ -238,24 +250,22 @@
 			<img id="tutorial_redesign" alt="Redesign of the tutorial" src="image/tutorial_redesign.png">
 
 			<br><p id="subtitle">Part 2 Rearrangement of tools</p>
-			<p>According to the usability tests, users have difficulty finding tools hidden under the hamburger menu, so I decided to put out all these tools. I also moved the toolbar, that used to be placed at the banner, to the working area, so the banner would not be cramped.</p>
+			<p>According to the usability tests, users have difficulty finding tools hidden under the hamburger menu, so I put out all the tools from the menu. In addition, I moved the toolbar from the banner to the working area, so that users would take less efforts reaching the tools and the banner would not look too cramped.</p>
 			<img src="image/tool_problem.jpg" alt="Original design of the tool bar" width="100%">
 			<p style="text-align: center; font-size: 15px;">Original Version</p>
 			<img src="image/tool_redesign.jpg" alt="Redesign of the tool bar" width="100%">
 			<p style="text-align: center; font-size: 15px;">Redesign Version</p>
 
 			<br><p id="subtitle">Part 3 Redesign of Testing Function</p>
-			<p>In the original version, the drawer on the right is hidden when users opening the website, causing the tools in the drawer hard to notice. Since 3 out of 4 participants considered the Testing function to be the most useful and most likely to be used, I decided to have the Testing function displayed when users open the website. The Testing function is pretty confusing to me, and at first I thought it is probably due to my lack of professional knowledge. But it turned out to be confusing to the participants as well. Therefore, I redesigned the indicators and buttons of that part. </p>
+			<p>In the original version, tools on the right could be barely noticed when users enter the website, since they were hidden under the drawer. Because 3 out of 4 participants considered the Testing function to be the most helpful and the most likely to be used, I expand the drawer and display the Testing function when users enter the website. When I first used the Testing function, it was confusing to me, and I thought it was probably due to my lack of professional knowledge. However, it turned out to be confusing to the participants as well. Therefore, I redesigned the visual indicators and buttons of that function. </p>
 			<img src="image/testing_problem.jpg" alt="Original design of the testing features" width="100%">
 			<p style="text-align: center; font-size: 15px;">Original Version</p>
-			<p>In the redesign version, one test has been created by default, and the text bar has a placeholder reminding users to input strings. The buttons are more recognizable, and the redundant ones are removed. </p>
+			<p>In the redesign version, there is one test created by default to demonstrate the function to new users. The text input has a placeholder that reminds users to input strings. I replaced the previous confusing and redundant buttons with recognizable and concise ones. </p>
 			<img src="image/testing_redesign.jpg" alt="Redesign of the testing features" width="100%">
 			<p style="text-align: center; font-size: 15px;">Redesign Version</p>
 
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Takeaway</p>
-			<p>This has been a valuable experience for me to design a product that is not for me. I am not and indeed barely closed to a target user. I tried my best to understand a new thing in a short time and corporate with computer science engineers in my redesign process. Instead of running away from something unfamiliar, I trained myself to deal with the unknown.</p>
-		
-			
+			<p style="margin-top: 90px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Takeaway</p>
+			<p>It was a challenge for me to redesign a product based on a subject I completely didn't understand at first. I was barely closed to its target user group. With a goal to refine Flap.js, I tried my best to absorb new computer science knowledge in a short time and to closely cooporate with computer science engineers in my user experience research process in order to better understand user needs. Instead of running away from something unfamiliar, I trained myself to deal with the unknown.</p>
 			
 			
 			
