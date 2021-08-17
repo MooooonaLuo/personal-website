@@ -337,6 +337,15 @@ body{
 }
 #box15:hover p{visibility: visible;}
 
+#box16{background-image: url(image/alphahanger_cover.jpg);}
+#box16 p{visibility: hidden;}
+#box16:hover{
+	 /*background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(image/solemate.jpg);*/
+	 background-size: 400px 320px;
+	 background: #121314;
+}
+#box16:hover p{visibility: visible;}
+
 
 
 
@@ -356,6 +365,7 @@ body{
 #box13 h3{visibility: hidden;}
 #box14 h3{visibility: hidden;}
 #box15 h3{visibility: hidden;}
+#box16 h3{visibility: hidden;}
 
 #box2:hover h3{visibility: visible;}
 #box3:hover h3{visibility: visible;}
@@ -371,7 +381,10 @@ body{
 #box13:hover h3{visibility: visible;}
 #box14:hover h3{visibility: visible;}
 #box15:hover h3{visibility: visible;}
+#box16:hover h3{visibility: visible;}
+
 }
+
 
 .description{
 	display: none;
@@ -626,6 +639,7 @@ p{
 	#box13{background-image: url(image/t-shirt.jpg);}
 	#box14{background-image: url(image/flap.jpg);}
 	#box15{background-image: url(image/launchit_cover.png);}
+	#box16{background-image: url(image/alphahanger_cover.jpg);}
 
 	#port_title{
 		visibility: visible;
@@ -885,6 +899,7 @@ p{
 	#box13{background-image: url(image/t-shirt.jpg);}
 	#box14{background-image: url(image/flap.jpg);}
 	#box15{background-image: url(image/launchit_cover.png);}
+	#box16{background-image: url(image/alphahanger_cover.jpg);}
 
 	#port_title{
 		visibility: visible;
