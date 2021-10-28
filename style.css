@@ -1,8 +1,15 @@
+/* 
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700 
+*/
+
 /* ------------------------------------------------------------ */
 /* Main */
 
 *{
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
 }
 
 p{
@@ -66,10 +73,9 @@ body{
 .top-nav-right a{
     color: #C6C6C6;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
     margin-left: 36px;
-    font-weight: 500;
     text-decoration: none;
     transition: 0.3s;
 }
