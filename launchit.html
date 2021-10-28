@@ -1,408 +1,175 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>LaunchIt</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css"> 
-	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
-	<!-- loader -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-	<style type="text/css">
-    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
-    	.no-js #loader { display: none;  }
-		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-		.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 25%;
-		}
-		@media only screen and (max-width: 450px){
-			.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 65%;
-		}
-    </style>
-      <script type="text/javascript"> //loader
-    	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-    </script>
+<html lang="en">
+    <head>
+        <title>LaunchIt - Mona Luo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+            <div class="project-body">
+                <!-- top nav -->
+                <div class="top-nav">
+                    <script src="cube_top_white.js"></script>
+                    <div class="top-nav-logo">
+                        <a href="index.html"></a>
+                    </div>
+                    <div class="top-nav-right">
+                        <a href="work.html">WORK</a>
+                        <a href="experiments.html">EXPERIMENTS</a>
+                        <a href="about.html">ABOUT</a>
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="content">
 
-	<style type="text/css">
-		body{
-			margin:0;
-		}
+                    <!-- title -->
+                    <div class="title">
+                        <h1>LAUNCHIT</h1>
+                        <p id="info">Product Design &amp; Visual Design &#183; 2020</p>
+                    </div>
 
-		.title{
-			/*margin-bottom: 30px;*/
-			margin-top: 50px;	
-		}
-		h1{
-			text-align: center;
-			font-family: PT Sans;
-		}
-		.title p{
-			text-align: center;
-			font-family: PT Sans;
-		}
-		.content{
-			width: 1000px;
-			height: 2100px;
-			/*margin-left: 215px;
-			margin-right: 215px;*/
-			margin:0 auto;
-		}
-		.content p{
-			font-family: PT Sans;
-			/*width: 600px;*/
-			margin-left: auto;
-			margin-right: auto;
-			color: rgb(90,90,90);
-			text-align: left;
-		}
-		.content h3{
-			font-family: PT Sans;
-			text-align: center;
-		}
-		.content img{
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-		}
-		#intro{
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);*/
-			margin-bottom: 50px;
-		}
-		#subtitle{
-			font-family: PT Sans;
-			font-size: 25px;
-			line-height: 20px;
-			font-weight: bold;
-			opacity: 0.8;
-		}
-		#subsubtitle{
-			font-family: PT Sans;
-			/*width: 600px;*/
-			margin-left: auto;
-			margin-right: auto;
-			font-size: 20px;
-			line-height: 20px;
-			color: #86b332;
-			text-align: left;
-		}
-		#description{
-			height: 200px;
-		}
-		#des1{
-			float: left;
-		}
-		#des2{
-			float: left;
-			margin-left: 100px;
-		}
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-7">
+                                    <p id="subtitle1">OVERVIEW</p>
+                                    <p>LaunchIt is a website platform that bridges innovative student start-ups with college students from various academic backgrounds. Students are eager to practice what they have learned from class through extracurricular projects. Nonetheless, many of them lack project resources or have troubles finding collaborators to propel their ongoing projects. On LaunchIt, through a streamlined experience, project leaders can post their ideas and recruit teammates; students who wish to build something impactful via collaboration can easily find projects of all kinds within seconds.</p>
+                                    <p>I have joined the team LaunchIt since January of 2020 as the User Experience Lead. Through an iterative design process, I have improved the website structure, designed new functions, and refined the notification system.</p>
+                                </div>
+                                <div class="role col-sm-5">
+                                    <p id="subtitle1">MY ROLE</p>
+                                    <p>Redesign the entire user interface and prototype mobile view. Conduct user interviews and usability tests. Ideate with other team leaders and my fellow designer for smart solutions. Create illustrations for empty pages.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="previewImg" src="image/launchit_preview.jpg" alt="" width="100%">
+                    
+                    </div>
+                    
 
-		#onboarding{
-			width: 100%;
-		}
+                    <!-- detail -->
 
-		#statistics{
-			width: 100%;
-		}
+                    <div class="block">
+                        <p id="section-title">FEATURE HIGHLIGHTS</p>
+                        <h2 id="subtitle2">EASY ONBOARDING</h2>
+                        <p>Understanding that people tend to skip tedious and complex tutorials, we created a fun and concise onboarding experience with animated illustrations that help them take a glimpse of our core features.</p> 
+                    </div>
+                    
+                    <img src="image/launchit_feature_0.jpg" alt="" width="100%">
 
-		#testing{
-			width: 100%;
-		}
-		#wireframe{
-			width: 100%;
-			margin-bottom: 100px;
-		}
-		#visual{
-			margin-bottom: 100px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
-		}
-		#concepts{
-			margin-top: 80px;
-			margin-bottom: 50px; 
-			font-size: 30px;
-			font-weight: bold;
-		}
-		#emily{
-			width: 50%;
-		}
+                    <div class="block">
+                        <p id="section-title">FEATURE HIGHLIGHTS</p>
+                        <h2 id="subtitle2">EXPLORING VARIOUS PROJECTS</h2>
+                        <p>Students explore innovative projects of all kinds launched by their peers and faculty members in college. Under project descriptions, we show everything users care about in a clear and organized fashion. Once they find the one they are interested in, they can apply to be part of it with a few clicks.</p> 
+                    </div>
+                    
+                    <img src="image/launchit_feature_1.gif" alt="" width="100%">
 
-		#improvement li{
-			text-decoration: none;
-			list-style-type: I;
-			font-family: PT Sans;
-			font-size: 16px;
-			color: rgb(90,90,90);
-			line-height: 27px;
+                    <div class="block">
+                        <p id="section-title">FEATURE HIGHLIGHTS</p>
+                        <h2 id="subtitle2">MANAGING YOUR PROJECTS</h2>
+                        <p>Project founders can manage applicants and get to know them comprehensively on this all-in-one platform. They can edit applicant status and quickly access applicants' GitHub, LinkedIn, portfolios, and resumes.</p> 
+                    </div>
+                    
+                    <img src="image/launchit_feature_2.gif" alt="" width="100%">
 
-		}
+                    <div class="block">
+                        <p id="section-title">DESIGN PROCESS</p>
+                        <h2 id="subtitle2">USER INTERVIEW</h2>
+                        <p>I worked along a UX designer to interview 6 college students with different academic backgrounds, asking about their decision-making process when seeking projects to join or when recruiting people for their own projects. At the end of the interviews, we also asked them to play around with LaunchIt and to provide some feedback.</p> 
+                        <p>Through the interviews, we found out that users care a lot about the details of projects/positions on posts and other users’ profiles. We need a way to guide users to fill out more useful information that other users desire to see.</p>
+                    </div>
+                    
+                    <img src="image/launchit_interview.jpg" alt="" width="100%">
+
+                    <div class="block">
+                        <p id="section-title">DESIGN PROCESS</p>
+                        <h2 id="subtitle2">USABILITY TEST</h2>
+                        <p>We found 6 people to participate in our usability tests. We assigned them several tasks to go through key features on our design and asked about their experience later on. We acquired a plenty of useful findings. With a solid base of the usability tests, we became confident to create more significant changes on our design, such as changes in navigation, information architecture, and key functions. Below are the main problems we found through the usability tests and corresponding solutions.</p> 
+                    </div>
+                    
+                    <img class="mx-auto d-block small-img" src="image/launchit_p1.jpg" alt="ui">
+                    <div class="block">
+                        <p>In the original version, there are two navigation bars, one on the top and one on the left. During the usability tests, we found that having two navigation bars is distracting for users, so we decided to put all navigation components on one side bar. We designed at least 5 versions of navigation bars and conducted mini usability tests to find out which one is the most intuitive. I realized that users’ conceptual models on navigation are very different from mine, since many users favored the version that I didn’t think would work at first.</p>
+                    </div>
+                    <img src="image/launchit_phase3_1.png" alt="" width="100%">
+
+                    <img class="mx-auto d-block small-img" src="image/launchit_p2.jpg" alt="ui">
+                    <div class="block">
+                        <p>When signing up for the first time, users are only asked to fill out some basic information. At the last step of signing up, they have the freedom to choose to either complete their profiles or skip this part for now. If they choose to skip, the system will later encourage them to complete profiles when they apply for project positions.</p>
+                    </div>
+
+                    <img class="mx-auto d-block small-img" src="image/launchit_p3.jpg" alt="ui">
+                    <div class="block">
+                        <p>We reorganized the page of post details, by clearly dividing project information and recruitment information into two boxes. Readers can easily find all openings under this project and their corresponding responsibilities and qualifications. In response to user need, we also guide post creators to list out responsibilities of each opening using bullet points rather than inputing big chucks of paragraphs that are less readable. In addition, they can add project logos and images to better introduce their projects and teams.</p>
+                    </div>
+                    <img src="image/launchit_phase3_3.png" alt="findings" width="100%">
+
+                    <img class="mx-auto d-block small-img" src="image/launchit_p4.jpg" alt="ui">
+                    <div class="block">
+                        <p>Project recruitment used to be considerably complex, as project leaders needed to employ different tools during the process, such as Google Form, Facebook, and Excel. We created a function for project leaders to manage applicants in one page. They are able to see all applicants’ information on this page from the applicant list. They can modify their application status and contact them via email. Click on a title at the first row, and the list will be reordered based on that title.</p>
+                    </div>
+                    <img src="image/launchit_phase3_4.png" alt="findings" width="100%">
+
+                    <div class="block">
+                        <h2 id="subtitle2">EMPTY PAGES</h2>
+                        <p>To provide more delightful feedback when users reach empty pages, I designed a few illustrations with the theme of spacemen, which matches our brand identity.</p>
+                    </div>
+                    <img src="image/launchit_illustrations.png" alt="illustration" width="100%">
+
+                    <div class="block">
+                        <h2 id="subtitle2">STYLE GUIDE</h2>
+                        <p>To provide more delightful feedback when users reach empty pages, I designed a few illustrations with the theme of spacemen, which matches our brand identity.</p>
+                    </div>
+                    <img src="image/launchit_styleguide.png" alt="style guide" width="100%">
+
+                    <div class="block">
+                        <h2 id="subtitle2">TAKEAWAY</h2>
+                        <p>My main takeaway from this project is the strategy of efficiently collaborating with computer engineers during product development. I used to spend a long time on prototyping and usability tests. Only until I completed them, I was willing to deliver my design to front-end developers. In this way, time was not used wisely for the whole team, and developers easily lost patience while waiting for my design. In contrast, the process of developing LaunchIt is considerably efficient, as we streamline the process through frequent and concise communication between designers and developers. One of the crucial thing I have been doing every week is to work with the PM to create a task priority list for the developers. This allows me to trace my design progress and enables developers to schedule their tasks.</p>
+                    </div>
 
 
-		#persona2{
-			display: none;
-		}
+                    
+                </div>
+            </div>
 
-		#scenario2{
-			display: none;
-		}
+            
+                <div class="next container-fliud">
+                    <a href="alpha-hanger.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>ALPHA HANGER</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-		#r1_2{
-			display: none;
-		}
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:mona_luo@outlook.com">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/">LinkedIn</a>
+                        <a href="">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Jiayu Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2021 Jiayu Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
 
-		#objective{
-			width: 70%;
-		}
-
-		#r{
-			width: 40%;
-		}
-
-		#cdcgif{
-			width: 25%;
-		}
-
-		#cdcabout{
-			width: 60%;
-		}
-
-		#visual_text{
-			margin-bottom: 200px;
-			margin-top: 50px;
-		}
-
-
-		
-		@media only screen and (max-width: 450px){
-			.content{
-				width: 80%;
-				height: 100%;
-			}
-			#statistics{
-				width: 100%;
-			}
-
-			#testing{
-				width: 100%;
-			}
-
-			#visual{
-				margin-bottom: 20px;
-			}
-			#des2{
-				float: left;
-				margin-left: 0px;
-				margin-bottom: 60px;
-			}
-			#concepts{
-				margin-bottom: 0px;
-			}
-			#wireframe{
-				margin-bottom: 50px;
-			}
-
-			#emily{
-				width: 80%;
-			}
-
-
-			#persona2{
-				display: block;
-			}
-
-			#persona1{
-				display: none;
-			}
-
-			#scenario2{
-				display: block;
-			}
-
-			#scenario1{
-				display: none;
-			}
-
-			#r1_2{
-				display: block;
-			}
-
-			#r1{
-				display: none;
-			}
-
-			#objective{
-				width: 100%;
-			}
-
-			#r{
-				width: 100%;
-			}
-			#cdcgif{
-				width: 80%;
-			}
-
-			#cdcabout{
-				width: 100%;
-			}
-
-			#visual_text{
-				margin-bottom: 150px;
-				margin-top: 50px;
-			}
-
-			.findings{
-				width: 100%;
-			}
-
-		}
-		
-	</style>
-</head>
-<body>
-	<div class="se-pre-con"></div>
-	<a id="home_logo" href="index.html#home"></a>
-	<img id="intro" src="image/launchit.jpg" alt="LaunchIt UI Preview" width=100%>
-
-		
-		<div class="title">
-			 <h1>LaunchIt</h1>
-			 <p>Product Design &#183; 2020</p>
-		</div>
-		<br>
-		<div class="content">
-			<p>LaunchIt is a website platform that bridges innovative student start-ups with college students from various academic backgrounds. Students are eager to practice what they have learned from class through extracurricular projects. Nonetheless, many of them lack project resources or have troubles finding collaborators to propel their ongoing projects. On LaunchIt, through a streamlined experience, project leaders can post their ideas and recruit teammates; students who wish to build something impactful via collaboration can easily find projects of all kinds within seconds.</p>
-			<img src="image/launchit_needs.jpg" width="100%">
-			<p>I have joined the team LaunchIt since January of 2020 as the User Experience Lead. With the goal of refining LaunchIt's user experience, I closely cooperate with my fellow designer, the PM, and Tech Lead to create strategies in product development. Through an iterative design process, I have improved the website structure, designed new functions, and refined the notification system. I am dedicated to make the platform more user-friendly and engaging.</p>
-			<p style="font-weight: bold;">Live at <a style="color: #FF6A6A; font-weight: bold; text-decoration: none;" href="https://www.launchitnow.org/" target="_blank">www.launchitnow.org/</a></p>
-
-			<br><br>
-			<div id="description">
-				<div id="des1">
-					<h4 style="font-family: PT Sans;">The Team</h4>
-					<a href="https://www.linkedin.com/company/launchit-sd/people/" target="_blank"><p style="text-decoration: underline;">LaunchIt</p></a>
-
-				</div>
-				<div id="des2">
-					<h4 style="font-family: PT Sans;">My Role</h4>
-					<p>Redesign the entire user interface and prototype mobile view<br>Conduct user interviews and usability tests<br>Ideate with other team leaders and my fellow designer for smart solutions<br>Create illustrations for empty pages</p>
-				</div>
-			</div>
-
-			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Feature Highlights</p>
-			<br>
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>A fun and concise introduction to the platform</b></p>
-			<img src="image/launchit_feature_0.jpg" alt="LaunchIt onboarding" width="100%"><br>
-			<br><br>
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>Explore interesting projects of all kinds and apply to join in a few clicks</b></p>
-			<img src="image/launchit_feature_1.gif" alt="LaunchIt homepage and post details" width="100%"><br>
-			<br><br>
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>As project leaders, manage applicants and get to know about them comprehensively</b></p>
-			<img src="image/launchit_feature_2.gif" alt="LaunchIt manage applicants page and personal profiles" width="100%"><br>
-			
-
-
-			<p style="margin-top: 100px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Design Process</p>
-			<img src="image/launchit_process.jpg" alt="differenet phases of design process" width="100%">
-			
-
-			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase I</p>
-
-			<p>Although LaunchIt was originally prototyped by another designer, the user interface was way different from the original design at the point I joined, because the team decided to reposition the product, and many features have been changed.<p>
-			<p>Product repositioning means that another user research needs to be conducted. However, instead of doing user research first, I chose to tackle obvious design flaws that did not require much efforts for front-end developers to fix. There were two reasons for this decision: first, I didn’t want the developers to wait for too long; second, I could prepare for user interviews while they were fixing those flaws.</p>
-
-
-			
-			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase II</p>
-			<p id="subtitle">User Interview</p>
-			<p>I worked along a UX designer to interview 6 college students with different academic backgrounds, asking about their decision-making process when seeking projects to join or when recruiting people for their own projects. At the end of the interviews, we also asked them to play around with LaunchIt and to provide some feedback.</p>
-			<br>
-			<p id="subtitle">Outcome</p>
-			<p>Through the interviews, we found out that users care a lot about the details of projects/positions on posts and other users’ profiles. We need a way to guide users to fill out more useful information that other users desire to see.</p>
-			<img src="image/launchit_phase2.jpg" alt="Comparision between the previous and redesigned versions" width="100%">
-
-
-			<p style="margin-top: 80px; margin-bottom: 50px; font-size: 30px; font-weight: bold">Phase III</p>
-			<p id="subtitle">Usability Testing</p>
-			<p>We found 6 people to participate in our usability tests. We assigned them several tasks to go through key features on our design and asked about their experience later on. We acquired a plenty of useful findings. With a solid base of the usability tests, we became confident to create more significant changes on our design, such as changes in navigation, information architecture, and key functions. Below are the main problems we found through the usability tests and corresponding solutions.</p>
-			<br>
-
-			<p id="subtitle">Problems and Solutions</p>
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>How can we design more intuitive navigation?</b></p>
-			<img class="findings" src="image/launchit_p1.jpg" alt="problem and solution summary" width="80%">
-			<p>In the original version, there are two navigation bars, one on the top and one on the left. During the usability tests, we found that having two navigation bars is distracting for users, so we decided to put all navigation components on one side bar. We designed at least 5 versions of navigation bars and conducted mini usability tests to find out which one is the most intuitive. I realized that users’ conceptual models on navigation are very different from mine, since many users favored the version that I didn’t think would work at first.</p>
-			<img src="image/launchit_phase3_1.png" alt="different versions of the navigation bar" width="100%">
-			<br><br><br><br>
-
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>How can we encourage users to complete user profiles without affecting their onboarding experience?</b></p>
-			<img class="findings" src="image/launchit_p2.jpg" alt="problem and solution summary" width="80%">
-			<p>When signing up for the first time, users are only asked to fill out some basic information. At the last step of signing up, they have the freedom to choose to either complete their profiles or skip this part for now. If they choose to skip, the system will later encourage them to complete profiles when they apply for project positions. </p>
-			<img src="image/launchit_phase3_2.gif" alt="Onboarding process" width="100%">
-			<br><br><br><br>
-
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>How can we help users to easily find information they hope to see from the post details?</b></p>
-			<img class="findings" src="image/launchit_p3.jpg" alt="problem and solution summary" width="80%">
-			<p>We reorganized the page of post details, by clearly dividing project information and recruitment information into two boxes. Readers can easily find all openings under this project and their corresponding responsibilities and qualifications. In response to user need, we also guide post creators to list out responsibilities of each opening using bullet points rather than inputing big chucks of paragraphs that are less readable. In addition, they can add project logos and images to better introduce their projects and teams.</p>
-			<img src="image/launchit_phase3_3.png" alt="Redesign of the post details structure" width="100%">
-
-
-			<br><br><br><br>
-			<p style="font-size: 20px;"><span style="color: #FF6A6A">&diams;</span> <b>How can we help project leaders efficiently manage their applicants, learn about them, and contact them?</b></p>
-			<img class="findings" src="image/launchit_p4.jpg" alt="problem and solution summary" width="80%">
-			<p>Project recruitment used to be considerably complex, as project leaders needed to employ different tools during the process, such as Google Form, Facebook, and Excel. We created a function for project leaders to manage applicants in one page. They are able to see all applicants’ information on this page from the applicant list. They can modify their application status and contact them via email. Click on a title at the first row, and the list will be reordered based on that title. </p>
-			<img src="image/launchit_phase3_4.png" alt="Manage Applicants page" width="100%">
-
-
-			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Illustrations for Empty Pages</p>
-			<p>To provide more delightful feedback when users reach empty pages, I designed a few illustrations with the theme of spacemen, which matches our brand identity.</p>
-			<img src="image/launchit_illustrations.png" alt="Style guide" width="100%">
-
-			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Style Guide</p>
-			<p>I created a very detailed style guide to ensure style consistency throughout all pages and for maintainence. It specifies the use of colors in different conditions and includes components that are frequently used.</p>
-			<img src="image/launchit_styleguide.png" alt="Style guide" width="100%">
-
-			<p style="margin-top: 80px; margin-bottom: 20px; font-size: 30px; font-weight: bold">Takeaway & The Next Step</p>
-			<p>My main takeaway from this project is the strategy of efficiently collaborating with computer engineers during product development. I used to spend a long time on prototyping and usability tests. Only until I completed them, I was willing to deliver my design to front-end developers. In this way, time was not used wisely for the whole team, and developers easily lost patience while waiting for my design. In contrast, the process of developing LaunchIt is considerably efficient, as we streamline the process through frequent and concise communication between designers and developers. One of the crucial thing I have been doing every week is to work with the PM to create a task priority list for the developers. This allows me to trace my design progress and enables developers to schedule their tasks.</p>
-			<p>The team has recently accomplished the 3rd release. We are aiming at expanding our user base through smarter marketing strategies and more engaging user onboarding experience.</p>
-
-
-			
-			
-			<p style="margin-top: 120px; margin-bottom: 50px; font-size: 30px; font-weight: bold; text-align: center;"></p>
-
-			<div style="height: 60px; margin-top: 40px;">
-				<div>
-					<a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/" target="_blank"><img src="image/linkedin.png" alt="View my Linkedin" height="23px;" style="float: left;"></a>
-				</div>
-				<div  style=" height: 50px; float: left; margin-left: 20px;">
-						<a href="mailto:mona_luo@outlook.com" target="_blank"><img src="image/outlook.png" alt="Email me" height="25px;" style="float: left;"></a>
-				</div>
-				<p style="float: right; margin-right: 30px; margin-top: 0px;">&copy; 2021 Jiayu Luo.</p>
-				<br>
-			</div>	
-	
-	</div>
-
-</body>
-</html>
+    </html>

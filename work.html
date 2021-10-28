@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Work - Mona Luo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="style.css">
+        <script src="menu.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#nav-design').click(function() {
+                    $('#nav-design').css('color','#22C392');
+                    $('#nav-art').css('color','#C6C6C6');
+                    $('#nav-others').css('color','#C6C6C6');
+                    $('.gallery-design').css('display','block');
+                    $('.gallery-art').css('display','none');
+                    $('.gallery-others').css('display','none');  
+                });
+                $('#nav-art').click(function() {
+                    $('#nav-design').css('color','#C6C6C6');
+                    $('#nav-art').css('color','#22C392');
+                    $('#nav-others').css('color','#C6C6C6');
+                    $('.gallery-design').css('display','none');
+                    $('.gallery-art').css('display','block');
+                    $('.gallery-others').css('display','none'); 
+                });
+                $('#nav-others').click(function() {
+                    $('#nav-design').css('color','#C6C6C6');
+                    $('#nav-art').css('color','#C6C6C6');
+                    $('#nav-others').css('color','#22C392');
+                    $('.gallery-design').css('display','none');
+                    $('.gallery-art').css('display','none');
+                    $('.gallery-others').css('display','block'); 
+                });
+            });
+
+
+        </script>
+    </head>
+    
+    <body>
+        <div class="container-fliud">
+
+            <!-- top nav -->
+            <div class="top-nav">
+                <script src="cube_top_black.js"></script>
+                <div class="top-nav-logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="work.html" style="color: #22C392;">WORK</a>
+                    <a href="experiments.html">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+            
+            <!-- work -->
+            <div class="work container-fliud">
+                <div class="row">
+                    <!-- side nav bar -->
+                    <div class="work-nav col-sm-3">
+                        <p id="nav-design">UI/UX DESIGN</p>
+                        <p id="nav-art">INTERACTIVE ART</p>
+                        <p id="nav-others">OTHERS</p>
+                    </div>
+                    <!-- gallery -->
+                    <div class="work-gallery col-sm-9">
+                        <!-- Design -->
+                        <div class="gallery-design container-fliud">
+                            <div class="row">
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="launchit.html">
+                                        <div class="launchit">
+                                            <div class="work-description">
+                                                <h5>LAUNCHIT</h5>
+                                                <p>Product Design &amp; Visual Design</p>
+                                            </div>
+                                              <!-- only for setting the size of this section -->
+                                            <img src="image/placeholder.jpg" alt="placeholderplaceholder" width="100%" style="visibility: hidden;"> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="alpha-hanger.html">
+                                        <div class="alpha-hanger">
+                                            <div class="work-description">
+                                                <h5>ALPHA HANGER</h5>
+                                                <p>Freelance Web Design</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- break to a new line -->
+                                <div class="w-100"></div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="flap-js.html">
+                                        <div class="flap-js">
+                                            <div class="work-description">
+                                                <h5>FLAP.JS</h5>
+                                                <p>UI/UX </p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="essence-securities-intern.html">
+                                        <div class="essence-securities">
+                                            <div class="work-description">
+                                                <h5>ESSENCE SECURITIES INTERN</h5>
+                                                <p>UI Design Intern</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Art -->
+                        <div class="gallery-art container-fliud">
+                            <div class="row">
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="distance-and-understanding.html">
+                                        <div class="distance-and-understanding">
+                                            <div class="work-description">
+                                                <h5>DISTANCE &amp; UNDERSTANDING</h5>
+                                                <p>Digital Interactive Installation</p>
+                                            </div>
+                                              <!-- only for setting the size of this section -->
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;"> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="animaze.html">
+                                        <div class="animaze">
+                                            <div class="work-description">
+                                                <h5>ANIMAZE</h5>
+                                                <p>Interactive Gaming Installation</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Others -->
+                        <div class="gallery-others container-fliud">
+                            <div class="row">
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="leo-burnett-intern.html">
+                                        <div class="lb">
+                                            <div class="work-description">
+                                                <h5>LEO BURNETT INTERN</h5>
+                                                <p>Visual Design Intern</p>
+                                            </div>
+                                              <!-- only for setting the size of this section -->
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;"> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="old-town-house.html">
+                                        <div class="old-town-house">
+                                            <div class="work-description">
+                                                <h5>OLD TOWN HOUSE</h5>
+                                                <p>Illustration</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- break to a new line -->
+                                <div class="w-100"></div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="the-lost-city.html">
+                                        <div class="lost-city">
+                                            <div class="work-description">
+                                                <h5>THE LOST CITY</h5>
+                                                <p>Analogue Photography</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 pl-2 pr-2 pb-3 pt-0">
+                                    <a href="cycleccoon.html">
+                                        <div class="cycleccoon">
+                                            <div class="work-description">
+                                                <h5>CYCLECCOON</h5>
+                                                <p>Speculative Design</p>
+                                            </div>   
+                                            <img src="image/placeholder.jpg" alt="placeholder" width="100%" style="visibility: hidden;">
+                                        </div>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="contact">
+                    <a href="mailto:mona_luo@outlook.com">Email</a>
+                    <a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/">LinkedIn</a>
+                    <a href="">Instagram</a>
+                    <span class="copyright"><span>Designed and developed by Jiayu Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2021 Jiayu Luo.</span>
+                </div>
+            </div>
+        
+        </div> 
+    </body>
+
+    </html>

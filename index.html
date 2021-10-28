@@ -1,322 +1,41 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-	<meta charset="UTF-8">
-	<title>Jiayu Luo</title>
-	<link rel="shortcut icon" type="image/png" href="image/luo.png" />
-	<link rel="stylesheet" href="style.css"> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<script src="analytics.js"></script>
-    <!-- <script src="flocking.js"></script> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-150477387-1');
-	</script>
-
-
+<html lang="en">
+    <head>
+        <title>Mona Luo - Interaction Designer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="cube_main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
     
-    <script type="text/javascript">
-    	function myFunction() { 
-                window.open("home.html#home"); 
-            } 
-    </script>
-  	
-  	<style type="text/css">
-    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
-    	.no-js #loader { display: none;  }
-		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-		.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 25%;
-		}
-		@media only screen and (max-width: 450px){
-			.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 65%;
-		}
-    </style>
-      <script type="text/javascript"> //loader
-    	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-    </script>
+    <body>
 
-	<!-- smooth scroll -->
-	<script>
-	$(document).ready(function(){
-	  $("a").on('click', function(event) {
-	    if (this.hash !== "") {
-	      event.preventDefault();
-	      var hash = this.hash;
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 500, function(){
-	        window.location.hash = hash;
-	      });
-	    }
-	  });
-	});
-	</script>
+        <div class="gradient"></div>
 
-</head>
-<body id="home_body">
-	<div class="se-pre-con"></div>
-	<div id="about_me">
-		<h3>Hi! My name is Jiayu Luo.<br>You can call me Mona. </h3>
-		<p>I am an interaction designer based in NYC. With a background in new media arts and UI/UX design, I have both an artist’s sensibility and a designer’s rationality. I am currently studying in the MFA Interaction Design program at the School of Visual Arts.</p>
-		<a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/" target="_blank"><img id="img1" src="image/linkedin_icon.png" alt="View my Linkedin"></a>
-		<a href="mailto:mona_luo@outlook.com" target="_blank"><img id="img2" src="image/email_icon.png" alt="Email me"></a>
-	</div>
-	
-	<div id="home">
-		<center><p style="color: white; line-height: 5px; font-size: 6px">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|</p></center>
-		<a href="#about_me" style="text-decoration: none;"><center><p class="title">About Me</p></center></a>
-		<br>
-		<img id="neon" src="image/neon.jpg" alt="Mona logo">
-		<br><br><br>
-		<a href="#portfolio" style="text-decoration: none"><center><p class="title">Portfolio</p></center></a>
-		<center><p style="color: white; line-height: 5px; font-size: 6px">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|</p></center>
-	</div>
-	<div id="navigation">
-		<p id="uiux_nav">UI/UX Design</p>
-		<p id="artwork_nav" style="color: rgb(160,160,160);">Artwork</p>
-		<p id="graphic_design_nav" style="color: rgb(160,160,160);">Graphic Design</p>
-		<a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/" target="_blank"><img id="img3" src="image/linkedin_icon.png" width="20px"></a>
-		<a href="mailto:mona_luo@outlook.com" target="_blank"><img id="img4" src="image/email_icon.png" alt="Email me" width="25px"></a>
+        <div class="container-fliud">
+            
+            <!-- top nav -->
+            <div class="top-nav">
+                <div class="top-nav-logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="work.html">WORK</a>
+                    <a href="experiments.html">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
 
-		<p id="copyright">Copyright &copy; 2021 Jiayu Luo.</p>
+            <!-- home main -->
+            <div class="home-main">
+               <h1 class="home-h1">Hi! My name is Jiayu Luo.<br>You can call me Mona.</h1>
+               <p class="home-p">I am an interaction designer based in NYC. With a background in new media arts and UI/UX design, I have both an artist’s sensibility and a designer’s rationality. </p>
+               <a href="work.html"><button class="view-my-work">VIEW MY WORK</button></a>
+            </div>
 
-	</div>
+        </div> 
+    </body>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			var tools;
-
-		    $('#artwork_nav').click(function() {
-		        $('#uiux').css('display','none');
-		        $('#graphic_design').css('display','none');
-		        $('#artwork').css('display','initial');  
-		        
-		        $('#uiux_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(160,160,160)');
-		        $('#artwork_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#artwork_nav').css('cursor','default');
-		        $('#uiux_nav').css('cursor','pointer');
-		        $('#graphic_design_nav').css('cursor','pointer');
-
-		         $('#navigation>#copyright').css('margin-top','790px');
-
-				localStorage.setItem("genre", "artwork");
-
-		    });
-
-		    if(localStorage.getItem('genre') == "artwork"){
- 				$('#uiux').css('display','none');
-		        $('#graphic_design').css('display','none');
-		        $('#artwork').css('display','initial');  
-		        
-		        $('#uiux_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(160,160,160)');
-		        $('#artwork_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#artwork_nav').css('cursor','default');
-		        $('#uiux_nav').css('cursor','pointer');
-		        $('#graphic_design_nav').css('cursor','pointer');
-
-		         $('#navigation>#copyright').css('margin-top','790px');
-		    }
-
-		    $('#uiux_nav').click(function() {
-		        $('#artwork').css('display','none');
-		        $('#graphic_design').css('display','none');
-		        $('#uiux').css('display','initial');  
-		        
-		        $('#artwork_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(160,160,160)');
-		        $('#uiux_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#uiux_nav').css('cursor','default');
-		        $('#artwork_nav').css('cursor','pointer');
-		        $('#graphic_design_nav').css('cursor','pointer');
-
-		        $('#navigation>#copyright').css('margin-top','790px');
-
-		        localStorage.setItem("genre", "uiux");
-		    });
-
-		    if(localStorage.getItem('genre') == "uiux"){
- 				$('#artwork').css('display','none');
-		        $('#graphic_design').css('display','none');
-		        $('#uiux').css('display','initial');  
-		        
-		        $('#artwork_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(160,160,160)');
-		        $('#uiux_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#uiux_nav').css('cursor','default');
-		        $('#artwork_nav').css('cursor','pointer');
-		        $('#graphic_design_nav').css('cursor','pointer');
-
-		        $('#navigation>#copyright').css('margin-top','790px');
-		    }
-
-		    $('#graphic_design_nav').click(function() {
-		        $('#uiux').css('display','none');
-		        $('#artwork').css('display','none');
-		        $('#graphic_design').css('display','initial');  
-		        
-		        $('#uiux_nav').css('color','rgb(160,160,160)');
-		        $('#artwork_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#graphic_design_nav').css('cursor','default');
-		        $('#artwork_nav').css('cursor','pointer');
-		        $('#uiux_nav').css('cursor','pointer');
-
-		        $('#navigation>#copyright').css('margin-top','470px');
-
-		        localStorage.setItem("genre", "graphic design");
-		    });
-
-
-		    if(localStorage.getItem('genre') == "graphic design"){
- 				$('#uiux').css('display','none');
-		        $('#artwork').css('display','none');
-		        $('#graphic_design').css('display','initial');  
-		        
-		        $('#uiux_nav').css('color','rgb(160,160,160)');
-		        $('#artwork_nav').css('color','rgb(160,160,160)');
-		        $('#graphic_design_nav').css('color','rgb(250,250,250)');
-		        
-		        $('#graphic_design_nav').css('cursor','default');
-		        $('#artwork_nav').css('cursor','pointer');
-		        $('#uiux_nav').css('cursor','pointer');
-
-		        $('#navigation>#copyright').css('margin-top','470px');
-		    }
-
-		});
-	</script>
-
-	<div id="portfolio">
-		<div id="uiux">
-			
-			<a href="alphahanger.html"><div class="box" id="box16">
-				<h3>Alpha Hanger</h3><p>Web design for a dry-cleaning<br> equipment manufacturer</p></div></a>
-			<a href="alphahanger.html"><div class="description"><h3>Alpha Hanger</h3><p>Web design for a dry-cleaning<br> equipment manufacturer</p></div></a>
-
-			<a href="launchit.html"><div class="box" id="box15">
-				<h3>LaunchIt</h3><p>A web-based idea incubator for college students</p></div></a>
-			<a href="launchit.html"><div class="description"><h3>LaunchIt</h3><p>A web-based idea incubator for college students</p></div></a>
-
-			<a href="essence_securities.html"><div class="box" id="box17">
-				<h3>Essence Securities Intern</h3><p>UI design intern at Essence Securities</p></div></a>
-			<a href="essence_securities.html"><div class="description"><h3>Essence Securities Intern</h3><p>UI design intern at Essence Securities</p></div></a>
-
-
-			<a href="flapjs.html"><div class="box" id="box14">
-				<h3>Flap.js</h3><p>A  web app for students to practice<br>the mathematical theory of computability</p></div></a>
-			<a href="flapjs.html"><div class="description"><h3>Flap.js</h3><p>A web app for students to practice<br>the mathematical theory of computability</p></div></a>
-
-			<a href="solemate.html"><div class="box" id="box11">
-				<h3>SoleMate</h3><p>Assisting lower extremity injury rehabilitation</p></div></a>
-			<a href="solemate.html"><div class="description"><h3>SoleMate</h3><p>Assisting lower extremity injury rehabilitation</p></div></a>
-
-			<a href="cdcweb.html"><div class="box" id="box1">
-				<h3>Chinese Drama Club</h3><p>First official website designed for <br>Chinese Drama Club at UCSD</p></div></a>
-			<a href="cdcweb.html"><div class="description"><h3>Chinese Drama Club</h3><p>First official website designed for <br>Chinese Drama Club at UCSD</p></div></a>
-
-			
-
-			
-			
-			
-		</div>
-			
-		<div id="artwork">
-			
-
-			<a href="distance_and_understanding.html"><div class="box" id="box9">
-				<h3>Distance and Understanding</h3><p>Digital Interactive Art</p></div></a>
-			<a href="distance_and_understanding.html"><div class="description"><h3>Distance and Understanding</h3><p>Digital Interactive Art</p></div></a>
-
-			<a href="animaze.html"><div class="box" id="box2">
-				<h3>Animaze</h3><p>Story-Driven Interactive Art</p></div></a>
-			<a href="animaze.html"><div class="description"><h3>Animaze</h3><p>Story-Driven Interactive Art</p></div></a>
-
-			<a href="cycleccoon.html"><div class="box" id="box4">
-				<h3>Cycleccoon</h3><p>Speculative Design of Raccoon AR Goggle</p></div></a>		
-			<a href="cycleccoon.html"><div class="description"><h3>Cycleccoon</h3><p>Speculative Design of Raccoon AR Goggle</p></div></a>
-
-			<a href="the_lost_city.html"><div class="box" id="box8">
-				<h3>The Lost City</h3><p>A Road Trip in Salton City</p></div></a>
-			<a href="the_lost_city.html"><div class="description"><h3>The Lost City</h3><p>A Road Trip in Salton City</p></div></a>
-
-			<a href="data_explosion.html"><div class="box" id="box7">
-				<h3>Data Explosion</h3><p>Abstract Animation</p></div></a>
-			<a href="data_explosion.html"><div class="description"><h3>Data Explosion</h3><p>Abstract Animation</p></div></a>
-
-			<a href="the_eye.html"><div class="box" id="box6">
-				<h3>The Eye</h3><p>Digital Wearable Art</p></div></a>
-			<a href="the_eye.html"><div class="description"><h3>The Eye</h3><p>Digital Wearable Art</p></div></a>
-
-
-		
-			
-		</div>
-
-		<div id="graphic_design">
-
-			<a href="LB.html"><div class="box" id="box12">
-				<h3>Leo Burnett Graphic Design Intern</h3><p>Audi Automobile Advertising </p></div></a>
-			<a href="LB.html"><div class="description"><h3>Leo Burnett Graphic Design Intern</h3><p>Audi Automobile Advertising </p></div></a>
-
-			<a href="old_town.html"><div class="box" id="box10">
-				<h3>House In Old Town</h3><p>Illustration</p></div></a>
-			<a href="old_town.html"><div class="description"><h3>House In Old Town</h3><p>Illustration</p></div></a>
-			
-			<a href="CDC.html"><div class="box" id="box13">
-				<h3>Chinese Drama Club</h3><p>Advertising for shows </p></div></a>
-			<a href="CDC.html"><div class="description"><h3>Chinese Drama Club</h3><p>Advertising for shows </p></div></a>
-
-			<a href="moodi.html"><div class="box" id="box5">
-				<h3>Moodi</h3><p>Illustrations for a Mood Recording App</p></div></a>
-			<a href="moodi.html"><div class="description"><h3>Moodi</h3><p>Illustrations for a Mood Recording App</p></div></a>
-			
-			
-		</div>
-	
-	</div>
-
-
-</body>
-</html>
+    </html>

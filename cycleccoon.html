@@ -1,144 +1,119 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Cycleccoon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" type="image/png" href="image/luo.png" /> 
-	<!-- loader -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-	<style type="text/css">
+<html lang="en">
+    <head>
+        <title>cycleccoon - Mona Luo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+            <div class="project-body">
+                <!-- top nav -->
+                <div class="top-nav">
+                    <script src="cube_top_white.js"></script>
+                    <div class="top-nav-logo">
+                        <a href="index.html"></a>
+                    </div>
+                    <div class="top-nav-right">
+                        <a href="work.html">WORK</a>
+                        <a href="experiments.html">EXPERIMENTS</a>
+                        <a href="about.html">ABOUT</a>
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="content">
 
-    	/*@import url("https://fonts.googleapis.com/css?family=Lato");*/
-    	.no-js #loader { display: none;  }
-		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-		.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 25%;
-		}
-		@media only screen and (max-width: 450px){
-			.se-pre-con {
-			position: fixed;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background: url(image/neon-rocket.gif) center no-repeat #121314;
-			background-size: 65%;
-		}
-    </style>
-      <script type="text/javascript"> //loader
-    	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-    </script>
-	<style type="text/css">
-		.title{
-			/*margin-bottom: 30px;*/
-			padding-top: 50px;	
-		}
-		h1{
-			text-align: center;
-			font-family: PT Sans;
-		}
-		.title p{
-			text-align: center;
-			font-family: PT Sans;
-		}
-		#subtitle{
-			font-family: PT Sans;
-			font-size: 20px;
-			line-height: 20px;
-			font-weight: bold;
-			opacity: 0.8;
-		}
-		.content{
-			width: 1000px;
-			height: 2100px;
-			/*margin-left: 215px;
-			margin-right: 215px;*/
-			margin:0 auto;
-		}
-		.content p{
-			font-family: PT Sans;
-			color: rgb(90,90,90);
-		}
-		.content h3{
-			font-family: PT Sans;
-			text-align: center;
-		}
-		.content img{
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-		}
-		@media only screen and (max-width: 450px){
-			.content{
-				width: 80%;
-				height: 100%;
-			}
-			iframe{
-				height: 200px;
-			}
-		}
-		
-	</style>
-</head>
-<body>
-	<div class="se-pre-con"></div>
-	<a id="home_logo" href="index.html#home"></a>
-	<div class="title">
-		 <h1>Cycleccoon</h1>
-		 <p>Speculative Design &#183; 2017</p>
-	</div>
-	<div class="content">
-	<br>
-		<p>Cycleccoon is an augmented-reality system for raccoons, created out of the endeavor to manage the amount of food waste humans discard and to aid in the conservation of the environment. In the imaginary scenario, raccoons become animal workers in charge of eliminating human food waste. Wear augmented reality headsets, they roam the streets of La Raccoona city and consume food waste that human citizens discard on the streets of the city and in public trash cans. The raccoons are able to detect the food that needs to be consumed through highly developed object recognition software which identifies food items that are in the raccoons’ line of vision and leads them to it.</p>
-		<br><br>
-		<img src="image/cycleccoon2.jpg" alt="Pictures of raccoons wearing VR googles" width="100%">
-		<br>
-		<p style="margin-top: 80px; margin-bottom: 20px; font-size: 25px; font-weight: bold">Tunnel vision of the augmented-reality headset</p>
-		<p>The object recognition technology is not only able to identify food but also able to differentiate between food that has been discarded and food that humans are eating. A concern that arises out of the prominence of a traditionally “wild” species of animals among a human society is that the safety of the humans could be compromised. The augmented-reality headset modifies what the raccoons are able to see and blocks out any irrelevant scenery (similar to the “tunnel-vision” concept), including the presence of humans. This ensures that humans are safe, as raccoon attacks are highly unlikely because of the extent to which the raccoons’ visions are regulated.</p>
-		<iframe width="100%" height="564" src="https://player.vimeo.com/video/294630717" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe></center>
-		<br>
-		<p style="margin-top: 80px; margin-bottom: 20px; font-size: 25px; font-weight: bold">Location system that manages raccoons’ activities</p>
-		<p>GPS is also incorporated into the product and the system in which it functions: when a raccoon is in active work state, they are led to desired location determined by Cyberccoon personnel (the operations room from which the system is run), and are motivated to travel there by signals sent to individual headsets. When the raccoons are not in active work state, they are led to forested areas to rest and reside in.</p>
-		<iframe width="100%" height="630" src="https://www.youtube.com/embed/5Hl-iZVI2CQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    <!-- title -->
+                    <div class="title">
+                        <h1>CYCLECCOON</h1>
+                        <p id="info">Speculative Design &#183; 2017</p>
+                    </div>
 
-		<p style="margin-top: 80px; margin-bottom: 20px; font-size: 25px; font-weight: bold">The Making Process</p>
-		<br>
-		<p id="subtitle">Research</p>
-		<p>A tremendous amount of food is wasted in the United States every year. According to U.S. Department of Agriculture, "In the United States, food waste is estimated at between 30-40 percent of the food supply. This estimate, based on estimates from USDA’s Economic Research Service of 31 percent food loss at the retail and consumer levels, corresponded to approximately 133 billion pounds and $161 billion worth of food in 2010." With an attempt to reduce food waste and the cost of food disposal, we think of the "gargabe pickers" that spread in the North Amercia — raccoons.</p>
-		<img src="image/cycle_research.jpg" alt="Research summary" width="100%">
-		<br>
-		<p id="subtitle">Modeling</p>
-		<p>I prototyped the 3D model with Maya and printed it out. Then I handed it over to my teammate for spraying the model and attaching lights and straps to it.</p>
-		<img src="image/cycle_model.jpg" alt="3D model and physical model of the goggle" width="100%">
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-8">
+                                    <p id="subtitle1">OVERVIEW</p>
+                                    <p>Cycleccoon is an augmented-reality system for raccoons, created out of the endeavor to manage the amount of food waste humans discard and to aid in the conservation of the environment. In the imaginary scenario, raccoons become animal workers in charge of eliminating human food waste. Wear augmented reality headsets, they roam the streets of La Raccoona city and consume food waste that human citizens discard on the streets of the city and in public trash cans. The raccoons are able to detect the food that needs to be consumed through highly developed object recognition software which identifies food items that are in the raccoons’ line of vision and leads them to it.</p>
+                                </div>
+                                <div class="role col-sm-4">
+                                    <p id="subtitle1">TOOLS</p>
+                                    <p>Adobe Photoshop<br>Adobe After Effects<br>Maya</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="previewImg" src="image/cycleccoon_preview.jpg" alt="" width="100%">
+                    
+                    </div>
+                    
 
-		<br><br>
-			<div style="height: 60px; margin-top: 40px;">
-				<div>
-					<a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/" target="_blank"><img src="image/linkedin.png" alt="View my LinkedIn" height="23px;", style="float: left;"></a>
-				</div>
-				<div  style=" height: 50px; float: left; margin-left: 20px;">
-						<a href="mailto:mona_luo@outlook.com" target="_blank"><img src="image/outlook.png" alt="Email me" height="25px;", style="float: left;"></a>
-				</div>
-				<p style="float: right; margin-right: 30px; margin-top: 0px;">&copy; 2021 Jiayu Luo.</p>
-				<br>
-			</div>
-		
-	</div>
+                    <!-- detail -->
 
-</body>
-</html>
+                    <div class="block">
+                        <h2 id="subtitle2">AUGMENTED-REALITY PROTOTYPE</h2>
+                        <p>The object recognition technology is not only able to identify food but also able to differentiate between food that has been discarded and food that humans are eating. A concern that arises out of the prominence of a traditionally “wild” species of animals among a human society is that the safety of the humans could be compromised. The augmented-reality headset modifies what the raccoons are able to see and blocks out any irrelevant scenery (similar to the “tunnel-vision” concept), including the presence of humans. This ensures that humans are safe, as raccoon attacks are highly unlikely because of the extent to which the raccoons’ visions are regulated.</p>
+                        <img src="image/cycleccoon_ar.jpg" alt="AR vision" width="100%" style="margin-bottom: 0; margin-top: 3vh;">
+                    </div>
+
+                    <div class="block">
+                        <h2 id="subtitle2">LOCATION TRACKING</h2>
+                        <p>GPS is incorporated into the product and the system in which it functions: when a raccoon is in active work state, they are led to desired location determined by Cyberccoon personnel (the operations room from which the system is run), and are motivated to travel there by signals sent to individual headsets. When the raccoons are not in active work state, they are led to forested areas to rest and reside in.</p>
+                        <img src="image/cycleccoon_map.jpg" alt="GPS" width="100%" style="margin-bottom: 0; margin-top: 3vh;">
+                    </div>
+                    
+
+                    <div class="block">
+                        <h2 id="subtitle2">THE MAKING PROCESS</h2>
+                        <h4 id="subtitle3">Research</h4>
+                        <p>A tremendous amount of food is wasted in the United States every year. According to U.S. Department of Agriculture, "In the United States, food waste is estimated at between 30-40 percent of the food supply. This estimate, based on estimates from USDA’s Economic Research Service of 31 percent food loss at the retail and consumer levels, corresponded to approximately 133 billion pounds and $161 billion worth of food in 2010." With an attempt to reduce food waste and the cost of food disposal, we think of the "gargabe pickers" that spread in the North Amercia — raccoons.</p>
+                        <img src="image/cycleccoon_research.jpg" alt="Research" width="100%" style="margin-bottom: 0; margin-top: 3vh;">                    
+                    </div>
+
+                    <div class="block">
+                        <h4 id="subtitle3">Modeling</h4>
+                        <p>I prototyped the 3D model with Maya and printed it out. Then I handed it over to my teammate for spraying the model and attaching lights and straps to it.</p>
+                        <img src="image/cycleccoon_model.jpg" alt="Research" width="100%" style="margin-bottom: 0; margin-top: 3vh;">                    
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+                <div class="next container-fliud">
+                    <a href="launchit.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>LAUNCHIT</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:mona_luo@outlook.com">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-mona-luo-aa48a217b/">LinkedIn</a>
+                        <a href="">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Jiayu Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2021 Jiayu Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
+
+    </html>
