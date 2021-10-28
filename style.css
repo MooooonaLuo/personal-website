@@ -774,7 +774,15 @@ body{
 @media only screen and (max-width: 450px){
     .footer{
         position: relative;
-        padding-top: 0vh;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    #about-footer{
+        position: relative;
+        padding-top: 5vh;
         padding-bottom: 2vh;
     }
 }
