@@ -567,6 +567,17 @@ body{
     font-size: 18px;
 }
 
+.content ul{
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+.content li{
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
 .title h1{
     font-size: 44px;
     font-weight: bold;
