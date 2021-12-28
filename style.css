@@ -286,6 +286,18 @@ body{
 
 /* gallery background */
 
+.toogether{
+    width: 100%;
+	height: 100%;
+    background-size: 100% 100%;
+    background-image: url(image/toogether_cover.jpg);
+    transition: ease-out 0.3s;
+}
+
+.toogether:hover{
+    background: #3b4ed7;
+}
+
 .launchit{
     width: 100%;
 	height: 100%;
@@ -788,6 +800,20 @@ body{
 
 #gifBT:hover{
     cursor: pointer;
+}
+
+#jnjtag{
+    width: 23%;
+}
+
+@media only screen and (max-width: 450px){
+    #jnjtag{
+        width: 80%;
+    }
+}
+
+#toogether-highlight{
+    color: #3f3f3f;
 }
 
 
