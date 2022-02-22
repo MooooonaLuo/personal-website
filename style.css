@@ -442,6 +442,18 @@ body{
     background: #5541d2;
 }
 
+.off-the-wall{
+    width: 100%;
+	height: 100%;
+    background-size: 100% 100%;
+    background-image: url(image/off_the_wall.jpg);
+    transition: ease-out 0.3s;
+}
+
+.off-the-wall:hover{
+    background: #3b4ed7;
+}
+
 .solemate{
     width: 100%;
 	height: 100%;
