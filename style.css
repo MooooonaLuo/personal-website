@@ -254,11 +254,11 @@ body{
     text-decoration: none;
 }
 
-.work-gallery h5{
+.work-description h5{
     color: #e8e8e8;
     font-size: 18px;
     margin-bottom: 0.1em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
 
 .work-gallery p{
@@ -292,10 +292,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/toogether_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .toogether:hover{
-    background: #3b4ed7;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .launchit{
@@ -304,10 +305,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/launchit_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .launchit:hover{
-    background: #276ed8;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .alpha-hanger{
@@ -316,10 +318,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/alphahanger_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .alpha-hanger:hover{
-    background: #5541d2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .flap-js{
@@ -328,10 +331,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/flapjs_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .flap-js:hover{
-    background: #753dc2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .essence-securities{
@@ -340,10 +344,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/essence_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .essence-securities:hover{
-    background: #3b4ed7;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .egor{
@@ -352,10 +357,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/egor_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .egor:hover{
-    background: #276ed8;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .distance-and-understanding{
@@ -364,10 +370,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/d&u_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .distance-and-understanding:hover{
-    background: #3b4ed7;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .animaze{
@@ -376,10 +383,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/animaze_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .animaze:hover{
-    background: #753dc2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .lb{
@@ -388,10 +396,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/lb_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .lb:hover{
-    background: #276ed8;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .old-town-house{
@@ -400,10 +409,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/oldtownhouse_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .old-town-house:hover{
-    background: #753dc2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .lost-city{
@@ -412,10 +422,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/lostcity_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .lost-city:hover{
-    background: #3b4ed7;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .cycleccoon{
@@ -424,10 +435,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/cycleccoon_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .cycleccoon:hover{
-    background: #5541d2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .data-explosion{
@@ -436,22 +448,24 @@ body{
     background-size: 100% 100%;
     background-image: url(image/dataexplosion_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .data-explosion:hover{
-    background: #5541d2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .off-the-wall{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
-    background-image: url(image/off_the_wall.jpg);
+    background-image: url(image/off_the_wall_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .off-the-wall:hover{
-    background: #3b4ed7;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .solemate{
@@ -460,10 +474,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/solemate_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .solemate:hover{
-    background: #276ed8;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 .chronic-pain{
@@ -472,10 +487,11 @@ body{
     background-size: 100% 100%;
     background-image: url(image/chronic_pain_cover.jpg);
     transition: ease-out 0.3s;
+    border-radius: 3px;
 }
 
 .chronic-pain:hover{
-    background: #753dc2;
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
 
@@ -817,7 +833,7 @@ body{
     background: rgb(50,50,50); 
     margin-top: 30px;
     color: yellow;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
 }
