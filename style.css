@@ -107,15 +107,29 @@ body{
 /* ------------------------------------------------------------ */
 /* Project Top Nav */
 
-@media only screen and (min-width: 451px){
-    .project .top-nav-logo a{
+/* @media only screen and (min-width: 451px){ */
+    #navbar{
+        height: 120px;
+        background-color: #ffffff;
         position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        }
+
+    .project .top-nav-logo a{
+        background-size: 100% 90%;
+        background-image: url(image/cube.png);
+        opacity: 1;
     }
     
-    .project .top-nav-right{
+    /* .project .top-nav-right{
         position: fixed;
-    }
-}
+    } */
+
+/* } */
 
 .project .top-nav-right a{
     color: #808080;
@@ -675,6 +689,10 @@ body{
     letter-spacing: 0.1em;
 }
 
+#subtitle2{
+    line-height: 1.5em;
+}
+
 .role{
     padding-left: 4vw;
     margin-top: 7vh;
@@ -696,29 +714,48 @@ body{
     }
 }
 
-#section-title{
-    font-weight: 600;
-    color: #9a9a9a;
-    font-size: 20px;
-    letter-spacing: 0.1em;
+.jnj #section-title{
+    font-weight: 500;
+    color: #767676;
+    font-size: 18px;
+    letter-spacing: 0.01em;
     margin-bottom: 0.4em;
+    text-transform: capitalize;
 }
 
-#subtitle2{
+.jnj #subtitle2{
     color: #272727;
     font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 0.8em;
+    font-size: 28px;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+
+    #section-title{
+    font-weight: 500;
+    color: #767676;
+    font-size: 18px;
     letter-spacing: 0.1em;
+    margin-bottom: 0.4em;
+    /* text-transform: capitalize; */
+}
+
+    #subtitle2{
+    color: #272727;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.1em;
+    /* text-transform: capitalize; */
 }
 
 #subtitle3{
     padding-bottom: 0.5em;
-    padding-top: 1em;
 }
 
 .content img{
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .content .small-img{
@@ -754,7 +791,7 @@ body{
 }
 
 .block{
-    padding-bottom: 8vh;
+    padding-bottom: 5vh;
     margin-top: 6vh;
     width: 65vw;
     margin-left: auto;
