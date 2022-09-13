@@ -300,6 +300,19 @@ body{
 
 /* gallery background */
 
+.chegg{
+    width: 100%;
+	height: 100%;
+    background-size: 100% 100%;
+    background-image: url(image/chegg_cover.jpg);
+    transition: ease-out 0.3s;
+    border-radius: 3px;
+}
+
+.chegg:hover{
+    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+}
+
 .toogether{
     width: 100%;
 	height: 100%;
@@ -339,18 +352,7 @@ body{
     background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
-.flap-js{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-image: url(image/flapjs_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
 
-.flap-js:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
-}
 
 .essence-securities{
     width: 100%;
@@ -417,18 +419,7 @@ body{
     background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
 }
 
-.old-town-house{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-image: url(image/oldtownhouse_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
 
-.old-town-house:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
-}
 
 .lost-city{
     width: 100%;
