@@ -304,52 +304,57 @@ body{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/chegg_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .chegg:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    /* background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%); */
+    background-size: 105% 105%;
 }
 
 .toogether{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/toogether_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .toogether:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .launchit{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/launchit_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .launchit:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .alpha-hanger{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/alphahanger_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .alpha-hanger:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 
@@ -358,65 +363,70 @@ body{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/essence_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .essence-securities:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .egor{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/egor_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .egor:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .distance-and-understanding{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/d&u_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .distance-and-understanding:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .animaze{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/animaze_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .animaze:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .lb{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/lb_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .lb:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 
@@ -425,78 +435,84 @@ body{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/lostcity_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .lost-city:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .cycleccoon{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/cycleccoon_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .cycleccoon:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .data-explosion{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/dataexplosion_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .data-explosion:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .off-the-wall{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/off_the_wall_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .off-the-wall:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .solemate{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/solemate_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .solemate:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 .chronic-pain{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
+    background-position: center;
     background-image: url(image/chronic_pain_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
 .chronic-pain:hover{
-    background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%);
+    background-size: 105% 105%;
 }
 
 
@@ -912,6 +928,14 @@ body{
 
 @media only screen and (max-width: 450px){
     .footer{
+        position: relative;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-height: 1000px){
+    #about-footer{
         position: relative;
         padding-top: 5vh;
         padding-bottom: 2vh;
