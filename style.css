@@ -864,7 +864,7 @@ body{
 }
 
 .next:hover p{
-    color: #ffffff;
+    color: #373737;
 }
 
 .next a{
@@ -874,7 +874,7 @@ body{
 .next p{
     margin-left: 5vw;
     padding-top: 5vh;
-    color: #9A9A9A;
+    color: #7f7f7f;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.1em;
