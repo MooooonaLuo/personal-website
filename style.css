@@ -693,7 +693,7 @@ body{
 #subtitle1{
     color: #272727;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
 }
 
 #subtitle2{
@@ -721,67 +721,14 @@ body{
     }
 }
 
-.jnj #section-title{
-    font-weight: 500;
-    color: #767676;
-    font-size: 18px;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.4em;
-    text-transform: capitalize;
-}
-
-.jnj #subtitle2{
-    color: #272727;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 1.5em;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
-}
-
-.launch-it #section-title{
-    font-weight: 500;
-    color: #767676;
-    font-size: 18px;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.4em;
-    text-transform: capitalize;
-}
-
-.launch-it #subtitle2{
-    color: #272727;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 1.5em;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
-}
-
-.alpha #section-title{
-    font-weight: 500;
-    color: #767676;
-    font-size: 18px;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.4em;
-    text-transform: capitalize;
-}
-
-.alpha #subtitle2{
-    color: #272727;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 1.5em;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
-}
 
     #section-title{
     font-weight: 500;
     color: #767676;
     font-size: 18px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     margin-bottom: 0.4em;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
 }
 
     #subtitle2{
@@ -789,8 +736,8 @@ body{
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 1.5em;
-    letter-spacing: 0.1em;
-    /* text-transform: capitalize; */
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
 }
 
 #subtitle3{
