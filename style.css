@@ -445,17 +445,17 @@ body{
     background-size: 105% 105%;
 }
 
-.cycleccoon{
+.old-town{
     width: 100%;
 	height: 100%;
     background-size: 100% 100%;
     background-position: center;
-    background-image: url(image/cycleccoon_cover.jpg);
+    background-image: url(image/oldtownhouse_cover.jpg);
     transition: ease-out 0.3s;
     border-radius: 3px;
 }
 
-.cycleccoon:hover{
+.old-town:hover{
     background-size: 105% 105%;
 }
 
