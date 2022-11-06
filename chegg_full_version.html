@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-150477387-1');
+        </script>
+
+        <title>Chegg - Mona Luo</title>
+        <link rel="shortcut icon" type="image/png" href="image/logo.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+            <!-- top nav -->
+            <div class="top-nav" id="navbar">
+                <!-- <script src="cube_top_white.js"></script> -->
+                <script src="nav_toggle.js"></script>
+                <div class="top-nav-logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="work.html">WORK</a>
+                    <a href="experiments.html">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+            
+            <div class="project-body">
+                
+                <!-- content -->
+                <div class="content">
+
+                    <!-- title -->
+                    <div class="title">
+                        <img id="jnjtag" src="image/chegg_logo.jpg" alt="Chegg logo" style="margin-bottom: 30px; width: 100px;">
+                        <h1>CHEGG INTERNSHIP</h1>
+                        <p id="info">UX Design &#183; 2022</p>
+                    </div>
+
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-6">
+                                    <p id="subtitle1">Overview</p>
+                                    <p>Chegg is a higher-education study tool with 4.6 Million subscribers. It provides textbook solutions, homework help, exam preparation, and more.</p>
+                                </div>
+                                <div class="role col-sm-6">
+                                    <p id="subtitle1">My Contributions</p>
+                                    <ul>
+                                        <li>In my capstone project, I designed two new modules to increase discoverability and engagement on Chegg’s Course Dashboard. </li>
+                                        <li>I took the lead when collaborating with other interns cross-functionally.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="overview col-sm-3">
+                                    <p id="subtitle1">Duration</p>
+                                    <p>12 Weeks</p>
+                                </div>
+                                <div class="overview col-sm-3">
+                                    <p id="subtitle1">My Role</p>
+                                    <p>UX Design Intern<br>Project Owner</p>
+                                    
+                                </div>
+                                <div class="role col-sm-3">
+                                    <p id="subtitle1">Team</p>
+                                    <p>1 UX Design Intern (Me) <br>1 Content Design Intern<br>1 UXR Intern<br>2 PM Interns</p>
+                                </div>
+                                <div class="role col-sm-3">
+                                    <p id="subtitle1">Tools</p>
+                                    <p>Figma<br>FigJam<br>Confluence</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img id="previewImg" src="image/chegg_preview.jpg" alt="" width="100%" style="padding-bottom: 3vh;">
+
+  
+
+                    </div>
+                    
+
+                    <!-- detail -->
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Context</p>
+                        <h2 id="subtitle2">Students are unaware of Course dashboard's value</h2>
+                        <p>Chegg's Course Dashboard provides various study tools to help students ace their courses in college. However, students only use Chegg to search for homework solutions and are unaware of the value of other study tools.</p>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-6">
+                                    <div class="d-flex justify-content-center">
+                                        <p style="font-size: 70px; font-weight: bold; color: #E86001; float:left; margin-bottom: 0; ">9%</p>
+                                    </div>
+                                    
+                                    <p style="clear: both; text-align: center;">Subscribers who use the Course<br>Dashboard is 9% more engaged.</p>
+                                </div>
+                                <div class="overview col-sm-6">
+                                    <div class="d-flex justify-content-center">
+                                        <p style="font-size: 70px; font-weight: bold; color: #E86001; float:left; margin-bottom: 0; ">7.2%</p>
+                                    </div>
+                                    <p style="clear: both; text-align: center;">However, only 7.2% of subscribers<br>visit the Course Dashboard.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Project brief</p>
+                        <h2 id="subtitle2">Increase repeat visits to course dashboard from homepage</h2>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-6" style="padding-right: 10%;">
+                                    <p><b id="toogether-highlight">&#128101; Target Users</b><br>Students who revisit the signed-in homepage after they subscribe to Chegg (not their first visit)</p>
+                                </div>
+                                <div class="overview col-sm-6" style="padding-right: 10%;">
+                                    <p><b id="toogether-highlight">&#127919; Scope</b><br>Design new modules on the signed-in homepage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-6" style="padding-right: 10%;">
+                                    <p><b id="toogether-highlight">&#9971; User Need</b><br>Perceive the value of study tools available within their subscriptions</p>
+                                </div>
+                                <div class="overview col-sm-6" style="padding-right: 10%;">
+                                    <p><b id="toogether-highlight">&#128188; Business Goal</b><br>Increase the visibility of various study tools on the Course Dashboard and drive repeat visits to the page</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">principles</p>
+                        <h2 id="subtitle2">Developing three design principles</h2>
+                        <br>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgb(253, 246, 236); padding: 40px; border-radius: 5%;">
+                                    <p><b id="toogether-highlight" style="font-size: 18px; color: #E86001;">Encouraging</b></p>
+                                    <p style="color: rgb(59, 59, 59); line-height: 1.6em; font-size: 16px;">Avoid using demotivating or stressful information</p>
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3" style="background-color: rgb(253, 246, 236); padding: 40px;border-radius: 5%;">
+                                    <p><b id="toogether-highlight" style="font-size: 18px; color: #E86001;">Personalized</b></p>
+                                    <p style="color: rgb(59, 59, 59); line-height: 1.6em;font-size: 16px;">Create personalized experience for each student</p>
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3" style="background-color: rgb(253, 246, 236); padding: 40px;border-radius: 5%;">
+                                    <p><b id="toogether-highlight" style="font-size: 18px; color: #E86001;">Student Centered</b></p>
+                                    <p style="color: rgb(59, 59, 59); line-height: 1.6em;font-size: 16px;">Incentivize students to do what they truly need</p>
+                                </div>
+                                <div class="overview col-sm-1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">User Flow</p>
+                        <h2 id="subtitle2">Map out the new user flow</h2>
+                        <p>I created a new user flow for me and my team to understand how our project would affect and contribute to the entire user journey.</p>
+                        <img src="image/chegg_flow.jpg" alt="new user flow" width="100%">
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Placement</p>
+                        <h2 id="subtitle2">Where to place the design?</h2>
+                        <p>I tried out different placements with consideration of information hierarchy and the design in other ongoing projects. We started with the right rail but eventually placed the module in the central area below Pick Back Up because this would unleash its full potential.</p>
+                        <img src="image/chegg_placement.jpg" alt="different placements" width="100%">
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">ideation & wireframing</p>
+                        <h2 id="subtitle2">Choose three ideas out of five</h2>
+                        <p>I led a brainstorming session and generated five ideas with my teammates. I turned the ideas into sketches and wireframes. Based on feedback from the senior PMs and engineers, we decided to move on with the three most feasible and valuable ideas.</p>
+                        <br>
+                        <br>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <center><p>Idea 1</p></center>
+                                    <img src="image/chegg_wireframe_1.jpg" alt="wireframe" width="100%">
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    <center><p>Idea 2</p></center>
+                                    <img src="image/chegg_wireframe_2.jpg" alt="wireframe" width="100%">
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                    <center><p>Idea 3</p></center>
+                                    <img src="image/chegg_wireframe_3.jpg" alt="wireframe" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Iterations</p>
+                        <h2 id="subtitle2">Iterate based on feedback and user testing</h2>
+                        <p>I worked closely with the content design intern to generate variations on UX design and content. After discussing what to test with my UX and PM partners, the UXR intern conducted unmoderated user testing with six current subscribers.</p>
+                        <br>
+                        
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Which idea works better for students?</b></p>
+                        <img src="image/chegg_test_idea.jpg" alt="learning analysis vs weekly goal" width="100%">
+                        
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Which variation is more user-friendly?</b></p>
+                        <img src="image/chegg_test_chart.jpg" alt="chart variations" width="100%">
+                        
+                        <p style="font-size: 20px;"><b id="toogether-highlight">More intuitive, engaging, and actionable</b></p>
+                        <img src="image/chegg_test_chart2.jpg" alt="iterations on chart" width="100%">
+
+                        <p style="font-size: 20px;"><b id="toogether-highlight">How to encourage the exploration and usage of Course dashboard?</b></p>
+                        <img src="image/chegg_test_report.jpg" alt="iterations on weekly report" width="100%">
+                    </div>
+                    
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Final Output</p>
+                        <h2 id="subtitle2">Learning analysis</h2>
+                        
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Happy Path</b></p>
+                        <p>The Learning Analysis module provides a data-driven analysis of students' practice question performance. It suggests topics to focus on and drives students to study on the Course Dashboard.</p>
+                        <img src="image/chegg_solution_1.jpg" alt="Learning analysis UI" width="100%" style="margin: auto;display: block;">
+
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Edge Cases & Empty States</b></p>
+                        <p>I designed for rare but possible cases and empty states when there was data to show initially.</p>
+                        <img src="image/chegg_edge_cases.jpg" alt="Edge Cases & Empty States UI" width="100%" style="margin: auto;display: block;">
+                    </div>
+ 
+                    <div class="block"  style="padding-bottom: 10vh;">
+                        <p id="section-title">Final output</p>
+                        <h2 id="subtitle2">weekly report</h2>
+                        
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Happy Path</b></p>
+                        <p>The Weekly Report celebrates students' achievements and suggests exploring low-engagement study tools.</p>
+                        <img src="image/chegg_solution_2.jpg" alt="weekly report UI" width="100%" style="margin: auto;display: block;">
+                    
+                        <br><br>
+                        <p style="font-size: 20px;"><b id="toogether-highlight">Low-Engagement States</b></p>
+                        <p>Many students would have no or low engagement with study tools initially. We considered and designed for all possible cases.</p>
+                        <img src="image/chegg_low_engage.jpg" alt="low engagement state" width="100%" style="margin: auto;display: block;">
+
+                    </div>
+                 
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <p id="section-title">Engineering Handoff</p>
+                        <h2 id="subtitle2">present the design rationale and discuss the backend logic</h2>
+                        <img src="image/chegg_backend.jpg" alt="backend logic chart" width="100%" style="margin: auto;display: block;">
+                    </div>
+
+
+                    
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <br/>
+                        <p id="section-title">team's comments</p>
+                        <h2 id="subtitle2">What my manager and teammate said about me</h2>
+                        <img src="image/chegg_comments.jpg" alt="comments" width="80%">
+                    </div>
+                   
+
+                </div>
+            </div>
+
+            
+                <div class="next container-fliud">
+                    <a href="launchit.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>LAUNCHIT</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:mona_luo@outlook.com" target="_blank">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-luo/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Jiayu Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2022 Jiayu Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
+
+    </html>
