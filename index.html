@@ -21,36 +21,184 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css">
+
     </head>
     
     <body>
+        
 
-        <div class="gradient"></div>
+            <div class="gradient"></div>
 
-        <div class="container-fliud">
+            <div class="container-fliud">
+                
+                <!-- top nav -->
+                <div class="top-nav" id="navbar-dark">
+                    <script src="nav_dark_toggle.js"></script>
+                    <div class="top-nav-logo">
+                        <a href="index.html"><img src="image/mona_logo.png" alt="mona" style="width: 120px;"></a>
+                    </div>
+                    <div class="top-nav-right">
+                        <a href="index.html#work">WORK</a>
+                        <a href="index.html#experiments">EXPERIMENTS</a>
+                        <a href="about.html">ABOUT</a>
+                    </div>
+                </div>
+
+                <!-- home main -->
+                <div class="home-main pl-3">
+                    <h1 class="home-h1">Hi, there! I'm Mona Luo</h1>
+                    <p class="home-p">A product designer who crafts meaningful experiences with curiosity, empathy, and creativity. Coming from a background in new media arts, I have both an artist's sensibility and a designer's rationality.</p>
+                    <a href="#work"><button class="view-my-work">VIEW MY WORK</button></a>
+                </div>
+
+                <div id="work"  style="margin-top: 15vh; padding-top: 10vh;">
+                    <a href="chegg.html">
+                        <div class="card-container">
+                            <div class="card chegg-card">
+                                <img src="image/chegg_cover.jpg" alt="chegg preview" style="opacity: 0.95;">
+                                <div class="card-div">
+                                    <p class="year">2022</p>
+                                    <h3>Chegg UX Design Internship</h3>
+                                    <p>Led the design of new features to increase the discoverability and engagement of Chegg's Course Dashboard.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="launchit.html">
+                        <div class="card-container">
+                            <div class="card launchit-card">
+                                <img src="image/launchit_cover.jpg" alt="launchit preview">
+                                <div class="card-div">
+                                    <p class="year">2020 - 2021</p>
+                                    <h3>LaunchIt</h3>
+                                    <p>Product Design Lead at a student startup. Designed new features of an idea incubator for college students.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="alpha-hanger.html">
+                        <div class="card-container">
+                            <div class="card alpha-card">
+                                <img src="image/alphahanger_cover.jpg" alt="alpha hanger preview">
+                                <div class="card-div">
+                                    <p class="year">2021</p>
+                                    <h3>Alpha Hanger</h3>
+                                    <p>Designed the entire website. Increased the company's customer base by 42% in one year after the launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="toogether.html">
+                        <div class="card-container">
+                            <div class="card toogether-card">
+                                <img src="image/toogether_cover.jpg" alt="toogether preview">
+                                <div class="card-div">
+                                    <p class="year">2021</p>
+                                    <h3>Toogether</h3>
+                                    <p>Course project sponsored by Johnson & Johnson. Turned the caring routine of chronic pain into fun and rewarding activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+           
+            </div>
+
+            <div class="experiments-div" id="experiments">
+                <h1>Experiments</h1>
+                <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                <h3 style="margin-top: 10vh; line-height: 180%;">I love interactive prototyping and video storytelling.</h3>
+                
+                <div class="experiments container-fliud">
+                    <div class="row">
+                       
+                        <div class="col-sm-6 pl-2 pr-2 pb-2 pt-2">
+                            <a href="https://vimeo.com/768199043" target="_blank">
+                                <div class="off-the-wall">
+                                    <div class="work-description">
+                                        <p>Art museum AI-enabled scavenger hunt</p>
+                                    </div>   
+                                    <img src="image/placeholder.jpg" alt="" width="100%" style="visibility: hidden;">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 pl-2 pr-2 pb-2 pt-2">
+                            <a href="https://vimeo.com/768203695" target="_blank">
+                                <div class="chronic-pain">
+                                    <div class="work-description">
+                                        <p>Interactive prototype practice</p>
+                                    </div>   
+                                    <img src="image/placeholder.jpg" alt="" width="100%" style="visibility: hidden;">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 15vh; line-height: 180%;">I built art installations to create <br>experimental interaction experiences.</h3>
+                <div class="experiments container-fliud">
+                    <div class="row">
+                       
+                        <div class="col-sm-6 pl-2 pr-2 pb-2 pt-2">
+                            <a href="egor.html" target="_blank">
+                                <div class="egor">
+                                    <div class="work-description">
+                                        <p>Ego inflator</p>
+                                    </div>   
+                                    <img src="image/placeholder.jpg" alt="" width="100%" style="visibility: hidden;">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <div class="col-sm-6 pl-2 pr-2 pb-2 pt-2">
+                            <a href="distance-and-understanding.html" target="_blank">
+                                <div class="distance-and-understanding">
+                                    <div class="work-description">
+                                        <p>Interactive prototype practice</p>
+                                    </div>   
+                                    <img src="image/placeholder.jpg" alt="" width="100%" style="visibility: hidden;">
+                                </div>
+                            </a>
+                        </div> -->
+
+                        <div class="col-sm-6 pl-2 pr-2 pb-2 pt-2">
+                            <a href="animaze.html" target="_blank">
+                                <div class="animaze">
+                                    <div class="work-description">
+                                        <p>Story-driven pixel art game</p>
+                                    </div>   
+                                    <img src="image/placeholder.jpg" alt="" width="100%" style="visibility: hidden;">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             
-            <!-- top nav -->
-            <div class="top-nav">
-                <div class="top-nav-logo">
-                    <a href="index.html"></a>
-                </div>
-                <div class="top-nav-right">
-                    <a href="work.html">WORK</a>
-                    <a href="experiments.html">EXPERIMENTS</a>
-                    <a href="about.html">ABOUT</a>
+            </div>
+            
+            <h3 id="chat">Want to chat? <br>Email me at <a href="mailto:mona_luo@outlook.com" style="color: #E6E6E6;">mona_luo@outlook.com</a> </h3>
+
+
+            <!-- footer -->
+            <div class="footer" id="about-footer" style="margin-top: 10vh;">
+                <div class="contact">
+                    <a href="mailto:mona_luo@outlook.com" target="_blank">Email</a>
+                    <a href="https://www.linkedin.com/in/jiayu-luo/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
+                    <span class="copyright"><span>Designed and developed by Jiayu Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2022 Jiayu Luo.</span>
                 </div>
             </div>
+            
 
-            <!-- home main -->
-            <div class="home-main">
-               <h1 class="home-h1">Hi, there! I'm Mona Luo</h1>
-               <p class="home-p">A product designer who crafts meaningful experiences with curiosity, empathy, and creativity. Coming from a background in new media arts, I have both an artist's sensibility and a designer's rationality.</p>
-               <a href="work.html"><button class="view-my-work">VIEW MY WORK</button></a>
-            </div>
-
-        </div> 
+        
     </body>
 
     </html>

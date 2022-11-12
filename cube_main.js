@@ -14,7 +14,7 @@ function setup() {
 }
   
   function draw() {    
-    background(20, 21, 23);
+    background(23,24,25);
     noFill();
     stroke(34,195,145);
     translate(-windowWidth/2 + 50, -windowHeight/2 + 70, 0); // reposition the matrix
