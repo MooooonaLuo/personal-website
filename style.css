@@ -271,49 +271,47 @@ body{
     color: #22C392;
 }
 
-.work-gallery a{
-    text-decoration: none;
-}
 
-.work-description h5{
-    color: #e8e8e8;
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 0.1em;
-    letter-spacing: 0.03em;
-}
 
-.work-gallery p{
-    color: #e8e8e8;
-    font-size: 14px;
-}
 
-.work-gallery .work-description{
-    position: absolute;
-    bottom: 25px;
-    left: 45px;
-}
 
-.gallery-design{
-    display: block;
-}
-
-.gallery-art{
-    display: none;
-}
-
-.gallery-others{
-    display: none;
-}
+/* --------------------------------work------------------------------------- */
 
 .card-container{
     margin-top: 100px;
 }
 
+.bottom {
+    position: absolute;
+    bottom: 5vh;
+    }
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
 
-.chegg-card{
-    height: 420px;
-    width: 90%;
+.card-container img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.year{
+    color: #888888;
+}
+
+.title-intro h3{
+    color: #22C392;
+    margin-bottom: 0.6em;
+}
+
+.title-intro p{
+    color: #E6E6E6;
+}
+
+.card-container{
+    width:90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -322,6 +320,12 @@ body{
     border: 1px solid #3A3F45;
     border-radius: 10px;
     transition: transform 0.3s;
+}
+
+.chegg-card:hover{
+    box-shadow: 0px 3px 40px #090909;
+    transform: translateY(-7px);
+    background: #222325;
 }
 
 
@@ -331,18 +335,6 @@ body{
     background: #222325;
 }
 
-.launchit-card{
-    height: 420px;
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: #171819 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 40px #171819;
-    border: 1px solid #3A3F45;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
 
 .launchit-card:hover{
     box-shadow: 0px 3px 40px #090909;
@@ -350,18 +342,6 @@ body{
     background: #222325;
 }
 
-.toogether-card{
-    height: 420px;
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: #171819 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 40px #171819;
-    border: 1px solid #3A3F45;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
 
 .toogether-card:hover{
     box-shadow: 0px 3px 40px #090909;
@@ -369,19 +349,6 @@ body{
     background: #222325;
 }
 
-.alpha-card{
-    height: 420px;
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: #171819 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 40px #171819;
-    border: 1px solid #3A3F45;
-    border-radius: 10px;
-    transition: transform 0.3s;
-   
-}
 
 .alpha-card:hover{
     box-shadow: 0px 3px 40px #090909;
@@ -389,29 +356,51 @@ body{
     background: #222325;
 }
 
-.card img{
-    border-radius: 10px 0 0 10px;
-    height: 418px;
-    float: left;
+.card-container .col-sm-5{
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
-.card-div{
-    float: left;
-    color: #E8E8E8;
-    padding: 3vw;
-    width: 500px;
+@media only screen and (max-width: 450px){
+    .bottom {
+        position: relative;
+        bottom: 0;
+        }
+
+
+    .card-container img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }    
 }
 
-.year{
-    margin-bottom: 160px;
-    color: rgb(155, 155, 155);
-    display: inline-flex;
+@media only screen and (min-width: 450px) and (max-width: 1200px){
+    .bottom {
+        position: relative;
+        bottom: 0;
+    }
+
+    .card-container{
+        width:100%;
+    }
+
+    .card-container .col-sm-5{
+        padding-right: 0;
+    }
+    
+    .title-intro h3{
+        font-size: 16px;
+    }
+
+    .title-intro p{
+        font-size: 12px;
+    }
 }
 
-.card h3{
-    color:#22C392;
-    margin-bottom: 0.6em;
-}
+/* ------------------------------------ */
+
+
+
 
 .experiments-div{
     padding-top: 10vh;
@@ -425,7 +414,7 @@ body{
 .experiments-div h1{
     color: #E6E6E6;
     font-weight: 600;
-    font-size: 40xpx;
+    font-size: 40px;
 
 }
 
