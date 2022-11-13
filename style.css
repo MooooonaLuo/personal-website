@@ -66,6 +66,10 @@ body{
     .top-nav-right{
         right: 7vw;
     }
+
+    .top-nav img{
+        width: 80px !important;
+    }
 }
 
 .top-nav-right a{
@@ -304,10 +308,12 @@ body{
 .title-intro h3{
     color: #22C392;
     margin-bottom: 0.6em;
+    padding-right: 2vw;
 }
 
 .title-intro p{
     color: #E6E6E6;
+    padding-right: 2vw;
 }
 
 .card-container{
