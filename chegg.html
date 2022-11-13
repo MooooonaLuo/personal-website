@@ -52,19 +52,43 @@
                     </div>
 
                     <!-- password -->
-                    <div class="content" style="margin-top: 50px; margin-bottom: 30px; width:auto; height: 280px; background-color: antiquewhite; padding-left: 50px; padding-right: 50px; padding-top: 70px; padding-bottom: 30px;">
+                    <div class="content" style="margin-top: 50px; margin-bottom: 30px; width:auto; height: 380px; background-color: antiquewhite;  padding-top: 120px; padding-bottom: 30px;border-radius: 5px; ">
                         <script src="chegg.js"></script>
 
                        <p style="padding-bottom: 0.5em; line-height: 1.5em; color:rgb(54, 54, 54); font-size: 16px; text-align: center;">This project is under the NDA. Access the full version here.</p>
                        <div style="display:block; margin:auto; width: 260px;">
                             <form class="hero-form">
-                                <input type="password" style="width: 260px; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em;font-size: 14px;" name="password" maxlength="8" id="password" placeholder="Enter the password" required/>
+                                <input type="password" style="padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em;font-size: 14px;" name="password" maxlength="8" id="password" placeholder="Enter the password" required/>
                             </form>
-                            <button style="margin-top:1em; width: 260px; border-style: none; background-color: #EB7100; color: white; font-weight: 600; padding-top: 0.5em; padding-bottom: 0.5em;" onclick="onSubmit()">Submit</button>
+                            <button style="margin-top:1em; border-style: none; background-color: #EB7100; color: white; font-weight: 600; padding-top: 0.5em; padding-bottom: 0.5em;" onclick="onSubmit()">Submit</button>
                             <p id="alert" style="color:rgb(245, 76, 76); font-size: 14px; margin-top: 0.5em;"></p>
                        </div>
                        
                     </div>
+                    <style>
+                        .content{
+                            padding-left: 50px; 
+                            padding-right: 50px;
+                        }
+                        input{
+                                width: 260px;
+                            }
+                            button{
+                                width: 260px;
+                            }
+                        @media only screen and (max-width: 450px){
+                            .content{
+                                padding-left: 20px; 
+                                padding-right: 20px;
+                            }
+                            input{
+                                width: 180px;
+                            }
+                            button{
+                                width: 180px;
+                            }
+                        }
+                    </style>
 
                     <!-- overview and my role -->
                     <div class="intro">
@@ -78,7 +102,6 @@
                                     <p id="subtitle1">My Contributions</p>
                                     <ul>
                                         <li>In my capstone project, I designed two new modules to increase discoverability and engagement on Chegg’s Course Dashboard. </li>
-                                        <li>I took the lead when collaborating with other interns cross-functionally.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -114,26 +137,25 @@
 
                     <div class="block">
                         <h2 id="subtitle2">Lead the project</h2>
-                        <p>In my capstone project, I led the team off by hosting meetings, proposing more reasonable project timelines, and proactively reaching out to the adjacent project team to handle cross-team dependency.</p>
+                        <p>In my capstone project, I took the lead in the cross-functional team by hosting meetings, proposing more reasonable project timelines, and proactively reaching out to the adjacent project team to handle cross-team dependency.</p>
                     </div>
 
 
                     <div class="block">
                         <!-- <p id="section-title">REFLECTION</p> -->
                         <h2 id="subtitle2">challenges I overcame</h2>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">My team was double the size of a normal team, and communication in such a big team was challenging.</b></p>
+                        <p><b id="toogether-highlight">My team was double the size of a normal team, and communication in such a big team was challenging.</b></p>
                         <p>I worked cross-functionally with four interns, each has a manager. The interns took ownership of the project, but there were many stakeholders to be kept in the loop. Over time, I developed the skill to communicate with the right person at the right cadence. I also employed different ways to share updates on my design and collect feedback, such as video walkthroughs and meeting recaps.</p>
                         <img src="image/chegg_communication.jpg" alt="how I communicated with stakeholders" width="100%">
                         <br><br><br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Another challenge was to collect and synthesize feedback from 20+ people with different levels of involvement in the project.</b></p>
+                        <p><b id="toogether-highlight">Another challenge was to collect and synthesize feedback from 20+ people with different levels of involvement in the project.</b></p>
                         <p>I proactively seek feedback from the broader UX team's meetings and people in other roles. I found it tricky initially because I didn't have enough time to cover everything first, and people had different levels of knowledge about my project.</p> 
                         <img src="image/chegg_feedback.jpg" alt="Collecting feedback from" width="100%">
                         <p>How did I efficiently collect feedback from a large group of people? I started by introducing the context and emphasizing what feedback I was looking for; due to the time limit, I focused on one or two parts that mattered the most.</p>
                         <p>Some feedback contradicted each other. To better handle feedback, I kept the high-level project goal in mind and focused on feedback within the scope.</p>
                     </div>
                     
-                    <div class="block">
-                        <!-- <p id="section-title">REFLECTION</p> -->
+                    <!-- <div class="block">
                         <h2 id="subtitle2">what I've learned</h2>
                         <p><b id="toogether-highlight">Hard skills:</b></p>
                         <ul>
@@ -149,7 +171,7 @@
                             <li>Closely collaborating with UX researchers, content designers, and product managers.</li>
                             <li>Handling dependency across different projects through effective communication.</li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="block" style="padding-bottom: 10vh;">
                         <br/>
