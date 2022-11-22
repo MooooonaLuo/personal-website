@@ -58,11 +58,21 @@
                        <p style="padding-bottom: 0.5em; line-height: 1.5em; color:rgb(54, 54, 54); font-size: 16px; text-align: center;">This project is under the NDA. Access the full version here.</p>
                        <div style="display:block; margin:auto; width: 260px;">
                             <form class="hero-form">
-                                <input type="password" style="padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em;font-size: 14px;" name="password" maxlength="8" id="password" placeholder="Enter the password" required/>
+                                <input type="password" id="password" style="padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em;font-size: 14px;" name="password" maxlength="8" id="password" placeholder="Enter the password" required/>
                             </form>
-                            <button style="margin-top:1em; border-style: none; background-color: #EB7100; color: white; font-weight: 600; padding-top: 0.5em; padding-bottom: 0.5em;" onclick="onSubmit()">Submit</button>
+                            <button id="submit" style="margin-top:1em; border-style: none; background-color: #EB7100; color: white; font-weight: 600; padding-top: 0.5em; padding-bottom: 0.5em;" onclick="onSubmit()">Submit</button>
                             <p id="alert" style="color:rgb(245, 76, 76); font-size: 14px; margin-top: 0.5em;"></p>
                        </div>
+                       <!-- press enter -->
+                       <script>
+                            var input = document.getElementById("password");
+                            input.addEventListener("keypress", function(event) {
+                            if (event.key === "Enter") {
+                                event.preventDefault();
+                                document.getElementById("submit").click();
+                            }
+                            });
+                       </script>
                        
                     </div>
                     <style>
