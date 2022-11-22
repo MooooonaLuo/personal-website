@@ -136,12 +136,13 @@ body{
 
 
 .project .top-nav-right a{
-    color: #424242;
+    color: #4e4e4e;
 }
 
 .project .top-nav-right a:hover{
-    color: #22C392;
+    color: #000000;
 }
+
 
 
 /* ------------------------------------------------------------ */
