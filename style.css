@@ -774,6 +774,8 @@ body{
     padding-right: 5vw;
 }
 
+
+
 @media only screen and (max-width: 450px){
     .project-body{
         padding-left: 8vw;
@@ -797,6 +799,17 @@ body{
     font-size: 18px;
 }
 
+
+#annotation{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 4vh;
+}
+
+#image_w_annotation{
+    margin-bottom: 1vh;
+} 
+
 .content ul{
     padding-left: 20px;
     list-style-type: circle;
@@ -812,7 +825,6 @@ body{
     font-size: 44px;
     font-weight: bold;
     color: #272727;
-    letter-spacing: 0.1em;
 }
 
 @media only screen and (max-width: 450px){
@@ -905,6 +917,7 @@ body{
     margin-bottom: 5vh;
 }
 
+
 .content .small-img{
     width: 70%;
     margin-bottom: 0vh;
@@ -931,10 +944,6 @@ body{
     .corgi{
         width: 60%;
     }
-}
-
-#annotation{
-    font-size: 15px;
 }
 
 .block{
