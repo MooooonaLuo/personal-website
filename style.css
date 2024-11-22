@@ -746,8 +746,8 @@ body{
 
 .experiments .video-tag{
     position: absolute;
-    top: 25px;
-    left: 35px;
+    top: 28px;
+    left: 32px;
     width: 80px;
     height: 32px;
     background-color: rgba(25, 25, 28, 0.6);
@@ -763,8 +763,15 @@ body{
 
 .experiments .work-description{
     position: absolute;
-    bottom: 15px;
-    left: 35px;
+    bottom: 8px;
+    left: 32px;
+    text-shadow: 1px 1px 8px black;
+}
+
+@media only screen and (max-width: 450px){
+    .experiments .work-description{
+        width: 250px;
+    }
 }
 
 /* ------------------------------------------------------------ */
