@@ -182,24 +182,26 @@ body{
 }
 
 .home-h1{
-    font-size: 50px;
+    font-size: 70px;
     color: #E6E6E6;
     font-weight: bold;
     line-height: 1.5em;
-    margin-bottom: 0.6em;
-    width: 750px;
+    width: 1200px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 
 @media only screen and (max-width: 450px){
     .home-h1{
-        font-size: 32px;
+        font-size: 40px;
         width: auto;
     }
 }
 
 .home-p{
-    font-size: 20px;
+    font-size: 18px;
     color: #D0D0D0;
     margin-bottom: 3em;
     width: 750px;
@@ -218,6 +220,7 @@ body{
     border: 1px solid #22C392;
     opacity: 1;
     padding: 20px, 32px, 20px, 32px;
+    border-radius: 3px;
     background-color: #171819;
     color: #22C392;
     font-weight: 600;
@@ -421,14 +424,16 @@ body{
 .experiments-div h1{
     color: #E6E6E6;
     font-weight: 600;
-    font-size: 40px;
-
+    font-size: 56px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 .experiments-div h3{
     margin-top: 20vh;
     color: #E6E6E6;
-    font-size: 24px;
+    font-size: 22px;
     font-weight:100;
     line-height: 150%;
 }
