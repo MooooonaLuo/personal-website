@@ -1071,6 +1071,17 @@ body{
     padding-right: 5vw;
 }
 
+#emphasized-text{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
 /* ------------------------------------------------------------ */
 /* Footer */
 
