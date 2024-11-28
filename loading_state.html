@@ -100,13 +100,13 @@
 
 
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Context</p>
                         <h2 id="subtitle2">The AI chat experience requires effective loading state design</h2>
                         <p>In Chegg’s new AI conversational learning experience, users would either instantly receive an expert solution from the archive or wait for an AI-generated solution from the Automation Engine, depending on which source provided higher quality for the specific topic. While answer streaming was a common way to mitigate long LLM response times, it required time to implement. In the interim, we needed a design solution to manage the delays and prevent user drop-off.</p>
                     </div>
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Challenges</p>
                         <h2 id="subtitle2">The loading time of AI responses ranges from 3s to 45s</h2>
                         <p>The first question that came into my mind was: how long does it take to get a response from the AI? This seemed like a straightforward question, but I realized it was far more complex than I anticipated when I posed it to my PM. To get an accurate answer, we needed input from five backend teams to run load tests and calculate the average time range.</p>
@@ -122,7 +122,7 @@
                         </ul>
                     </div>
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Ideation</p>
                         <h2 id="subtitle2">How to keep users on the page?</h2>
                         <p>Could we present a similar Q&A from the archive while the user waits for a response? This was my initial idea, but I soon realized it wouldn’t work. Previous UX research showed that users would leave Chegg and search other sites for solutions if the relevance wasn’t high. After discarding this approach, I started considering another question: how can we design the loading state to encourage users to wait longer?</p>
@@ -139,7 +139,7 @@
                         </ul>
                     </div>
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Design iteration</p>
                         <h2 id="subtitle2">It's all about perception</h2>
                         <p>The loader is a great way to keep users engaged by providing a sense of control and transparency. Ideally, it should show how much time is left for the loading process. However, in my case, <b id="toogether-highlight">an estimated loading time was unavailable</b>, and I almost abandoned the idea of adding a loader.</p>
@@ -159,7 +159,7 @@
                         <img id="image_w_annotation" src="image/loading_logic.jpg" alt="loading logic" width="100%">
                     </div>
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Desig iteration</p>
                         <h2 id="subtitle2">Designing for different scenarios</h2>
                         <p>As mentioned earlier, the loading time ranges from 3 to 45 seconds, with a small chance (around 5%) that the system will hit the 45-second limit and fail to provide an answer. </p>
@@ -173,7 +173,7 @@
 
                     </div>
 
-                    <div class="block" style="padding-bottom: 10vh;">
+                    <div class="block">
                         <p id="section-title">Design outcome</p>
                         <h2 id="subtitle2">The design was a success</h2>
                         <p>Without the loading state design, most users would likely abandon the site after 10 seconds of waiting. After launching the new AI learning experience with the loading design, there was no noticeable increase in drop-off rates.</p>
@@ -181,8 +181,8 @@
                     </div>
 
 
-                    <div class="block" style="padding-bottom: 10vh;">
-                        <p id="section-title">Takeaway</p>
+                    <div class="block" style="padding-bottom: 16vh;">
+                        <p id="section-title">Reflection</p>
                         <h2 id="subtitle2">Visualization is my superpower in cross-functional collaboration</h2>
                         <p>I initially created the loading timeline just for myself to understand the complex backend process. However, I soon discovered it was incredibly helpful for the PM and engineers to clarify loading times and communicate with the squads we depended on. As a designer, I once associated visualization only with wireframes, prototypes, and user flows. In reality, my true superpower goes far beyond these artifacts.</p>
                     </div>
@@ -195,7 +195,7 @@
 
             
                 <div class="next container-fliud">
-                    <a href="chegg_full_version.html">
+                    <a href="chegg.html">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p>NEXT</p>
