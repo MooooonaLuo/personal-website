@@ -176,7 +176,7 @@ body{
 
 @media only screen and (max-width: 450px){
     .home-main{
-        margin-top: 20vh;
+        margin-top: 25vh;
         width: 100%;
     }    
 }
@@ -196,7 +196,7 @@ body{
 
 @media only screen and (max-width: 450px){
     .home-h1{
-        font-size: 40px;
+        font-size: 48px;
         width: auto;
     }
 }
@@ -246,9 +246,16 @@ body{
 /* ------------------------------------------------------------ */
 /* work */
 
-.work{
-    margin-top: 18vh;
+#work{
     height: auto;
+    margin-top: 15vh;
+    padding-top: 10vh;
+}
+
+@media only screen and (max-width: 450px){
+    #work{
+        margin-top: 5vh;
+    }
 }
 
 .work-nav p{
@@ -365,7 +372,6 @@ body{
     .card-container img{
         width: 100%;
         border-radius: 10px 10px 0 0;
-        padding-top: 3vw;
     }    
 }
 
@@ -409,18 +415,18 @@ body{
 .experiments-div h1{
     color: #E6E6E6;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 48px;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
     letter-spacing: 0.01em;
 }
 
 .experiments-div h3{
-    margin-top: 20vh;
+    margin-top: 12vh;
     color: #E6E6E6;
     font-size: 22px;
     font-weight:100;
-    line-height: 150%;
+    line-height: 180%;
 }
 
 #chat{
@@ -438,6 +444,10 @@ body{
 @media only screen and (max-width: 450px){
     #chat{
         font-size: 20px;
+        margin-top: 10vh;
+    }
+    .experiments-div h3{
+        margin-top: 10vh;
     }
 }
 
