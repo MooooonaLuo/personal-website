@@ -311,7 +311,7 @@ body{
 
 .card-container img{
     width: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 .year{
@@ -347,7 +347,7 @@ body{
     background: #171819 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 40px #171819;
     border: 1px solid #3A3F45;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: transform 0.3s;
 }
 
@@ -371,7 +371,7 @@ body{
 
     .card-container img{
         width: 100%;
-        border-radius: 10px 10px 0 0;
+        border-radius: 15px 15px 0 0;
     }    
 }
 
@@ -453,78 +453,6 @@ body{
 
 /* gallery background */
 
-.chegg{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/chegg_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.chegg:hover{
-    /* background: linear-gradient(180deg, #5DBF95 0%, #14313E 100%); */
-    background-size: 105% 105%;
-}
-
-.toogether{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/toogether_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.toogether:hover{
-    background-size: 105% 105%;
-}
-
-.launchit{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/launchit_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.launchit:hover{
-    background-size: 105% 105%;
-}
-
-.alpha-hanger{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/alphahanger_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.alpha-hanger:hover{
-    background-size: 105% 105%;
-}
-
-
-
-.essence-securities{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/essence_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.essence-securities:hover{
-    background-size: 105% 105%;
-}
 
 .egor{
     width: 100%;
@@ -533,26 +461,13 @@ body{
     background-position: center;
     background-image: url(image/egor_cover.jpg);
     transition: ease-out 0.3s;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
 .egor:hover{
     background-size: 105% 105%;
 }
 
-.distance-and-understanding{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/d&u_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.distance-and-understanding:hover{
-    background-size: 105% 105%;
-}
 
 .animaze{
     width: 100%;
@@ -561,70 +476,14 @@ body{
     background-position: center;
     background-image: url(image/animaze_cover.jpg);
     transition: ease-out 0.3s;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
 .animaze:hover{
     background-size: 105% 105%;
 }
 
-.lb{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/lb_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
 
-.lb:hover{
-    background-size: 105% 105%;
-}
-
-
-
-.lost-city{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/lostcity_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.lost-city:hover{
-    background-size: 105% 105%;
-}
-
-.old-town{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/oldtownhouse_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.old-town:hover{
-    background-size: 105% 105%;
-}
-
-.data-explosion{
-    width: 100%;
-	height: 100%;
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url(image/dataexplosion_cover.jpg);
-    transition: ease-out 0.3s;
-    border-radius: 3px;
-}
-
-.data-explosion:hover{
-    background-size: 105% 105%;
-}
 
 .off-the-wall{
     width: 100%;
@@ -633,7 +492,7 @@ body{
     background-position: center;
     background-image: url(image/off_the_wall_cover.jpg);
     transition: ease-out 0.3s;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
 .off-the-wall:hover{
@@ -647,7 +506,7 @@ body{
     background-position: center;
     background-image: url(image/sooth_cover.jpg);
     transition: ease-out 0.3s;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
 .sooth:hover{
