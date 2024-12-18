@@ -33,9 +33,9 @@
                     <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
                 </div>
                 <div class="top-nav-right">
-                    <a href="index.html#work">WORK</a>
-                    <a href="index.html#experiments">EXPERIMENTS</a>
-                    <a href="about.html">ABOUT</a>
+                    <a href="index.html#work">Work</a>
+                    <a href="index.html#experiments">Experiments</a>
+                    <a href="about.html">About</a>
                 </div>
             </div>
             
@@ -101,13 +101,13 @@
 
                     <div class="block">
                         <p id="section-title">Context</p>
-                        <h2 id="subtitle2">The AI chat experience requires effective loading state design</h2>
+                        <h2 id="subtitle2">A loading state design is required to account for AI response latency</h2>
                         <p>In Chegg’s new AI conversational learning experience, users would either instantly receive an expert solution from the archive or wait for an AI-generated solution from the Automation Engine, depending on which source provided higher quality for the specific topic. While answer streaming was a common way to mitigate long LLM response times, it required time to implement. In the interim, we needed a design solution to manage the delays and prevent user drop-off.</p>
                     </div>
 
                     <div class="block">
                         <p id="section-title">Challenges</p>
-                        <h2 id="subtitle2">The loading time of AI responses ranges from 3s to 45s</h2>
+                        <h2 id="subtitle2">The loading time can be extremely long and filled with uncertainty</h2>
                         <p>The first question that came into my mind was: how long does it take to get a response from the AI? This seemed like a straightforward question, but I realized it was far more complex than I anticipated when I posed it to my PM. To get an accurate answer, we needed input from five backend teams to run load tests and calculate the average time range.</p>
                         <p>Since understanding this was critical for brainstorming solutions, I took the initiative to find out the anwer with the PM and engineers. I visualized the backend loading timeline, breaking down the intricate process to make the problem easier to address. This diagram was highly appreciated by stakeholders and significantly accelerated the process of understanding loading times.</p>
                         <img src="image/loading_timeline.jpg" alt="loading timeline" width="100%">
@@ -140,7 +140,7 @@
 
                     <div class="block">
                         <p id="section-title">Design iteration</p>
-                        <h2 id="subtitle2">It's all about perception</h2>
+                        <h2 id="subtitle2">It's all about the perception of the wait</h2>
                         <p>The loader is a great way to keep users engaged by providing a sense of control and transparency. Ideally, it should show how much time is left for the loading process. However, in my case, <b id="toogether-highlight">an estimated loading time was unavailable</b>, and I almost abandoned the idea of adding a loader.</p>
                         <p>While drawing inspiration from other products and brainstorming with engineers, <b id="toogether-highlight">I realized that the actual loading time isn’t as important as the perceived loading time.</b> If the design can make users feel that the wait is shorter, then it’s a success.</p>
                         <p style="font-size: 20px;"><b id="toogether-highlight">Three-step loader</b></p>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="block">
-                        <p id="section-title">Desig iteration</p>
+                        <p id="section-title">Design iteration</p>
                         <h2 id="subtitle2">Designing for different scenarios</h2>
                         <p>As mentioned earlier, the loading time ranges from 3 to 45 seconds, with a small chance (around 5%) that the system will hit the 45-second limit and fail to provide an answer. </p>
                         <p style="font-size: 20px;"><b id="toogether-highlight">The big loading component could be an overkill for quick responses</b></p>
@@ -173,8 +173,8 @@
                     </div>
 
                     <div class="block">
-                        <p id="section-title">Design outcome</p>
-                        <h2 id="subtitle2">The design was a success</h2>
+                        <p id="section-title">Impact</p>
+                        <h2 id="subtitle2">Successfully preventing drop-offs</h2>
                         <p>Without the loading state design, most users would likely abandon the site after 10 seconds of waiting. After launching the new AI learning experience with the loading design, there was no noticeable increase in drop-off rates.</p>
                         <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033309060?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
@@ -197,8 +197,8 @@
                     <a href="chegg.html">
                         <div class="row">
                             <div class="col-sm-6">
-                                <p>NEXT</p>
-                                <h1>CHEGG INTERNSHIP</h1>
+                                <p>Next</p>
+                                <h1>Chegg Internship</h1>
                             </div>
                             <div class="col-sm-6">
                                 <img id="arrow" src="image/arrow.svg" alt="">

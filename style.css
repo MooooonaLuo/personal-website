@@ -9,12 +9,14 @@ Bold 700
 /* Main */
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
     scroll-behavior: smooth;
 }
 
 p{
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
 
 body{
@@ -74,9 +76,8 @@ body{
 
 .top-nav-right a{
     color: #C6C6C6;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+    font-size: 20px;
+    font-weight: 300;
     margin-left: 36px;
     text-decoration: none;
     transition: 0.3s;
@@ -84,7 +85,7 @@ body{
 
 @media only screen and (max-width: 450px){
     .top-nav-right a{
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 1em;
     }
 }
@@ -153,7 +154,7 @@ body{
     left: 0px;
     width: 100%;
     height: 100%;
-    background: transparent linear-gradient(90deg, #171819 0%, #171819FB 18%, #171819BE 52%, #17181931 77%, #171819D3 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #171819 0%, #171819FB 22%, #171819BE 52%, #17181931 77%, #171819D3 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     z-index: -1;
     position: fixed;
@@ -184,7 +185,6 @@ body{
 .home-h1{
     font-size: 100px;
     color: #E6E6E6;
-    font-weight: bold;
     line-height: 1em;
     width: 1200px;
     font-family: "Kanit", sans-serif;
@@ -196,13 +196,13 @@ body{
 
 @media only screen and (max-width: 450px){
     .home-h1{
-        font-size: 48px;
+        font-size: 54px;
         width: auto;
     }
 }
 
 .home-p{
-    font-size: 18px;
+    font-size: 20px;
     color: #D0D0D0;
     margin-bottom: 3em;
     width: 600px;
@@ -210,7 +210,7 @@ body{
 
 @media only screen and (max-width: 450px){
     .home-p{
-        font-size: 18px;
+        font-size: 20px;
         width: auto;
     }
 }
@@ -222,15 +222,16 @@ body{
     opacity: 1;
     padding: 32px, 32px, 20px, 32px;
     margin-top: 3vh;
-    border-radius: 3px;
+    border-radius: 30px;
     background-color: #171819;
     color: #22C392;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
     letter-spacing: 0.1em;
     /* swipe right effect */
     box-shadow: inset 0 0 0 0 #22C392;
     transition: ease-out 0.2s;
+    font-family: "Kanit", sans-serif;
 
 }
 
@@ -261,7 +262,7 @@ body{
 .work-nav p{
     display: block;
     color: #C6C6C6;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 1.5em;
     text-decoration: none;
     font-weight: 500;
@@ -279,7 +280,7 @@ body{
 
 @media only screen and (max-width: 450px){
     .work-nav p{
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0.5em;
     }
 }
@@ -293,9 +294,42 @@ body{
 
 
 /* --------------------------------work------------------------------------- */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.8;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.card-container{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
 
 .card-container{
     margin-top: 100px;
+}
+
+@keyframes appear2{
+    from{
+        opacity: 0;
+        scale: 0.9;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.experiment-container{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .bottom {
@@ -322,11 +356,14 @@ body{
     color: #22C392;
     margin-bottom: 0.6em;
     padding-right: 2vw;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
 }
 
 .title-intro p{
     color: #E6E6E6;
     padding-right: 2vw;
+    font-weight: 200;
 }
 
 .nav-pills li{
@@ -336,7 +373,7 @@ body{
     border-radius: 30px;
     background-color: #2d2d30;
     color: #c0c0c0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card-container{
@@ -390,11 +427,11 @@ body{
     }
     
     .title-intro h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .title-intro p{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -422,19 +459,20 @@ body{
 }
 
 .experiments-div h3{
-    margin-top: 12vh;
+    margin-top: 8vh;
     color: #E6E6E6;
-    font-size: 22px;
+    font-size: 32px;
     font-weight:100;
-    line-height: 180%;
+    line-height: 160%;
+    font-family: "Kanit", sans-serif;
 }
 
 #chat{
     margin-top: 20vh;
-    line-height: 180%; font-style: italic;
+    margin-top: 10vh;
+    line-height: 150%;
     color: #e6e6e6;
-    font-weight: 400;
-    margin-top: 20vh;
+    font-weight: 300;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -443,7 +481,7 @@ body{
 
 @media only screen and (max-width: 450px){
     #chat{
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 10vh;
     }
     .experiments-div h3{
@@ -524,11 +562,13 @@ body{
 }
 
 .about-h1{
-    font-size: 40px;
+    font-size: 64px;
     color: #E6E6E6;
-    font-weight: bold;
-    line-height: 1.5em;
-    margin-bottom: 0.8em;
+    line-height: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding-bottom: 3vh;
 }
 
 #profile-img{
@@ -548,7 +588,7 @@ body{
 }
 
 .about-p{
-    font-size: 18px;
+    font-size: 20px;
     color: #D0D0D0;
     margin-bottom: 2.2em;
 }
@@ -594,13 +634,14 @@ body{
 
 .experiments h5{
     color: #E6E6E6;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 0.2em;
 }
 
 .experiments p{
     color: #E6E6E6;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .experiments .video-tag{
@@ -611,6 +652,7 @@ body{
     height: 32px;
     background-color: rgba(25, 25, 28, 0.6);
     border-radius: 40px;
+    backdrop-filter: blur(5px);
 }
 
 .experiments .video-tag p{
@@ -662,12 +704,12 @@ body{
 
 .content p{
     color: #5e5e5e;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
 #annotation{
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     margin-bottom: 4vh;
 }
@@ -683,19 +725,20 @@ body{
 
 .content li{
     color: #5e5e5e;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8em;
 }
 
 .title h1{
-    font-size: 44px;
-    font-weight: bold;
+    font-size: 64px;
     color: #272727;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 450px){
     .title h1{
-        font-size: 32px;
+        font-size: 36px;
     }
 }
 
@@ -727,7 +770,7 @@ body{
 
 #subtitle1{
     color: #272727;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 0.01em;
 }
 
@@ -758,21 +801,18 @@ body{
 
 
     #section-title{
-    font-weight: 500;
-    color: #767676;
-    font-size: 18px;
-    letter-spacing: 0.01em;
+    font-weight: 300;
+    color: #272727;
+    font-size: 22px;
     margin-bottom: 0.4em;
     text-transform: capitalize;
 }
 
     #subtitle2{
     color: #272727;
-    font-weight: bold;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 36px;
     margin-bottom: 1em;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
 }
 
 #subtitle3{
@@ -854,19 +894,20 @@ body{
 .next p{
     margin-left: 5vw;
     padding-top: 5vh;
-    color: #7f7f7f;
-    font-size: 20px;
+    color: #373737;
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
 }
 
 .next h1{
     margin-left: 5vw;
     padding-bottom: 5vh;
     color: #272727;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
+    font-size: 48px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 
 #arrow{
@@ -919,7 +960,7 @@ body{
 #problem-statement{
     font-weight: 500;
     font-style: italic;
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
     margin-top: 3em;
     padding-left: 5vw;
@@ -929,7 +970,7 @@ body{
 #emphasized-text{
     font-weight: 500;
     font-style: italic;
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -988,7 +1029,7 @@ body{
 
 .contact a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: #C6C6C6;
     margin-right: 1vw;
     padding: 0;
@@ -1002,13 +1043,13 @@ body{
 
 @media only screen and (max-width: 450px){
     .contact a{
-        font-size: 17px;
+        font-size: 20px;
         padding-right: 2vh;
     }
 }
 
 .copyright{
-    font-size: 15px;
+    font-size: 16px;
     color: #C6C6C6;
     opacity: 0.8;
     float: right;
@@ -1050,11 +1091,12 @@ body{
 
 .project .footer a{
     color: #1a1a1a;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .project .footer a:hover{
     color: #22C392;
+    font-weight: 400;
 }
 
 .project span{
