@@ -16,7 +16,8 @@ Bold 700
 }
 
 p{
-    line-height: 1.6em;
+    line-height: 1.8em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -41,8 +42,6 @@ body{
     padding-left: 0vw;
     padding-right: 0vw;
 }
-
-
 
 /* ------------------------------------------------------------ */
 /* Top Nav */
@@ -186,11 +185,17 @@ body{
     font-size: 100px;
     color: #E6E6E6;
     line-height: 1em;
-    width: 1200px;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
     letter-spacing: 0.01em;
-    padding-bottom: 3vh;
+}
+
+.line1{
+    width: 450px;
+}
+
+.line2{
+    width: 700px;
 }
 
 
@@ -201,11 +206,74 @@ body{
     }
 }
 
+/* text reveal animation */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #171819;
+}
+
+.home-h1{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.home-h1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-h1:nth-of-type(1)::before,
+.home-h1:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-h1:nth-of-type(2)::before,
+.home-h1:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
 .home-p{
     font-size: 20px;
     color: #D0D0D0;
     margin-bottom: 3em;
     width: 600px;
+    padding-top: 3vh;
 }
 
 @media only screen and (max-width: 450px){
@@ -225,9 +293,8 @@ body{
     border-radius: 30px;
     background-color: #171819;
     color: #22C392;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
-    letter-spacing: 0.1em;
     /* swipe right effect */
     box-shadow: inset 0 0 0 0 #22C392;
     transition: ease-out 0.2s;
@@ -358,6 +425,7 @@ body{
     padding-right: 2vw;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
+    font-size: 34px;
 }
 
 .title-intro p{
@@ -469,14 +537,18 @@ body{
 
 #chat{
     margin-top: 20vh;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
     line-height: 150%;
     color: #e6e6e6;
-    font-weight: 300;
+    font-weight: 200;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#chat a{
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 450px){
@@ -573,6 +645,7 @@ body{
 
 #profile-img{
     width: 80%;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 450px){
@@ -588,7 +661,7 @@ body{
 }
 
 .about-p{
-    font-size: 20px;
+    font-size: 18px;
     color: #D0D0D0;
     margin-bottom: 2.2em;
 }
@@ -642,6 +715,7 @@ body{
     color: #E6E6E6;
     font-size: 18px;
     font-weight: 200;
+    line-height: 1.3em;
 }
 
 .experiments .video-tag{
@@ -704,7 +778,8 @@ body{
 
 .content p{
     color: #5e5e5e;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 
@@ -725,14 +800,15 @@ body{
 
 .content li{
     color: #5e5e5e;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 .title h1{
     font-size: 64px;
     color: #272727;
-    font-family: "Kanit", sans-serif;
     font-weight: 500;
 }
 
@@ -772,6 +848,8 @@ body{
     color: #272727;
     font-weight: 500;
     letter-spacing: 0.01em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 #subtitle2{
@@ -811,7 +889,7 @@ body{
     #subtitle2{
     color: #272727;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 1em;
 }
 
@@ -955,6 +1033,8 @@ body{
 
 #toogether-highlight{
     color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 #problem-statement{

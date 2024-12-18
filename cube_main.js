@@ -18,16 +18,16 @@ function setup() {
     noFill();
     stroke(34,195,145);
     translate(-windowWidth/2 + 50, -windowHeight/2 + 70, 0); // reposition the matrix
-    // reset the paddings of the matrix to 120
-    for (let i = 120; i <= windowWidth - 120; i += 120){
-       for(let j = 120; j <= windowHeight - 120; j += 120){           
+    // reset the paddings of the matrix to 100
+    for (let i = 100; i <= windowWidth - 100; i += 100){
+       for(let j = 100; j <= windowHeight - 100; j += 100){           
             let size = dist(mouseX, mouseY, i, j);
             size = 28 - size / max_distance * 2;
             push(); // Start a new drawing state
             translate(i,j);
 
-            let m = i / 120;
-            let n = j / 120;
+            let m = i / 100;
+            let n = j / 100;
          
             if(m % 3 === 0){
                 if(n % 3 === 0){
@@ -101,7 +101,7 @@ function setup() {
         rotateZ(-6);
     }
 
-    let distance = dist(mouseX, mouseY, 120, 70);
+    let distance = dist(mouseX, mouseY, 100, 70);
     if (distance < 40) {
         rotateZ(frameCount * rotationSpeed * 1.5);
         rotateX(frameCount * rotationSpeed * 1.5);
