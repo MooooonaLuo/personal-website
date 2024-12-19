@@ -419,6 +419,10 @@ body{
     color: #888888;
 }
 
+.title{
+    margin-bottom: 6vh;
+}
+
 .title-intro h3{
     color: #22C392;
     margin-bottom: 0.6em;
@@ -713,7 +717,7 @@ body{
 
 .experiments p{
     color: #E6E6E6;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 1.3em;
 }
@@ -777,14 +781,14 @@ body{
 }
 
 .content p{
-    color: #5e5e5e;
+    color: #2e2e2e;
     font-size: 18px;
     font-weight: 300;
 }
 
 
 #annotation{
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     margin-bottom: 4vh;
 }
@@ -799,7 +803,7 @@ body{
 }
 
 .content li{
-    color: #5e5e5e;
+    color: #2e2e2e;
     font-size: 18px;
     line-height: 1.8em;
     font-family: 'Montserrat', sans-serif;
@@ -828,6 +832,12 @@ body{
     }
 }
 
+.overview p{
+    font-size: 28px;
+    font-family: "Kanit", sans-serif;
+    
+}
+
 #info{
     color: #747474;
     font-weight: medium;
@@ -835,25 +845,29 @@ body{
 }
 
 .intro{
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 450px){
     .intro{
-        margin-bottom: 0;
+        margin-bottom: 5vh;
+        margin-top: 0;
     }
 }
 
 #subtitle1{
-    color: #272727;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    color: #747474;
+    font-weight: 300;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 0;
 }
 
 #subtitle2{
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 .role{

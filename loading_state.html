@@ -50,56 +50,62 @@
                         <p id="info">UX Design &#183; 2023</p>
                     </div>
 
+                    <img id="previewImg" src="image/loading_preview.jpg" alt="" width="100%" style="margin-bottom: 3vh; border-radius: 15px;">
+
                     <!-- overview and my role -->
                     <div class="intro">
                         <div class="container-fliud">
                             <div class="row">
                                 <div class="overview col-sm-6">
-                                    <p id="subtitle1">Overview</p>
                                     <p>Chegg, a leading higher-education platform with millions of subscribers, revamped its Q&A product in 2023 to leverage generative AI for personalized study help. Before the streaming mechanism of AI responses was in place, users faced up to a 45-second wait for AI-generated answers, which had huge risk of user drop-off. As the sole designer, I leveraged my expertise in motion design and strong logical thinking to address this challenge successfully.</p>
                                 </div>
                                 <div class="role col-sm-6">
-                                    <p id="subtitle1">My Contributions</p>
-                                    <ul>
-                                        <li>Developed a creative solution to address the challenge of long AI loading and the uncertainty surrounding response generation outcomes. Without my solution, the majority of users would bounce.</li>
-                                        <li>Visualized the complex backend logics of my solution for clear and effective communication with the PM and engineers.</li>
-                                    </ul>
+                                    <div>
+                                        <p id="subtitle1">My role</p>
+                                        <p>Sole UX designer</p>
+                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                    </div>
+                                    <div>
+                                        <p id="subtitle1">Contribution highlights</p>
+                                        <ul>
+                                            <li>Developed diagrams to break down complex backend logics</li>
+                                            <li>Created motion design to mitigate AI latency.</li>
+                                        </ul>
+                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                    </div>
+                                    <div>
+                                        <p id="subtitle1">Duration</p>
+                                        <p>3 weeks</p>
+                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                    </div>
+                                    <div>
+                                        <p id="subtitle1">Team</p>
+                                        <p>UX designer (Me), UX content designer, Product manager, Engineers, Product marketing managers</p>
+                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                    </div>
+                                    <div>
+                                        <p id="subtitle1">Tools</p>
+                                        <p>Figma, FigJam</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="overview col-sm-3">
-                                    <p id="subtitle1">Duration</p>
-                                    <p>3 Weeks</p>
-                                </div>
-                                <div class="overview col-sm-3">
-                                    <p id="subtitle1">My Role</p>
-                                    <p>Sole UX Designer</p>
-                                    
-                                </div>
-                                <div class="role col-sm-3">
-                                    <p id="subtitle1">Team</p>
-                                    <p>UX Designer (Me) <br>UX Content Designer<br>Product Manager<br>Software Engineers<br>Product Marking Manager</p>
-                                </div>
-                                <div class="role col-sm-3">
-                                    <p id="subtitle1">Tools</p>
-                                    <p>Figma<br>FigJam<br>Confluence</p>
-                                </div>
-                            </div>
+            
                         </div>
-
-                        <img id="previewImg" src="image/loading_preview.jpg" alt="" width="100%" style="padding-bottom: 3vh;">
-                        <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033309060?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                        <br><br>
   
 
-                    </div>
+                    </div>                    
+
+                   
+                    <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033309060?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+                    
                     
 
                     <!-- detail -->
 
 
 
-                    <div class="block">
+                    <div class="block" style="padding-top: 16vh;">
                         <p id="section-title">Context</p>
                         <h2 id="subtitle2">A loading state design is required to account for AI response latency</h2>
                         <p>In Chegg’s new AI conversational learning experience, users would either instantly receive an expert solution from the archive or wait for an AI-generated solution from the Automation Engine, depending on which source provided higher quality for the specific topic. While answer streaming was a common way to mitigate long LLM response times, it required time to implement. In the interim, we needed a design solution to manage the delays and prevent user drop-off.</p>
@@ -155,7 +161,7 @@
                             <li>Once the answer is ready, the progress jumps to 100%, signaling completion.</li>
                         </ul>
                         <p>I translated this approach into "if/then" logic and developed formulas to calculate the loader’s progress, making it easy for engineers to implement. These formulas were also highly scalable, ensuring they could adapt to any changes in the timeout limit without requiring significant rework.</p>
-                        <img id="image_w_annotation" src="image/loading_logic.jpg" alt="loading logic" width="100%">
+                        <img id="image_w_annotation" src="image/loading_logic.jpg" alt="loading logic" width="100%" style="border-radius: 15px;">
                     </div>
 
                     <div class="block">
@@ -182,7 +188,7 @@
 
                     <div class="block" style="padding-bottom: 16vh;">
                         <p id="section-title">Reflection</p>
-                        <h2 id="subtitle2">Visualization is my superpower in cross-functional collaboration</h2>
+                        <h2 id="subtitle2">Utilizing my visualization skills to enhance cross-functional collaboration</h2>
                         <p>I initially created the loading timeline just for myself to understand the complex backend process. However, I soon discovered it was incredibly helpful for the PM and engineers to clarify loading times and communicate with the squads we depended on. As a designer, I once associated visualization only with wireframes, prototypes, and user flows. In reality, my true superpower goes far beyond these artifacts.</p>
                     </div>
                     
@@ -194,11 +200,11 @@
 
             
                 <div class="next container-fliud">
-                    <a href="chegg.html">
+                    <a href="learning_progress_locked.html">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p>Next</p>
-                                <h1>Chegg Internship</h1>
+                                <h1>Learning Progress Tracker</h1>
                             </div>
                             <div class="col-sm-6">
                                 <img id="arrow" src="image/arrow.svg" alt="">
