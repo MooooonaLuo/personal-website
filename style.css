@@ -423,6 +423,12 @@ body{
     margin-bottom: 6vh;
 }
 
+@media only screen and (max-width: 450px){
+    .title{
+        margin-bottom: 2vh;
+    }
+}
+
 .title-intro h3{
     color: #22C392;
     margin-bottom: 0.6em;
@@ -521,6 +527,12 @@ body{
     display: block;
 }
 
+@media only screen and (max-width: 450px){
+    .experiments-div{
+        margin-top: 5vh;
+    }
+}
+
 #homepage-header{
     color: #E6E6E6;
     font-weight: 600;
@@ -539,9 +551,11 @@ body{
     font-family: "Kanit", sans-serif;
 }
 
+
+
 #chat{
     margin-top: 20vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     line-height: 150%;
     color: #e6e6e6;
     font-weight: 200;
@@ -559,9 +573,10 @@ body{
     #chat{
         font-size: 24px;
         margin-top: 10vh;
+        margin-bottom: 10vh;
     }
     .experiments-div h3{
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
 }
 
@@ -793,6 +808,12 @@ body{
     margin-bottom: 4vh;
 }
 
+#top_annotation{
+    font-size: 18px;
+    margin-top: 1vh;
+    font-style: italic;
+}
+
 #image_w_annotation{
     margin-bottom: 1vh;
 } 
@@ -812,8 +833,8 @@ body{
 
 .title h1{
     font-size: 64px;
-    color: #272727;
-    font-weight: 500;
+    color: #2e2e2e;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 450px){
@@ -826,17 +847,19 @@ body{
     margin-top: 7vh;
 }
 
-@media only screen and (max-width: 450px){
-    .overview{
-        margin-top: 3vh;
-    }
-}
-
 .overview p{
     font-size: 28px;
     font-family: "Kanit", sans-serif;
     font-weight: 200;
-    
+}
+
+@media only screen and (max-width: 450px){
+    .overview{
+        margin-top: 3vh;
+    }
+    .overview p{
+        font-size: 24px;
+    }
 }
 
 #info{
@@ -867,9 +890,6 @@ body{
     margin-bottom: 0;
 }
 
-#subtitle2{
-    line-height: 1.3em;
-}
 
 .role{
     padding-left: 4vw;
@@ -893,19 +913,27 @@ body{
 }
 
 
-    #section-title{
-    font-weight: 300;
-    color: #272727;
+#section-title{
+    font-weight: 200;
+    color: #2e2e2e;
     font-size: 22px;
     margin-bottom: 0.4em;
     text-transform: capitalize;
+    font-family: "Kanit", sans-serif;
 }
 
-    #subtitle2{
-    color: #272727;
+#subtitle2{
+    color: #2e2e2e;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 1em;
+    line-height: 1.2em;
+}
+
+@media only screen and (max-width: 450px){
+    #subtitle2{
+        margin-bottom: 0.8em;
+    }
 }
 
 #subtitle3{
@@ -957,8 +985,8 @@ body{
 @media only screen and (max-width: 450px){
     .block{
         width: 100%;
-        padding-top: 4vh;
-        padding-bottom: 4vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     } 
 }
 
@@ -997,7 +1025,7 @@ body{
 .next h1{
     margin-left: 5vw;
     padding-bottom: 5vh;
-    color: #272727;
+    color: #2e2e2e;
     font-size: 48px;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
@@ -1048,8 +1076,8 @@ body{
 
 #toogether-highlight{
     color: #3f3f3f;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 
 #problem-statement{
