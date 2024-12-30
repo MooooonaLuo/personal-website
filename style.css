@@ -308,9 +308,9 @@ body{
     background-color: #ffffff;
     position: fixed;
     z-index: 3;
-    right: 0px;
-    top: 5vh;
-    border-radius: 15px 0 0 15px;
+    left: 0px;
+    top: 15vh;
+    border-radius: 0 15px 15px 0;
     border: 1px solid #F0F0F0;
     background: rgba(249, 249, 249, 0.75);
     backdrop-filter: blur(15px);
@@ -349,15 +349,15 @@ body{
 
 .side-nav.animate {
     opacity: 0; /* Fully transparent */
-    transform: translateX(100px); /* Positioned 20px below its normal position */
-    animation: fadeLeft 0.5s ease-in forwards; /* Animation definition */
+    transform: translateX(-100px); /* Positioned 20px below its normal position */
+    animation: fadeRight 0.5s ease-in forwards; /* Animation definition */
 }
 
 /* Animation definition */
-@keyframes fadeLeft {
+@keyframes fadeRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(-100px);
     }
     100% {
         opacity: 1;
