@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="robots" content="noindex, nofollow">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
         <script>
@@ -10,78 +11,106 @@
             gtag('config', 'UA-150477387-1');
         </script>
 
-        <title>AI Loading State - Mona Luo</title>
-        <link rel="icon" type="image/x-icon" href="/image/favicon_new.ico">
+        <title>Mona Luo - Product Designer</title>
+        <link rel="icon" type="image/x-icon" href="/image/mona_favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
     </head>
-    
     <body class="project">  
         <div class="container-fliud">
-             <!-- top nav -->
-             <div class="top-nav" id="navbar">
-                <script src="nav_toggle.js"></script>
-                <div class="top-nav-logo">
-                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
-                </div>
-                <div class="top-nav-right">
-                    <a href="index.html#work">Work</a>
-                    <a href="index.html#experiments">Experiments</a>
-                    <a href="about.html">About</a>
-                </div>
-            </div>
             
-            <div class="project-body">
+                <!-- top nav -->
+                <div class="top-nav project-top-nav narrow-body container fixed-top d-flex justify-content-center" id="project-top-nav">
+                    <div class="top-nav-logo">
+                        <a class="hover-target" href="index.html"><img src="image/mona_logo.png" alt="mona"></a>
+                    </div>
+                    <div class="top-nav-right">
+                            <a class="hover-target" id="hidden-button" href="index.html#work">Work</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#about">About</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#footer">Contact</a>
+                            <button id="menu-button"><img id="hamburger-img" src="image/menu.png" alt="menu"></button>
+                            <!-- <img src="image/menu.png" alt="menu"> -->
+                            <a class="hover-target" href="#top" id="up-arrow-button"><img src="image/arrow_upward.png" alt="go to top"></a>
+                    </div>
+                </div>
+                <div class="container fixed-top d-flex justify-content-center hidden-menu" id="hidden-menu">
+                    <a href="index.html#work">Work</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#footer">Contact</a>
+                </div>
+
+
+                <!-- side nav -->
+                 <div class="side-nav container">
+                    <div style="padding-top: 12px; padding-bottom: 12px;">
+                        <a class="hover-target" href="#nav-overview">Overview</a>
+                        <a class="hover-target" href="#nav-context">Context</a>
+                        <a class="hover-target" href="#nav-challenges">Challenges</a>
+                        <a class="hover-target" href="#nav-ideation">Ideation</a>
+                        <a class="hover-target" href="#nav-messaging-strategies">Messaging strategies</a>
+                        <a class="hover-target" href="#nav-design-iteration">Design iteration</a>
+                        <a class="hover-target" href="#nav-edge-cases">Edge cases</a>
+                        <a class="hover-target" href="#nav-outcome">Outcome</a>
+                        <a class="hover-target" href="#nav-reflection">Reflection</a>
+                    </div>
+                 </div>
+
+                 <script src="menu.js"></script>
                 
                 <!-- content -->
                 <div class="content">
 
                     <!-- title -->
-                    <div class="title">
-                        <h1>AI Loading State</h1>
-                        <p id="info">UX Design &#183; 2023</p>
+                    <div class="title block">
+                        <h1>How I creatively tackled the long AI response latency</h1>
+                        <p id="info">2023 &#183; loading state design</p>
+                    </div>
+                    <div class="wide-body">
+                        <div style="padding:64.34% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1042655897?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="loading"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
 
-                    <img id="previewImg" src="image/loading_preview.jpg" alt="" width="100%" style="margin-bottom: 3vh; border-radius: 15px;">
-
                     <!-- overview and my role -->
-                    <div class="intro">
+                    <div class="intro block" id="nav-overview">
                         <div class="container-fliud">
                             <div class="row">
                                 <div class="overview col-sm-6">
-                                    <p>Chegg, a leading higher-education platform with millions of subscribers, revamped its Q&A product in 2023 to leverage generative AI for personalized study help. Before the streaming mechanism of AI responses was in place, users faced up to a 45-second wait for AI-generated answers, which had huge risk of user drop-off. As the sole designer, I leveraged my expertise in motion design and strong logical thinking to address this challenge successfully.</p>
+                                    <p>Chegg is a leading online higher education platform with millions of subscribers. In 2023, it transformed its Q&A web app into an AI-powered chat experience. Before the streaming mechanism of AI responses was in place, users faced up to a 45-second wait, which had huge risk of user drop-off. I addressed this challenge successfully with creativity and strong logical thinking.</p>
+                                    <ul class="nav nav-pills" id="tag">
+                                        <li>Shipped</li>
+                                        <li>Generative AI</li>
+                                        <li>Motion design</li>
+                                    </ul>
                                 </div>
                                 <div class="role col-sm-6">
                                     <div>
                                         <p id="subtitle1">My role</p>
                                         <p>Sole UX designer</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Contribution highlights</p>
-                                        <ul>
-                                            <li>Developed diagrams to break down complex backend logics</li>
-                                            <li>Created motion design to mitigate AI latency.</li>
-                                        </ul>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Skills</p>
+                                        <p>Motion design, logical thinking, cognitive science, diagramming</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Duration</p>
                                         <p>3 weeks</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Team</p>
-                                        <p>UX designer (Me), UX content designer, Product manager, Engineers, Product marketing managers</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Core Team</p>
+                                        <p>UX designer (me), UX content designer, PM, Product marketing managers, Software engineers</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Tools</p>
@@ -91,142 +120,186 @@
                             </div>
             
                         </div>
-  
+                    </div>
 
-                    </div>                    
+                    <div class="wide-body"><hr></div>
 
-                   
-                    <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033309060?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-                    
                     
 
                     <!-- detail -->
 
 
-
-                    <div class="block" style="padding-top: 16vh;">
+                    <div class="block" id="nav-context">
                         <p id="section-title">Context</p>
                         <h2 id="subtitle2">We need a loading state to account for AI response latency</h2>
                         <p>In Chegg’s new AI conversational learning experience, users would either instantly receive an expert solution from the archive or wait for an AI-generated solution from the Automation Engine, depending on which source provided higher quality for the specific topic. While answer streaming was a common way to mitigate long LLM response times, it required time to implement. In the interim, we needed a design solution to manage the delays and prevent user drop-off.</p>
                     </div>
 
-                    <div class="block">
+                    <div class="block" id="nav-challenges">
                         <p id="section-title">Challenges</p>
                         <h2 id="subtitle2">The loading time can be extremely long and filled with uncertainty</h2>
                         <p>The first question that came into my mind was: how long does it take to get a response from the AI? This seemed like a straightforward question, but I realized it was far more complex than I anticipated when I posed it to my PM. To get an accurate answer, we needed input from five backend teams to run load tests and calculate the average time range.</p>
-                        <p>Since understanding this was critical for brainstorming solutions, I took the initiative to find out the anwer with the PM and engineers. I visualized the backend loading timeline, breaking down the intricate process to make the problem easier to address. This diagram was highly appreciated by stakeholders and significantly accelerated the process of understanding loading times.</p>
-                        <img src="image/loading_timeline.jpg" alt="loading timeline" width="100%">
+                        <p>Since understanding this was critical for brainstorming solutions, I took the initiative to find out the answer with the PM and engineers. I visualized the backend loading timeline, breaking down the intricate process to make the problem easier to address. This diagram was highly appreciated by stakeholders and significantly accelerated the process of understanding loading times.</p>
+                        <img src="image/loading_timeline.jpg" alt="loading" width="100%" style="border-radius: 28px;">
                         <p>After a week of collaborative effort, I finally had an answer: the loading time for most responses ranged from 3 to 45 seconds. This presented a significant challenge because, as the Nielsen Norman Group states,</p>
                         <p id="emphasized-text">"A 10-second delay will often make users leave a site immediately."</p>
-                        <p>— let alone a 45-second wait.</p>
-                        <p>Meanwhile, I discovered two other challenges:</p>
-                        <ul>
-                            <li><b id="toogether-highlight">Uncertainty in loading time: </b>We couldn’t estimate the exact loading time for each response when the system receives a question, leaving no clear way to inform users about how long they should wait.</li>
-                            <li><b id="toogether-highlight">Response failure: </b>Not all responses could be generated within the 45-second limit, meaning there was no guarantee that users would receive an answer even after the long wait.</li>
-                        </ul>
+                        <p>Here’s a summary of the main challenges we discovered:</p>
+                        <br>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/hourglass.svg" alt="">
+                                        <p class="card-title"><b>Long latency</b></p>
+                                        <p>The loading time takes up to 45 seconds, far exceeding the 10-second threshold that typically keeps users on the site.</p>
+                                </div>
+                                <div class="col">
+                                        <img src="image/psychology_alt.svg" alt="">
+                                        <p class="card-title"><b>Uncertainty in loading time</b></p>
+                                        <p>We couldn’t estimate the exact loading time for each response when the system receives a question, leaving no clear way to inform users about how long they should wait.</p>
+                                    </div>
+                                <div class="col">
+                                    <img src="image/error.svg" alt="">
+                                    <p class="card-title"><b>Response failure</b></p>
+                                    <p>Not all responses could be generated within the 45-second limit, meaning there was no guarantee that users would receive an answer even after the long wait.</p>
+                            </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block">
+                    <div class="block" id="nav-ideation">
                         <p id="section-title">Ideation</p>
                         <h2 id="subtitle2">How to keep users on the page?</h2>
                         <p>Could we present a similar Q&A from the archive while the user waits for a response? This was my initial idea, but I soon realized it wouldn’t work. Previous UX research showed that users would leave Chegg and search other sites for solutions if the relevance wasn’t high. After discarding this approach, I started considering another question: how can we design the loading state to encourage users to wait longer?</p>
-                        <p>To keep users engaged while they wait, there were two main approaches: first, we needed to <b id="toogether-highlight">explain why the delay was happening</b>, and second, we should <b id="toogether-highlight">provide an estimated wait time</b>. While this seemed straightforward in theory, the execution turned out to be much more challenging.</p>
+                        <p>To keep users engaged while they wait, there were two main approaches: first, <b>we needed to explain why the delay was happening</b>, and second, <b>we should provide an estimated wait time</b>. While this seemed straightforward in theory, the execution turned out to be much more challenging.</p>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-messaging-strategies">
+                        <p id="section-title">Messaging strategies</p>
                         <h2 id="subtitle2">How do we communicate the loading process to users</h2>
-                        <p>If I were to tell users, "Once we receive your question, it's sent to a moderation service to check for academic violations, then the subject is detected. After that, the question is routed to the Automation Engine to determine which model should answer..." it would do nothing but adding confusion. I collaborated with the content designer and PMMs on messaging strategies, and we aligned on the following approaches:</p>
-                        <ul>
-                            <li><b id="toogether-highlight">Focus on the value: </b>The messages should communicate clearly that we're working on generating a personalized, high-quality solution that’s worth the wait.</li>
-                            <li><b id="toogether-highlight">Dynamic messages: </b>The messages should update periodically to show progress and set the right tone throughout the waiting process.</li>
-                        </ul>
+                        <p>If we were to tell users, "Once we receive your question, it's sent to a moderation service to check for academic violations, then the subject is detected. After that, the question is routed to the Automation Engine..." it would do nothing but adding confusion. I collaborated with the content designer and PMMs on messaging strategies, and we aligned on the following approaches:</p>
+                        <br>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/cards_star.svg" alt="">
+                                        <p class="card-title"><b>Focusing on the value</b></p>
+                                        <p>The messages should communicate clearly that we're working on generating a personalized, high-quality solution that’s worth the wait.</p>
+                                    </div>
+                                <div class="col">
+                                        <img src="image/draw.svg" alt="">
+                                        <p class="card-title"><b>Dynamically updating the messages</b></p>
+                                        <p>The messages should update periodically to show progress and set the right tone throughout the waiting process.</p>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-design-iteration">
+                        <p id="section-title">Design Iteration</p>
                         <h2 id="subtitle2">It's all about the perception of the wait</h2>
-                        <p>The loader is a great way to keep users engaged by providing a sense of control and transparency. Ideally, it should show how much time is left for the loading process. However, in my case, <b id="toogether-highlight">an estimated loading time was unavailable</b>, and I almost abandoned the idea of adding a loader.</p>
-                        <p>While drawing inspiration from other products and brainstorming with engineers, <b id="toogether-highlight">I realized that the actual loading time isn’t as important as the perceived loading time.</b> If the design can make users feel that the wait is shorter, then it’s a success.</p>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Three-step loader</b></p>
+                        <p>The loader is a great way to keep users engaged by providing a sense of control and transparency. Ideally, it should show how much time is left for the loading process. However, in our case, <b>an estimated loading time was unavailable</b>, and I almost abandoned the idea of adding a loader.</p>
+                        <p>While drawing inspiration from other products and brainstorming with engineers, I realized that <b>the actual loading time isn’t as important as the perceived loading time</b>. If the design can make users feel that the wait is shorter, then it’s a success.</p>
+                        <p id="highlight">Three-step loader</p>
                         <p>The first version of the loader I designed broke the loading process into three steps to make it feel more manageable. I worked with the engineers to see if the frontend could fetch backend status updates, and soon I discovered that it wouldn’t work because one step took the majority of the loading time, while the others took just one or two seconds.</p>
-                        <img src="image/loading_three_step.jpg" alt="three-step loader design" width="100%">
-                        <p style="font-size: 20px;"><b id="toogether-highlight">"Fake" loader</b></p>
-                        <p>With no estimated loading time and no clear way to break the process into steps, I had to get creative in shaping the user’s perception. The loader relied on two clever tricks: <b id="toogether-highlight">keeping the loading animation in constant motion to signal progress and starting the progress bar faster before slowing down, using the sunk-cost effect to make it harder for users to abandon.</b></p>
+                        <img src="image/loading_three_step.jpg" alt="entry point design" style="border-radius: 28px;" width="100%">
+                        <p id="highlight">Final solution - "Fake" loader</p>
+                        <p>With no estimated loading time and no clear way to break the process into steps, I had to get creative in shaping the user’s perception. The loader relied on two tricks:</p>
+                        <br>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/animation.svg" alt="">
+                                        <p class="card-title"><b>Keeping it moving</b></p>
+                                        <p>Keeping the loading animation in motion to signal progress, using a constantly moving progress bar and a motion graphic.</p>
+                                    </div>
+                                <div class="col">
+                                        <img src="image/savings.svg" alt="">
+                                        <p class="card-title"><b>Sunk-cost effect</b></p>
+                                        <p>Using the sunk-cost effect to make it harder for users to abandon. This is achieved by quickly moving the progress bar for the first few seconds, giving the impression that most of the work is already done.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                         <p>Here’s how the loader worked:</p>
                         <ul>
-                            <li>The progress starts quickly, giving the impression that most of the work is already done.</li>
-                            <li>It then slows to a consistent pace.</li>
+                            <li>The progress starts quickly and then slows to a consistent pace.</li>
                             <li>Once the answer is ready, the progress jumps to 100%, signaling completion.</li>
                         </ul>
                         <p>I translated this approach into "if/then" logic and developed formulas to calculate the loader’s progress, making it easy for engineers to implement. These formulas were also highly scalable, ensuring they could adapt to any changes in the timeout limit without requiring significant rework.</p>
-                        <img id="image_w_annotation" src="image/loading_logic.jpg" alt="loading logic" width="100%" style="border-radius: 15px;">
+                        <img src="image/loading_logic.jpg" alt="loading logics" style="border-radius: 28px;" width="100%">
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-edge-cases">
+                        <p id="section-title">Edge cases</p>
                         <h2 id="subtitle2">Designing for different scenarios</h2>
-                        <p>As mentioned earlier, the loading time ranges from 3 to 45 seconds, with a small chance (around 5%) that the system will hit the 45-second limit and fail to provide an answer. </p>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">The big loading component could be an overkill for quick responses</b></p>
+                        <p id="hilight">The big loading component could be an overkill for quick responses</p>
                         <p>While sharing my design with the UX team, I realized that a big loading component could create the perception of slowness for answers that are generated quickly. To address this, I decided to divide the loading process into two phases. For answers generated within 4 seconds, the loading animation would simply show a light-weight three-dot animation. After 4 seconds, the full loading component would appear. The 4-second threshold was based on the average time it takes for Mathway—the fastest model—to generate answers, typically within 10 seconds.</p>
-                        <img src="image/loading_phases.jpg" alt="loading phases" width="100%">
-                        <br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">No answer state</b></p>
+                        <img src="image/loading_phases.jpg" alt="loading phases" style="border-radius: 28px;" width="100%">
+                        <p id="highlight">No answer state</p>
                         <p>Initially, the content designer and I considered setting the expectation that sometimes users might not get an answer even after waiting 45 seconds, with an apology message in case that happened. However, after discussing with the PM, we agreed that we didn’t want this edge case to negatively impact the perceived quality of the product. Instead, we opted for a more positive tone. As the 45-second timeout approached, the message would change to: “Your solution is taking longer than expected. Almost done!” This helped set the right expectations as the likelihood of no answer increased. If the system failed to generate a solution, we provided similar Q&As from the archive, offering something helpful instead of simply stating it was an error.</p>
-                        <img src="image/loading_no_answer.jpg" alt="no answer state" width="100%">
-
+                        <img src="image/loading_no_answer.jpg" alt="no answer state" style="border-radius: 28px;" width="100%">
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Impact</p>
-                        <h2 id="subtitle2">Successfully preventing drop-offs</h2>
+                    <div class="block" id="nav-outcome">
+                        <p id="section-title">Outcome</p>
+                        <h2 id="subtitle2">Successfully preventing user drop-off</h2>
                         <p>Without the loading state design, most users would likely abandon the site after 10 seconds of waiting. After launching the new AI learning experience with the loading design, there was no noticeable increase in drop-off rates.</p>
-                        <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033309060?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                    </div>
-
-
-                    <div class="block" style="padding-bottom: 16vh;">
-                        <p id="section-title">Reflection</p>
-                        <h2 id="subtitle2">Utilizing my visualization skills to enhance cross-functional collaboration</h2>
-                        <p>I initially created the loading timeline just for myself to understand the complex backend process. However, I soon discovered it was incredibly helpful for the PM and engineers to clarify loading times and communicate with the squads we depended on. As a designer, I once associated visualization only with wireframes, prototypes, and user flows. In reality, my true superpower goes far beyond these artifacts.</p>
+                        <div style="padding:64.34% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1042655897?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="loading"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
                     
+                
+                    <div class="block" id="nav-reflection">
+                        <p id="section-title">Reflection</p>
+                        <h2 id="subtitle2">Utilizing visualization skills to enhance cross-functional collaboration</h2>
+                        <p>I initially created the loading timeline just for myself to understand the complex backend process. However, I soon discovered it was incredibly helpful for the PM and engineers to clarify loading times and communicate with the squads we depended on. As a designer, I once associated visualization only with wireframes, prototypes, and user flows. In reality, my true superpower goes far beyond these artifacts.</p>
+                    </div>
  
-                   
-
-                </div>
-            </div>
-
-            
-                <div class="next container-fliud">
-                    <a href="learning_progress_locked.html">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>Next</p>
-                                <h1>Learning Progress Tracker</h1>
-                            </div>
-                            <div class="col-sm-6">
-                                <img id="arrow" src="image/arrow.svg" alt="">
+                </div>               
+                
+                <div class="narrow-body next-project">
+                    <hr id="footer-divider">
+                    <p id="subtitle2">Next project</p>
+                    <a href="follow_up_suggestion.html" style="text-decoration: none;">
+                        <div class="container-fliud card-container hover-target">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex align-items-center">
+                                    <div class="title-intro">
+                                            <h3>How I increased user engagement with Chegg's AI chat by 4.67%</h3>
+                                            <ul class="nav nav-pills" id="tag">
+                                                <li>Generative AI</li>
+                                                <li>Prompting</li>
+                                                <li>Shipped</li>
+                                            </ul>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-7 pl-0 pr-0 pb-0 pt-0">
+                                    <img src="image/follow_up_cover.png" alt="preview" >
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
-
-            <div class="project-body">
+                 </div>
                 
-                <!-- footer -->
-                <div class="footer">
-                    <div class="contact">
-                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
-                        <a href="https://www.linkedin.com/in/monaluo/" target="_blank">LinkedIn</a>
-                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
-                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2024 Mona Luo.</span>
+            
+
+             <!-- footer -->
+            <div class="home-footer container-fliud project-footer narrow-body" id="footer">
+                <div class="footer-container row">
+                    <div class="col-sm-12">
+                        <p class="copyright" style="float: left;">Designed and coded with love and coffee by Mona Luo </p>
+                        <p class="copyright" style="float: right;">Copyright &copy; 2025 Mona Luo</p>
                     </div>
                 </div>
-            
             </div>
+
+            
+            
+
         </div> 
+
+        <div id="cursor"></div>
+        <script src="cursor.js"></script>
+        
     </body>
 
     </html>

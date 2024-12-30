@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="robots" content="noindex, nofollow">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
         <script>
@@ -10,79 +11,108 @@
             gtag('config', 'UA-150477387-1');
         </script>
 
-        <title>Dynamic Follow-Up Suggestion - Mona Luo</title>
-        <link rel="icon" type="image/x-icon" href="/image/favicon_new.ico">
+        <title>Mona Luo - Product Designer</title>
+        <link rel="icon" type="image/x-icon" href="/image/mona_favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
     </head>
     <body class="project">  
         <div class="container-fliud">
-             <!-- top nav -->
-             <div class="top-nav" id="navbar">
-                <script src="nav_toggle.js"></script>
-                <div class="top-nav-logo">
-                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
-                </div>
-                <div class="top-nav-right">
-                    <a href="index.html#work">Work</a>
-                    <a href="index.html#experiments">Experiments</a>
-                    <a href="about.html">About</a>
-                </div>
-            </div>
             
-            <div class="project-body">
+                <!-- top nav -->
+                <div class="top-nav project-top-nav narrow-body container fixed-top d-flex justify-content-center" id="project-top-nav">
+                    <div class="top-nav-logo">
+                        <a class="hover-target" href="index.html"><img src="image/mona_logo.png" alt="mona"></a>
+                    </div>
+                    <div class="top-nav-right">
+                            <a class="hover-target" id="hidden-button" href="index.html#work">Work</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#about">About</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#footer">Contact</a>
+                            <button id="menu-button"><img id="hamburger-img" src="image/menu.png" alt="menu"></button>
+                            <!-- <img src="image/menu.png" alt="menu"> -->
+                            <a class="hover-target" href="#top" id="up-arrow-button"><img src="image/arrow_upward.png" alt="go to top"></a>
+                    </div>
+                </div>
+                <div class="container fixed-top d-flex justify-content-center hidden-menu" id="hidden-menu">
+                    <a href="index.html#work">Work</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#footer">Contact</a>
+                </div>
+
+
+                <!-- side nav -->
+                 <div class="side-nav container">
+                    <div style="padding-top: 12px; padding-bottom: 12px;">
+                        <a class="hover-target" href="#nav-overview">Overview</a>
+                        <a class="hover-target" href="#nav-context">Context</a>
+                        <a class="hover-target" href="#nav-problem">Problem</a>
+                        <a class="hover-target" href="#nav-goal-alignment">Goal alignment</a>
+                        <a class="hover-target" href="#nav-strategies">Strategies</a>
+                        <a class="hover-target" href="#nav-early-concepts">Early concepts</a>
+                        <a class="hover-target" href="#nav-information-hierarchy-and-research">Information hierarchy & Research</a>
+                        <a class="hover-target" href="#nav-visual-design">Visual design</a>
+                        <a class="hover-target" href="#nav-AI-design">AI design</a>
+                        <a class="hover-target" href="#nav-outcome">Outcome</a>
+                        <a class="hover-target" href="#nav-reflection">Reflection</a>
+                    </div>
+                 </div>
+
+                 <script src="menu.js"></script>
                 
                 <!-- content -->
                 <div class="content">
 
                     <!-- title -->
-                    <div class="title">
-                        <h1>Dynamic Follow-Up Suggestion</h1>
-                        <p id="info">UX Design &#183; 2024</p>
+                    <div class="title block">
+                        <h1>How I increased the user engagement of Chegg's AI chat by 4.67%</h1>
+                        <p id="info">2024 &#183; New feature design </p>
                     </div>
-                    <img id="previewImg" src="image/follow_up_preview.jpg" alt="" width="100%" style="border-radius: 15px;">
-
+                    <div class="wide-body">
+                        <div style="padding:64.34% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1036957162?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Follow-up Suggestion Preview"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
 
                     <!-- overview and my role -->
-                    <div class="intro">
+                    <div class="intro block" id="nav-overview">
                         <div class="container-fliud">
                             <div class="row">
                                 <div class="overview col-sm-6">
-                                    <p>Chegg, a leading higher-education platform with millions of subscribers, revamped its Q&A product in 2023 to an AI-powered conversational learning experience. One key challenge was the low engagement in asking follow-up questions. As the sole UX designer, I introduced a feature that significantly improved user engagement.</p>
+                                    <p>Chegg is a leading online higher education platform with millions of subscribers. In 2023, as it transformed its Q&A web app into an AI-powered chat experience, one key challenge was the low engagement in asking follow-up questions. As the sole UX designer, I introduced a feature that successfully increased user engagement by 4.67%.</p>
+                                    <ul class="nav nav-pills" id="tag">
+                                        <li>Shipped</li>
+                                        <li>Generative AI</li>
+                                        <li>Information hierarchy</li>
+                                    </ul>
                                 </div>
                                 <div class="role col-sm-6">
                                     <div>
                                         <p id="subtitle1">My role</p>
-                                        <p>Sole UX designer &amp; UX researcher</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p>Sole UX designer, UX researcher</p>
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Contribution highlights</p>
-                                        <ul>
-                                            <li>Increased user engagement by 4.67% in an A/B test</li>
-                                            <li>Redesigned information hierarchy</li>
-                                            <li>Crafted prototypes for leadership review</li>
-                                            <li>Conducted UX research</li>
-                                        </ul>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Skills</p>
+                                        <p>Rapid prototyping, Information hierarchy, User research, A/B testing</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Duration</p>
                                         <p>11 weeks</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Team</p>
-                                        <p>UX designer (Me), UX content designer, Product manager, ML and software engineers, Learning science designer</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Core Team</p>
+                                        <p>UX designer (me), UX content designer, PM, ML and software engineers, Learning science designer</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Tools</p>
@@ -92,324 +122,362 @@
                             </div>
             
                         </div>
-
                     </div>
 
-                    <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1036957162?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="wide-body"><hr></div>
 
                     
 
                     <!-- detail -->
 
-                    <div class="block" style="padding-top: 16vh;">
-                        <h2 id="subtitle2">Impact</h2>
-                        <div class="container-fliud">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="d-flex justify-content-center">
-                                        <p style="font-size: 70px; font-weight: bold; color: #E86001; float:left; margin-bottom: 0; ">4.67%</p>
-                                        <img style="width: 30px; height: 30px; margin-top: 1em;" src="image/chegg_arrow.png" alt="up arrow">
-                                    </div>
-                                    
-                                    <p style="clear: both; text-align: center;">Increase in subscribers who ask follow-ups</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="d-flex justify-content-center">
-                                        <p style="font-size: 70px; font-weight: bold; color: #E86001; float:left; margin-bottom: 0; ">3.93%</p>
-                                        <img style="width: 30px; height: 30px; margin-top: 1em;" src="image/chegg_arrow.png" alt="up arrow">
-                                    </div>
-                                    <p style="clear: both; text-align: center;">Increase in follow-ups per subscriber</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-                    <div class="block">
+                    <div class="block" id="nav-context">
                         <p id="section-title">Context</p>
-                        <h2 id="subtitle2">The new chat functionality was underutilized by students</h2>
-                        <p>Historically, most students used Chegg to search for homework solutions and left the platform without further engagement. One major reason that Chegg revamped the legacy product to a chat experience powered by AI since 2023 was to provide more personalized and engaging Q&A experience, especially through enabling students to ask follow-up questions to homework solutions. </p>
+                        <h2 id="subtitle2">Chegg had a huge product overhaul to integrate generative AI</h2>
+                        <p>In 2023, Chegg undertook a year-long transformation of its core Q&A platform, integrating generative AI to stay competitive. The overhaul turned the product into an AI-powered chat experience designed to deliver faster solutions than human experts and increase engagement through personalized, context-aware study help. By allowing users to ask follow-up questions after receiving homework solutions, it had great potential to enhance user engagement and retention.</p>
                         <img id="image_w_annotation" src="image/follow_up_mtc.jpg" alt="current chat experience design" width="100%">
-                        <p id="annotation">In the new experience, after users submit a homework question and receive a solution—either from archived expert answers or the LLM—they can continue to ask follow-up questions to deepen their understanding. These follow-ups are seamlessly answered by the LLM.</p>
-                        <p>However, asking follow-up questions was not yet a natural behavior among students using Chegg. Data revealed that only 19% of user inputs focused on digging deeper into the same question, indicating significant room for improvement.</p>
-                        <div class="container-fliud">
-                            <div class="row">
-                                <div class="col-sm-12" style="margin: 0;">
-                                    <div class="d-flex justify-content-center">
-                                        <p style="font-size: 70px; font-weight: bold; color: #E86001; float:left; margin-bottom: 0; ">19%</p>
-                                    </div>
-                                    <p style="clear: both; text-align: center;">of user inputs are follow-ups.</p>
+                        <p id="annotation">In the new experience, after users submit a homework question and receive a solution—either from the archive (expert or AI-generated solutions) or a live AI answer—they can ask follow-up questions to deepen their understanding. These follow-ups are seamlessly answered by the AI.</p>
+                    </div>
+
+                    <div class="block" id="nav-problem">
+                        <p id="section-title">Problem</p>
+                        <h2 id="subtitle2">The AI chat was underutilized by students</h2>
+                        <p>Despite its potential, the AI-powered chat feature struggled to gain engagement, and the significant investment initially fell short. <b>Only 19% of user inputs were follow-up questions on a homework solution</b>, while most focused on searching for new solutions. This indicated low engagement with the multi-turn chat functionality.</p>
+                        <p>What caused the low engagement in asking follow-up questions? User research indicated that this feature was both desirable to users and highly effective for learning. We identified two painpoints as the possible causes.</p>
+                        <br>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/sentiment_dissatisfied.svg" alt="">
+                                        <p class="card-title"><b>Lack of awareness</b></p>
+                                        <p>According to an in-product Sprig survey, many users were unaware of the feature</p>
+                                </div>
+                                <div class="col">
+                                        <img src="image/sentiment_dissatisfied.svg" alt="">
+                                        <p class="card-title"><b>Resistance to change</b></p>
+                                        <p>Users are often repelled by drastic product updates—they were unfamiliar with the AI chat and continued to rely on their habitual ways of using Chegg.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="block">
+                    <div class="block" id="nav-goal-alignment">
                         <p id="section-title">Goal alignment</p>
                         <h2 id="subtitle2">How to enhance user engagement in asking follow-up questions for homework problems?</h2>
-                        <p>To tackle the challenge of low engagement with follow-up questions in Chegg's AI-powered chat experience, we kicked off the project by identifying and aligning on the target users, their needs, and the business goals.</p>
+                        <p>We kicked off the project by identifying and aligning on the target users, their needs, and the business goals.</p>
                         <br>
                         <div class="container-fliud">
-                            <div class="row" style="background-color: rgb(248, 248, 250); padding: 2em; border-radius: 10px;">
-                                    <div class="col-sm-3">
-                                        <p><b id="toogether-highlight">&#128101; Target Users</b><br></p>
+                                <div class="row vertical-card-container">
+                                    <div class="col-sm-4">
+                                            <img src="image/group.svg" alt="">
+                                            <b>Target users</b>
                                     </div>
-                                    <div class="col-sm-9">
-                                        <p>Chegg subscribers who have been allocated to the new AI-powered chat experience, primarily STEM college students in the U.S.</p>
+                                    <div class="col-sm-8">
+                                        <p>Subscribers who have been allocated to the new AI-powered chat experience, primarily STEM college students in the U.S.</p>
                                     </div>
+                                 </div>
+                                 <div class="row vertical-card-container">
+                                    <div class="col-sm-4">
+                                            <img src="image/mountain_flag.svg" alt="">
+                                            <b>User needs</b>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>To clarify homework solutions and explore the same topic in greater depth to enhance understanding.</p>
+                                    </div>
+                                 </div>
+                                 <div class="row vertical-card-container">
+                                    <div class="col-sm-4">
+                                            <img src="image/monitoring.svg" alt="">
+                                            <b>Business goal</b>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Increase the percentage of subscribers who ask follow-up questions and the number of follow-ups asked by each subscriber.</p>
+                                    </div>
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="block" id="nav-strategies">
+                        <p id="section-title">Strategies</p>
+                        <h2 id="subtitle2">Dynamic follow-up suggestions</h2>
+                        <p>I led the ideation process alongside the content designer and PM to develop strategies that address the user pain points. We identified significant potential in <b>introducing dynamic, context-aware suggestions to guide users in asking follow-up questions to the AI.</b></p>
+                        <br>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/visibility.svg" alt="">
+                                        <p class="card-title"><b>Discoverable</b></p>
+                                        <p>Instead of relying on users to type follow-up questions, we proposed adding intuitive entry points to guide them in engaging with the feature.</p>
+                                </div>
+                                <div class="col">
+                                        <img src="image/for_you.svg" alt="">
+                                        <p class="card-title"><b>Personalized</b></p>
+                                        <p>We believed that better engagement could be achieved by offering follow-up suggestions tailored to individual users' needs and study contexts.</p>
+                                    </div>
+                                <div class="col">
+                                    <img src="image/cognition_2.svg" alt="">
+                                    <p class="card-title"><b>Effortless</b></p>
+                                    <p>Habitual change depends on making desirable actions easy. The follow-up suggestions should help users adapt to the AI-powered chat experience with intuitive, seamless interactions.</p>
                             </div>
-                            <div class="row" style="background-color: rgb(248, 248, 250); padding: 2em; border-radius: 10px; margin-top: 2em;">
-                                <div class="col-sm-3">
-                                    <p><b id="toogether-highlight">&#9971; User Need</b><br></p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <p>Subscribers are either unaware of or underutilizing the follow-up functionality within the AI-powered chat experience, a feature designed to enhance learning effectiveness based on learning science. Previous user research also indicates a desire among students to understand the process behind solving homework.</p>
-                                </div>
-                            </div>
-                            <div class="row" style="background-color: rgb(248, 248, 250); padding: 2em; border-radius: 10px; margin-top: 2em;">
-                                <div class="col-sm-3">
-                                    <p><b id="toogether-highlight">&#128188; Business Goal</b><br></p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <p>Increase the percentage of subscribers who ask follow-up questions and the number of follow-ups asked by each subscriber.</p>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Strategies & early ideas</p>
-                        <h2 id="subtitle2">More guided and discoverable experiences</h2>
-                        <p>I spearheaded the ideation process to enhance user engagement with the follow-up functionality, focusing on two key areas:</p>
-                        <ul>
-                            <li><b id="toogether-highlight">Increasing awareness: </b>Ensuring users discover the feature, as it could easily be overlooked due to their established usage patterns on Chegg.</li>
-                            <li><b id="toogether-highlight">Reducing friction: </b>Assisting users in overcoming the learning curve associated with using the feature.</li>
-                        </ul>
-                        <p>While my teammate worked on onboarding solutions, I concentrated on returning users. My design solutions were guided by these strategies:</p>
-                        <br>
-                        <div class="container-fliud">
-                            <div class="row">
-                                <div class="col-sm-4" style="margin-bottom: 2vh;">
-                                    <div style="background-color: rgb(253, 246, 236); padding: 40px; border-radius: 5%;">
-                                        <p><b id="toogether-highlight" style="font-size: 20x; color: #E86001;">Prominent</b></p>
-                                        <p style="color: rgb(59, 59, 59); line-height: 1.6em;font-size: 16px;">Enhancing proximity and discoverability of follow-up entry points.</p>
-                                        <br>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4" style="margin-bottom: 2vh;">
-                                    <div style="background-color: rgb(253, 246, 236); padding: 40px; border-radius: 5%;">
-                                        <p><b id="toogether-highlight" style="font-size: 20px; color: #E86001;">Effortless</b></p>
-                                        <p style="color: rgb(59, 59, 59); line-height: 1.6em;font-size: 16px;">Minimizing user effort required to engage with follow-up functionality.</p>
-                                        <br>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div style="background-color: rgb(253, 246, 236); padding: 40px; border-radius: 5%;">
-                                        <p><b id="toogether-highlight" style="font-size: 20px; color: #E86001;">Show vs. Tell</b></p>
-                                        <p style="color: rgb(59, 59, 59); line-height: 1.6em; font-size: 16px;">Guiding users through the learning curve by showing potential questions they could ask the AI.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p style="margin-top: 4vh;">To help the team strategize and prioritize, I categorized my design ideas into three types:</p>
-                        <p><b id="toogether-highlight">Type I: Suggestions based on solution types</b></p>
-                        <p>Suggestions tailored to problem types—Facts, Concepts, Procedures, Processes, or Principles—with guidance from learning science. For example:</p>
-                        <ul>
-                            <li>For a factual question like “What is the formula for calculating kinetic energy?”, the system might suggest asking, “Can you give me an example?”</li>
-                            <li>For a process question like “How does the water cycle work?”, it might recommend, “Can you explain in more detail?”</li>    
-                        </ul>
-                        <img src="image/follow_up_type_1.jpg" alt="type 1 sketch" width="100%" style="border-radius: 15px;">
-                        <p><b id="toogether-highlight">Type II: Suggestions based on solution content</b></p>
-                        <p>Suggestions dynamically generated by the LLM based on the solution's content with guidance from learning science, providing more specific and contextual prompts. For example:</p>
-                        <ul>
-                            <li>If the homework question is “At the end of Jan, Mineral Labs had an inventory of 735 unites, which cost 8% per unit to produce. During Feb the company produced 700 unites at a cost of $12 per unit. If the firm sold 1100 unites in Feb, what was the cost of goods sold?”, the system might suggest asking “How did you determine which units were sold first and why?”</li>
-                        </ul>
-                        <img src="image/follow_up_type_2.jpg" alt="type 2 sketch" width="100%" style="border-radius: 15px;">
-
-                        <p><b id="toogether-highlight">Type III: Suggestions based on key terms</b></p>
-                        <p>Suggestions derived from key terms in the solution, selected by the LLM with guidance from learning science. For example:</p>
-                        <ul>
-                            <li>If the Q&A is about the steps of metabolism, and the solutions states “The first step in metabolism is the ingestion of food. This is where you consume food which is then broken down into smaller molecules during digestion.” The system might highlight “molecules” in the solution and prompt users to ask to learn more about the term.</li>
-                        </ul>
-                        <img src="image/follow_up_type_3.jpg" alt="type 3 sketch" width="100%" style="border-radius: 15px;">
-
-                        <p>While content-specific and key-term-based suggestions provide more personalized and dynamic learning experiences, we prioritized the first type because it had a balanced trade-off between personalization and delivery speed. This approach allowed us to launch the feature sooner, while still delivering meaningful value. We planned to explore the more advanced types of suggestions in future iterations to further enhance the learning experience.</p>
-                        <img src="image/follow_up_idea_category_1.jpg" alt="categories of early ideas" width="100%" style="border-radius: 15px;">
-
-
-                    </div>
-
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
-                        <h2 id="subtitle2">Follow-up suggestions based on solution types</h2>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Where should the feature be placed?</b></p>
-                        <p>I considered three potential placement options for the feature: in the right rail (A), inline under each step (B), or grouped with the chat input box (C). After evaluating these options, I chose the right rail placement (A). It was more prominent and allowed for easier layout of multiple prompts compared to the other options. </p>
-                        <img src="image/follow_up_placement.jpg" alt="wireframes that shows different placements" width="100%">
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Refining the interaction</b></p>
-                        <p>Once the placement was determined, I iterated on the interaction design to ensure the feature was both intuitive and easily discoverable. To enhance discoverability, I added a visual affordance to the right side of each step in the solution. When users hover over it, follow-up suggestions appear seamlessly.</p>
-                        <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1031752081?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                        <br>
-                        <p id="annotation">To showcase the end-to-end flow to stakeholders, I built an interactive prototype that integrates both onboarding tooltips for follow-ups and dynamic follow-up suggestions.</p>
-                    </div>
-
-                    <div class="block">
-                        <p id="section-title">Project pivot</p>
-                        <h2 id="subtitle2">We have more time now — what's next?</h2>
-                        <p>Navigating ambiguity and adapting quickly were crucial as priorities shifted in response to the fast-evolving AI landscape. When the program's focus changed, the project was temporarily paused but later resumed with an extended timeline. We reassessed our approach and revisited ideas that had been put on hold. The 2x2 matrix I created earlier helped the team pivot quickly to a more personalized option, which offered the potential for a greater impact.</p>
-                        <img src="image/follow_up_idea_category_2.jpg" alt="categories of early ideas" width="100%" style="border-radius: 15px;">
-
-                    </div>
-
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
-                        <h2 id="subtitle2">We need a better information hierarchy</h2>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">How to maintain clear information hierarchy as new features and content are added?</b></p>
-                        <p>Adding new functions and content without considering the overall user experience can quickly make a product overwhelming. A key challenge I faced was structuring the layout to align with users' mental models.</p>
-                        <p>Below homework solutions, we already suggested actions like “Let’s practice,” “Give me an example,” and “Send to expert.” However, students requested more solutions to compare options and find the best fit. My task was to integrate similar solutions from the archive to support this primary goal. Without meeting it, students were less likely to engage with other features like follow-up questions.</p>
-                        <p>Balancing these additions while avoiding a cluttered interface required thoughtful organization to maintain a clear and intuitive experience.</p>
-                        <img id="image_w_annotation" src="image/follow_up_previous_IA.jpg" alt="previous page layout" width="100%">
-                        <p id="annotation">The previous solution layout had a disorganized information hierarchy, with functions scattered throughout the interface.</p>
-
-                        <br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">What’s the right information hierarchy? Let’s talk to users to find out.</b></p>
-                        <p>What should the information hierarchy prioritize? PMs initially argued that follow-up questions should take priority to evaluate the feature’s performance, with actions like reviewing similar solutions or sending questions to experts ranked lower. However, user feedback indicated these “secondary” actions were crucial to students. I believed testing assumptions shouldn’t compromise usability.</p>
-                        <p>To resolve this, I conducted user research to understand how students approach finding homework help on Chegg. I presented the current design and observed how students identified the best solutions. Here are the key findings:</p>
-                        <ul>
-                            <li style="margin-bottom: 2vh;">When dissatisfied with the initial Q&A, 75% of students compare similar Q&As, and if that doesn’t resolve their issue, 42% ask for expert help.</li>
-                            <li style="margin-bottom: 2vh;">They might ask follow-up questions for clarification after identifying the best Q&A.</li>
-                        </ul>
-                        <p>I redesigned the information hierarchy, with follow-up suggestions placed at the bottom. From both a UX and learning science perspective, this is the most ideal layout that matches the user's mental model and fosters effective learning.</p>
-                        <img src="image/follow_up_IA_comparison.jpg" alt="before vs after information hiearchy" width="100%">
-                        <p>That said, my PM and I agreed that making the new feature more visually prominent was crucial for better evaluating its performance in the A/B test. Ultimately, the team decided to test a second variant, placing the follow-up suggestions as a sticky element on the right rail for improved discoverability.</p>
-                        <img src="image/follow_up_IA_wireframes.jpg" alt="two variants of follow-up suggestion designs with new layout" width="100%">
-                    </div>
-
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-early-concepts">
+                        <p id="section-title">Early concepts</p>
+                        <h2 id="subtitle2">Steering my team through unexpected timeline shifts</h2>
+                        <p>After getting aligned on the high-level goals and strategies, I dove into brainstorming and sketched out some early design ideas. To help the team prioritize, I grouped the concepts into three buckets:</p>
                         
-                        <h2 id="subtitle2">Refining the details</h2>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Visual treatment for feature grouping</b></p>
+                        <p><b id="highlight">Concept I: Suggestions based on problem types</b></p>
+                        <p>Using learning science, problems can be broken into types like Factual, Conceptual, or Procedural. We could suggest follow-up questions tailored to each type to help deepen understanding.</p>
+                        <img src="image/follow_up_type_1.jpg" alt="type 1 sketch" width="100%" style="border-radius: 28px;">
+                        
+                        <p><b id="highlight">Concept II: Suggestions based on problem and solution content</b></p>
+                        <p>We could use the LLM to generate suggestions dynamically based on the specific content of each problem and solution. While this approach required more effort to train the LLM, it would produce more personalized and relevant suggestions.</p>
+                        <img src="image/follow_up_type_2.jpg" alt="type 2 sketch" width="100%" style="border-radius: 28px;">
+
+                        <p><b id="highlight">Concept III: Suggestions based on key terms</b></p>
+                        <p>We could highlight key terms from the solution, chosen by the LLM with some guidance from learning science, and prompt users to learn more.</p>
+                        <img src="image/follow_up_type_3.jpg" alt="type 3 sketch" width="100%" style="border-radius: 28px;">
+
+                        <p><b id="highlight">Mapping out the tradeoffs to help my team prioritize and pivot</b></p>
+                        <p>To help my team understand the tradeoffs, I created a 2x2 matrix to map the concepts based on effort and potential impact. With a tight timeline, we initially prioritized Concept I - Suggestions based on problem types - as it was the quickest to implement while still providing some context-aware suggestions. Midway, a company strategy shift put the project on hold, and when we picked it back up, we had more time available. <b>The 2x2 matrix I created became a key tool in guiding the team’s pivot to Concept II</b> - Suggestions based on problem and solution content - which required more effort in LLM training but promised greater impact.</p>
+                        <img src="image/follow_up_idea_category.jpg" alt="categories of early ideas" width="100%" style="border-radius: 28px;">
+
+
+                    </div>
+
+                    <div class="block" id="nav-information-hierarchy-and-research">
+                        <p id="section-title">Information hierarchy	&amp; research</p>
+                        <h2 id="subtitle2">Revisiting the information hierarchy: a step back for better UX</h2>
+                        <p><b id="highlight">Where should we place the new feature on an already crowded page?</b></p>
+                        <p>Over the past few months, new features and content had been added to the page without much thought given to the overall information hierarchy. Now, we faced the challenge of introducing yet another feature—one that certainly wouldn’t be the last. Balancing these additions without overwhelming the interface required careful organization to maintain a clear and intuitive user experience.</p>
+                        <img id="image_w_annotation" src="image/follow_up_previous_IA.jpg" alt="previous page layout" width="100%" style="border-radius: 28px;">
+                        <p id="annotation">The page was based on a disorganized information hierarchy, with functions scattered throughout the interface.</p>
+                        <p>Initially, PMs argued that follow-up suggestions should take priority, while actions like reviewing similar solutions or sending questions to experts were considered lower priority. However, user feedback revealed that these so-called “secondary” actions were actually quite important. Realizing we lacked a clear understanding of how users were interacting with the page, I proposed and conducted a user research study to answer critical questions:</p>
+                        <ul>
+                            <li>Since Chegg’s solutions aren’t always 100% accurate or perfectly matched to users’ questions, how do users evaluate solutions to find the most relevant ones?</li>
+                            <li>What would they do if they are still confused after finding the best solutions available? would they consider asking follow-up questions to AI?</li>
+                        </ul>
+
+                        <br>
+                        <p><b id="highlight">Discovering users’ mental modal through UX research</b></p>
+                        <p>Using UserTesting.com, I presented the current design and observed how students identified the best solutions. Key findings included:</p>
+                        <ul>
+                            <li>When dissatisfied with the initial solutions, 75% of students compare similar Q&As, and if that doesn’t work, 42% turn to expert help.</li>
+                            <li>Students would ask follow-up questions for clarification after identifying solutions, appreciating the immediacy of AI responses.</li>
+                        </ul>
+                        <br>
+                        
+                        <p><b id="highlight">A/B testing different placements</b></p>
+                        <p>Based on these insights, I worked with the content designer to revamp the information hierarchy. Our changes can be summarized in two key points:</p>
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/number1.svg" alt="">
+                                        <p class="card-title"><b>Helping users find the best solution first</b></p>
+                                        <p>We prioritized features that helped users find the best solution, such as simplifying Q&A comparisons and providing quick access to expert help. Once this primary goal was met, users were more likely to ask follow-up questions.</p>
+                                </div>
+                                <div class="col">
+                                        <img src="image/number2.svg" alt="">
+                                        <p class="card-title"><b>Surfacing follow-up suggestions at the right moment</b></p>
+                                        <p> We positioned follow-up suggestions after these primary features. While the placement seemed less prominent, it ensured the feature appeared exactly when users needed it most.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>To ensure we weren’t missing an opportunity for better discoverability, my PM and I decided to play it safe by testing multiple variants. Ultimately, we included a second variant in the A/B test, placing the follow-up suggestions as a sticky element on the right rail for improved visibility. This approach allowed us to balance user needs with business goals, ensuring the new feature was both intuitive and impactful.</p>
+                        <img src="image/follow_up_layout.jpg" alt="A/B test variants" id="desktop-img" width="100%" style="border-radius: 28px;">
+                        <div class="container-fliud" id="mobile-img">
+                            <div class="row comparison">
+                                <div class="col-sm-3">
+                                    <img src="image/follow_up_layout_control.jpg" alt="control" width="100%" style="border-radius: 20px;">
+                                    <p id="annotation">Control</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/follow_up_layout_A.jpg" alt="variant A" width="100%" style="border-radius: 20px;">
+                                    <p id="annotation">Variant A</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <img src="image/follow_up_layout_B.jpg" alt="wireframe" width="100%" style="border-radius: 20px;">
+                                    <p id="annotation">Variant B</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="block" id="nav-visual-design">
+                        <p id="section-title">Visual design</p>
+                        <h2 id="subtitle2">Refining the visual details</h2>
+
+                        <p><b id="highlight">Choice of icons</b></p>
+                        <p>I explored different icon options to find the one most relevant to the follow-up suggestion feature. Since our design system only included a plain chat icon at the time, I designed an illustrative one to enhance the visual appeal.</p>
+                        <br>
+                        <div class="container-fliud">
+                            <div class="row comparison">
+                                <div class="col col-sm-4">
+                                    <img src="image/follow_up_icon_A.jpg" alt="wireframe" width="100%">
+                                    <p id="annotation">Spark icon overemphasizes the AI technology.</p>
+                                </div>
+                                <div class="col col-sm-4">
+                                    <img src="image/follow_up_icon_B.jpg" alt="wireframe" width="100%">
+                                    <p id="annotation">Arrow icon suggests the action of "send," but doesn't clearly communicate the concept of multi-turn chats.</p>
+                                </div>
+                                <div class="col col-sm-4">
+                                    <img src="image/follow_up_icon_C.jpg" alt="wireframe" width="100%">
+                                    <p id="annotation">Chat icon directly communicates the concept of multi-turn chats and can be easily understood.</p>
+                                    <div class="selected-tag">
+                                        <img src="image/check_circle.svg" alt="">
+                                        <p>Final version</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <p><b id="highlight">Visual treatment for feature grouping</b></p>
                         <p>When presenting my design iteration to the UX team, one key suggestion I received was to group the follow-up suggestions with the existing Next Best Actions (e.g., "Let’s practice"), as both represent subsequent actions users can take. I went through multiple rounds of iteration, continuously evaluating the trade-offs of each option.</p>
                         <br>
                         <div class="container-fliud">
-                            <div class="row">
-                                <div class="col-sm-4">
+                            <div class="row gap-4 comparison">
+                                <div class="col">
                                     <img src="image/follow_up_iteration_A.jpg" alt="wireframe" width="100%">
+                                    <p id="annotation">This option keep all actions visually consistent and unified, but it's not visually appealing, and the copy is less concise.</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <img src="image/follow_up_iteration_B.jpg" alt="wireframe" width="100%">
-                                </div>
-                                <div class="col-sm-4">
+                                <div class="col">
                                     <img src="image/follow_up_iteration_C.jpg" alt="wireframe" width="100%">
+                                    <p id="annotation">Although the two sections are less connected visually, this option is more intuitive and distinctive.</p>
+                                    <div class="selected-tag">
+                                        <img src="image/check_circle.svg" alt="">
+                                        <p>Final version</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Choice of icons</b></p>
-                        <p>I explored different icon options to find the one most relevant to the follow-up suggestion feature.</p>
-                        <p><b id="toogether-highlight">Spark icon: </b>This icon is commonly used to represent AI. However, one of our content strategies was to focus on the value proposition of the feature—learning through chatting with AI—rather than overemphasizing the technology itself.</p>
-                        <p><b id="toogether-highlight">Arrow icon: </b>While it suggests the action of "send," it doesn't clearly communicate the feature’s value proposition.</p>
-                        <p><b id="toogether-highlight">Chat icon: </b>This icon directly relates to the value of the feature and is easily understood, conveying the concept of "conversation".</p>
-                        <br>
-                        <img src="image/follow_up_icon.jpg" alt="icon comparison" width="100%">
-                        <p>Since our design system only included a plain chat icon at the time, I designed a more illustrative chat icon to better align with the feature’s purpose and enhance the visual appeal.</p>
-
-                        <!-- <br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">What should happen when a follow-Up suggestion is selected?</b></p>
-                        <p>Once a user selects a follow-up suggestion, what should happen next? Some stakeholders suggested that the follow-up question should automatically populate the chat input box, requiring users to click "send" to initiate the action, to demonstrate that users could also type in the box.</p>
-                        <p>However, I argued that this would introduce unnecessary friction. Instead, I proposed that the follow-up suggestion should be sent directly upon selection. Based on the design strategies I had developed earlier, I believed that prioritizing ease of use would reduce friction, and that this interaction would be intuitive for users. Ultimately, I successfully persuaded the stakeholders to align with this approach.</p>
-                         -->
+                        
                     </div>
 
 
-                    <div class="block">
-                        <p id="section-title">Backend</p>
+                    <div class="block" id="nav-AI-design">
+                        <p id="section-title">AI design</p>
                         
-                        <h2 id="subtitle2">Designing with generative AI</h2>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Prompt engineering</b></p>
-                        <p>I worked closely with the learning science team and LLM engineers to refine the prompt strategy. Initially, we experimented with offering a set of predefined options (e.g., help me memorize, create an analogy, give an example) and allowed the LLM to choose the most appropriate one based on the given question. However, after conducting prompt engineering tests, we discovered that the more specific the instructions, the less relevant and lower quality the output became, as the LLM would attempt to follow the instructions too rigidly. As a result, we shifted to providing a more generic prompt, as follows:</p>
-                        <p style="font-family: 'Courier New', Courier, monospace; padding: 16px; background-color: rgb(237, 237, 237); border-radius: 5px;">Your goal is to provide suggestions of follow-up questions that a student might ask regarding a question and response you are helping them with original question and response context.</p>
-                        <p style="font-family: 'Courier New', Courier, monospace; padding: 16px; background-color: rgb(237, 237, 237); border-radius: 5px;">Write 3 follow-up questions, no longer than one sentence, tailored and relevant to the original question the student asked and the content of the answer they received. These follow-up questions should be from the perspective of a student, should be engaging and inviting for a student to ask, and span a variety of types of follow-up questions. </p>
+                        <h2 id="subtitle2">Prompting AI to generate high-quality, relevant suggestions</h2>
+                        <p><b id="highlight">Prompt engineering</b></p>
+                        <p>I worked closely with the learning science team and LLM engineers to refine the prompt. Initially, we experimented with offering a set of predefined options (e.g., help me memorize, create an analogy, give an example) and allowed the LLM to choose the most appropriate one based on the given question. However, after conducting prompt engineering tests, we discovered that the more specific the instructions, the less relevant and lower quality the output became, as the LLM would attempt to follow the instructions too rigidly. As a result, we shifted to providing a more generic prompt, as follows:</p>
+                        <p style="font-family: 'Courier New', Courier, monospace; padding: 24px; font-size: 16px; background-color: #F5F5F7; border-radius: 28px;">Your goal is to provide suggestions of follow-up questions that a student might ask regarding a question and response you are helping them with original question and response context.<br><br>Write 3 follow-up questions, no longer than one sentence, tailored and relevant to the original question the student asked and the content of the answer they received. These follow-up questions should be from the perspective of a student, should be engaging and inviting for a student to ask, and span a variety of types of follow-up questions. </p>
                         <p>I estimated the typical length of follow-up questions generated by the LLM and set a character limit to ensure the output wouldn’t overwhelm the user or constrain the quality of the suggestions. The limit was added to the prompt as follows: </p>
-                        <p style="font-family: 'Courier New', Courier, monospace; padding: 16px; background-color: rgb(237, 237, 237); border-radius: 5px;">Each follow-up question should be brief and no longer than 120 characters. </p>
+                        <p style="font-family: 'Courier New', Courier, monospace; padding: 24px; font-size: 16px; background-color: #F5F5F7; border-radius: 28px;">Each follow-up question should be brief and no longer than 120 characters. </p>
 
                         <br>
-                        <p style="font-size: 20px;"><b id="toogether-highlight">Adoption of AI means less control</b></p>
+                        <p><b id="highlight">Adoption of AI means less control</b></p>
                         <p>As we integrated generative AI into the product, we realized that we had less control over the output. I became more aware of potential friction and proactively designed for possible scenarios, such as: What if it takes too long to generate follow-up suggestions? What if an error occurs and the generation fails? I made sure to address these cases within the design to ensure a smooth user experience.</p>
-                        <img id="image_w_annotation" src="image/follow_up_loading_and_error.jpg" alt="loading state design" width="100%" style="border-radius: 15px;">
-                        <p id="annotation">Show the shimmer for the follow-up suggestions before the content is fully loaded. Hide the follow-up suggestion section if an error occurs.</p>
+                        <img id="image_w_annotation" src="image/follow_up_loading_and_error.jpg" alt="loading state design" width="100%" style="border-radius: 28px;">
+                        <p id="annotation">The shimmer acts as a placeholder while the follow-up suggestions are being generated. If an error occurs, the section is hidden to avoid drawing unnecessary attention.</p>
 
                     </div>
                     
 
-                    <div class="block">
-                        <p id="section-title">Final output and result</p>
-                        <h2 id="subtitle2">A/B testing with two variants</h2>
-                        <p>The solution provides dynamic, contextually relevant follow-up suggestions to help students engage more meaningfully, encouraging them to move beyond quick answers and achieve deeper learning outcomes. When a student receives a homework solution from Chegg, they will be presented with three dynamic suggestions, generated by the LLM through prompt engineering. Upon selecting a suggestion, students will receive a tailored response from Chegg.</p>
-                        <p><b id="toogether-highlight">Feature highlights:</b></p>
+                    <div class="block" id="nav-outcome">
+                        <p id="section-title">Outcome</p>
+                        <h2 id="subtitle2">Successfully boosting user engagement in the A/B test</h2>
+                        <p><b id="highlight">Solution</b></p>
+                        <p>To enhance user engagement with the AI-powered chat, we surfaced dynamic, context-aware suggestions to guide students beyond quick answers toward deeper learning. When receiving a homework solution on Chegg, students are presented with three suggestions generated by the LLM. Selecting one prompts an instant response from Chegg AI.</p>
+                        <p><b id="highlight">Feature highlights</b></p>
                         <ul>
-                            <li>Dynamic, context-aware follow-up suggestions</li>
+                            <li>Personalized follow-up suggestions</li>
                             <li>Clean information hierarchy that matches with the user’s mental modal</li>
                             <li>Improved discoverability through strategic visual treatment and placement</li>
                             <li>Seamless, effortless interaction</li>
                         </ul>
                         <br>
-                        <p><b id="toogether-highlight">Variant A - bottom placement</b></p>
-                        <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1031229341?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                        <br>
+                        <p><b id="highlight">Variant A - bottom placement</b></p>
                         <p>In variant A, the follow-up suggestions are placed inline at the bottom of the solutions. While this placement might appear less discoverable, it aligns closely with the user’s mental model—they typically consider asking a follow-up only after identifying the right question and solution to their homework problem. This alignment proved crucial, as this variant outperformed the other variant in the A/B test.</p>
+                        <div style="padding:64.34% 0 0 0;position:relative;margin-top: 4vh;margin-bottom: 4vh;"><iframe src="https://player.vimeo.com/video/1036957162?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Follow-up Suggestion Preview A"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         <br>
-                        <p><b id="toogether-highlight">Variant B - sticky right rail placement</b></p>
-                        <div style="padding:64.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1031234567?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Dynamic Follow-Up Suggestions (bottom)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         <br>
+                        <p><b id="highlight">Variant B - sticky right rail placement</b></p>
                         <p>Variant B features a more prominent placement, designed to ensure the new feature is highly visible and not easily overlooked by users. As users scroll through the screen, the follow-up suggestions remain visible, sticking to the right side of the solution as long as the solution body is in view. While this approach yielded positive results in the A/B testing, its performance was slightly lower compared to the other variant.</p>
+                        <div style="padding:64.34% 0 0 0;position:relative;margin-top: 4vh;margin-bottom: 4vh;"><iframe src="https://player.vimeo.com/video/1042389957?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Follow-up Suggestion Preview B"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         <br>
-
-                        
+                        <br>
+                        <p><b id="highlight">Impact on engagement metrics</b></p>
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="metrics" style="color: #E86001; float:left; ">4.67%</p>
+                                        <img style="width: 30px; height: 30px; margin-top: 1em;" src="image/chegg_arrow.png" alt="up arrow">
+                                    </div>
+                                    
+                                    <p style="clear: both; text-align: center;">Increase in the number of subscribers who ask follow-up questions</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex justify-content-center">
+                                        <p class="metrics" style="color: #E86001; float:left; ">3.93%</p>
+                                        <img style="width: 30px; height: 30px; margin-top: 1em;" src="image/chegg_arrow.png" alt="up arrow">
+                                    </div>
+                                    <p style="clear: both; text-align: center;">Increase in follow-up questions asked by each subscriber</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block" style="padding-bottom: 16vh;">
+                    <div class="block" id="nav-reflection">
                         <p id="section-title">Reflection</p>
                         
                         <h2 id="subtitle2">Bridging user needs and business goals</h2>
                         <p>This project enhanced my business acumen and refined my A/B testing skills. While I previously focused primarily on advocating for user needs in my designs, this experience allowed me to gain a deeper understanding of the business goals and potential impacts behind the task. I incorporated these insights into my design decisions and proactively collaborated with PMs to define success metrics and create an instrumentation plan. By designing two A/B test variants, I successfully aligned design decisions with both user needs and business objectives.</p>
                     </div>
  
-                   
-
-                </div>
-            </div>
-
-            
-                <div class="next container-fliud">
-                    <a href="freemium_locked.html">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>Next</p>
-                                <h1>Freemium</h1>
-                            </div>
-                            <div class="col-sm-6">
-                                <img id="arrow" src="image/arrow.svg" alt="">
+                </div>               
+                
+                <div class="narrow-body next-project">
+                    <hr id="footer-divider">
+                    <p id="subtitle2">Next project</p>
+                    <a href="freemium_locked.html" style="text-decoration: none;">
+                        <div class="container-fliud card-container hover-target">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex align-items-center">
+                                    <div class="title-intro">
+                                            <img src="image/lock.svg" alt="locked" style="width: 24px; margin-left: 0; margin-bottom: 20px; margin-top: 24px;">
+                                            <h3>Designing Chegg’s first freemium experience</h3>
+                                            <ul class="nav nav-pills" id="tag">
+                                                <li>Growth</li>
+                                                <li>Onboarding</li>
+                                                <li>Motion design</li>
+                                            </ul>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-7 pl-0 pr-0 pb-0 pt-0">
+                                    <img src="image/freemium_cover.png" alt="preview" >
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
-
-            <div class="project-body">
+                 </div>
                 
-                <!-- footer -->
-                <div class="footer">
-                    <div class="contact">
-                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
-                        <a href="https://www.linkedin.com/in/monaluo/" target="_blank">LinkedIn</a>
-                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
-                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2024 Mona Luo.</span>
+            
+
+             <!-- footer -->
+            <div class="home-footer container-fliud project-footer narrow-body" id="footer">
+                <div class="footer-container row">
+                    <div class="col-sm-12">
+                        <p class="copyright" style="float: left;">Designed and coded with love and coffee by Mona Luo </p>
+                        <p class="copyright" style="float: right;">Copyright &copy; 2025 Mona Luo</p>
                     </div>
                 </div>
-            
             </div>
+
+            
+            
+
         </div> 
+
+        <div id="cursor"></div>
+        <script src="cursor.js"></script>
+        
     </body>
 
     </html>

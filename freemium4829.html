@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="robots" content="noindex, nofollow">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
         <script>
@@ -10,80 +11,107 @@
             gtag('config', 'UA-150477387-1');
         </script>
 
-        <title>Dynamic Follow-Up Suggestion - Mona Luo</title>
-        <link rel="icon" type="image/x-icon" href="/image/favicon_new.ico">
+        <title>Mona Luo - Product Designer</title>
+        <link rel="icon" type="image/x-icon" href="/image/mona_favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
     </head>
     <body class="project">  
         <div class="container-fliud">
-             <!-- top nav -->
-             <div class="top-nav" id="navbar">
-                <script src="nav_toggle.js"></script>
-                <div class="top-nav-logo">
-                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
-                </div>
-                <div class="top-nav-right">
-                    <a href="index.html#work">Work</a>
-                    <a href="index.html#experiments">Experiments</a>
-                    <a href="about.html">About</a>
-                </div>
-            </div>
             
-            <div class="project-body">
+                <!-- top nav -->
+                <div class="top-nav project-top-nav narrow-body container fixed-top d-flex justify-content-center" id="project-top-nav">
+                    <div class="top-nav-logo">
+                        <a class="hover-target" href="index.html"><img src="image/mona_logo.png" alt="mona"></a>
+                    </div>
+                    <div class="top-nav-right">
+                            <a class="hover-target" id="hidden-button" href="index.html#work">Work</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#about">About</a>
+                            <a class="hover-target" id="hidden-button" href="index.html#footer">Contact</a>
+                            <button id="menu-button"><img id="hamburger-img" src="image/menu.png" alt="menu"></button>
+                            <!-- <img src="image/menu.png" alt="menu"> -->
+                            <a class="hover-target" href="#top" id="up-arrow-button"><img src="image/arrow_upward.png" alt="go to top"></a>
+                    </div>
+                </div>
+                <div class="container fixed-top d-flex justify-content-center hidden-menu" id="hidden-menu">
+                    <a href="index.html#work">Work</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#footer">Contact</a>
+                </div>
+
+
+                <!-- side nav -->
+                 <div class="side-nav container">
+                    <div style="padding-top: 12px; padding-bottom: 12px;">
+                        <a class="hover-target" href="#nav-overview">Overview</a>
+                        <a class="hover-target" href="#nav-context">Context</a>
+                        <a class="hover-target" href="#nav-opportunity">Opportunity</a>
+                        <a class="hover-target" href="#nav-ideation-and-research">Ideation & Research</a>
+                        <a class="hover-target" href="#nav-user-flow">User flow</a>
+                        <a class="hover-target" href="#nav-design-iteration">Design iteration</a>
+                        <a class="hover-target" href="#nav-feedback-handling">Feedback handling</a>
+                        <a class="hover-target" href="#nav-motion-design">Motion design</a>
+                        <a class="hover-target" href="#nav-wrap-up">Wrap-up</a>
+                        <a class="hover-target" href="#nav-reflection">Reflection</a>
+                    </div>
+                 </div>
+
+                 <script src="menu.js"></script>
                 
                 <!-- content -->
                 <div class="content">
 
                     <!-- title -->
-                    <div class="title">
-                        <h1>Freemium</h1>
-                        <p id="info">UX Design &#183; 2024</p>
+                    <div class="title block">
+                        <h1>Designing Chegg’s first freemium experience</h1>
+                        <p id="info">2024 &#183; New feature design </p>
+                    </div>
+                    <div class="wide-body">
+                        <div style="padding:64.34% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1038321796?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
 
-                    <img id="previewImg" src="image/freemium_preview.jpg" alt="" width="100%" style="border-radius: 15px;">
-
-
                     <!-- overview and my role -->
-                    <div class="intro">
+                    <div class="intro block" id="nav-overview">
                         <div class="container-fliud">
                             <div class="row">
                                 <div class="overview col-sm-6">
                                     <p>With the rise of free generative AI tools, Chegg experienced a decline in the conversion rate for its paid homework help services. To drive subscription acquisition and increase engagement of users with free accounts, I designed Chegg’s first freemium experience.</p>
+                                    <ul class="nav nav-pills" id="tag">
+                                        <li>Growth</li>
+                                        <li>Onboarding</li>
+                                        <li>Motion design</li>
+                                    </ul>
                                 </div>
                                 <div class="role col-sm-6">
                                     <div>
                                         <p id="subtitle1">My role</p>
-                                        <p>Sole UX designer &amp; UX researcher</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p>Sole UX designer, UX researcher</p>
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Contribution highlights</p>
-                                        <ul>
-                                            <li>Designed the end-to-end freemium user flow</li>
-                                            <li>Created motion graphics for onboarding</li>
-                                            <li>Conducted UX research</li>
-                                            <li>Developed strategies for business models</li>
-                                        </ul>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Skills</p>
+                                        <p>User flow, motion graphics, UX research</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Duration</p>
                                         <p>8 weeks</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <hr>
                                     </div>
                                     <div>
-                                        <p id="subtitle1">Team</p>
-                                        <p>UX designer (Me), UX content designer, Product manager, Engineers, Product marketing managers, Data analyst</p>
-                                        <hr style="height:0.5px;border-width:0;background-color:rgb(78, 81, 91)">
+                                        <p id="subtitle1">Core Team</p>
+                                        <p>UX designer (me), UX content designer, PM, Product marketing managers, Software engineers, Data analyst</p>
+                                        <hr>
                                     </div>
                                     <div>
                                         <p id="subtitle1">Tools</p>
@@ -93,151 +121,191 @@
                             </div>
             
                         </div>
-  
-
                     </div>
 
-                    <div style="padding:64.24% 0 0 0;position:relative; margin-top: 8vh;margin-bottom: 8vh;"><iframe src="https://player.vimeo.com/video/1038321796?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="wide-body"><hr></div>
 
-
-
-
-
+                    
 
                     <!-- detail -->
 
 
-                    <div class="block">
-                        <p id="section-title">Challenge</p>
-                        <h2 id="subtitle2">Chegg’s conversion rate has gone down significantly in 2024</h2>
-                        <p>With the rise of free generative AI tools, Chegg experienced a decline in the conversion rate for its paid homework help services. Currently, Chegg’s core product - homework Q&A - doesn’t provide any content for free, leaving non subscribers no way to try out the product outside of the paywall. There is a big appetite to build the first and ever freemium experience to give non-subscribers a taste of Chegg’s content quality.</p>
+                    <div class="block" id="nav-context">
+                        <p id="section-title">Context</p>
+                        <h2 id="subtitle2">Chegg’s conversion rate has gone down significantly</h2>
+                        <p>With the rise of free generative AI tools, Chegg experienced a decline in the conversion rate for its paid homework help services. Currently, Chegg’s core product - homework Q&A - doesn’t provide any content for free, leaving non subscribers no way to try out the product outside of the paywall.</p>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Objective</p>
+                    <div class="block" id="nav-opportunity">
+                        <p id="section-title">Opportunity</p>
                         <h2 id="subtitle2">How can we build a freemium experience that drives members’ engagement and conversion?</h2>
-                        <p>Through discussions with the PM and UX content designer, we defined the project goals and success metrics. The primary focus was to driving repeat usage of freemium as a first step, followed by improving the conversion rate.</p>
-                    </div>
-
-                    <div class="block">
-                        <p id="section-title">Ideation</p>
-                        <h2 id="subtitle2">Free step-reveal as the first freemium experiment</h2>
-                        <p>I planned and facilitated a brainstorming session with approximately 10 cross-functional stakeholders, ensuring diverse perspectives and the right mix of participants. Using activities like Crazy 8s and Storyboarding, we identified and prioritized four ideas deemed the most impactful and least likely to cannibalize existing subscriptions.</p>
-                        <p>To evaluate whether each option provided sufficient value to drive repeated use of the freemium offering, I conducted user research. The findings showed that the first three options were highly valuable to students. We chose Free Step-Reveal as the initial freemium experiment, prioritizing it for its low level of effort, which would allow us to get some quick signals.</p>
+                        <p>There is a big appetite to build the first and ever freemium experience to give non-subscribers a taste of Chegg’s content quality. Through discussions with the stakeholders, we aligned on the project goals and success metrics.</p>
                         <br>
-                        <div class="container-fliud">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p id="top_annotation" style="text-align: center;">Free AI solutions</p>
-                                    <img src="image/freemium_concept_1.jpg" alt="wireframe" width="100%">
+                        <div class="container-fliud horizontal-card-container">
+                            <div class="row gap-4">
+                                <div class="col">
+                                        <img src="image/number1.svg" alt="">
+                                        <p class="card-title"><b>Primary goal</b></p>
+                                        <p>Driving registration and repeat usage of freemium to grow the active user bases.</p>
                                 </div>
-                                <div class="col-sm-3">
-                                    <p id="top_annotation" style="text-align: center;">Free step reveal</p>
-                                    <img src="image/freemium_concept_2.jpg" alt="wireframe" width="100%">
-                                </div>
-                                <div class="col-sm-3">
-                                    <p id="top_annotation" style="text-align: center;">Guided walkthrough</p>
-                                    <img src="image/freemium_concept_3.jpg" alt="wireframe" width="100%">
-                                </div>
-                                <div class="col-sm-3">
-                                    <p id="top_annotation" style="text-align: center;">AI summary</p>
-                                    <img src="image/freemium_concept_4.jpg" alt="wireframe" width="100%">
+                                <div class="col">
+                                        <img src="image/number2.svg" alt="">
+                                        <p class="card-title"><b>Secondary goal</b></p>
+                                        <p>Increasing the conversion rate to subscriptions.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="block">
+                    <div class="block" id="nav-ideation-and-research">
+                        <p id="section-title">Ideation &amp; Research</p>
+                        <h2 id="subtitle2">Free step-reveal as the first freemium experiment</h2>
+                        <p id="highlight">Facilitating the brainstorming session</p>
+                        <p>I planned and facilitated a brainstorming session with approximately 10 cross-functional stakeholders, ensuring diverse perspectives. Through activities like Crazy 8s and Storyboarding, we identified and prioritized four ideas deemed the most impactful and least likely to cannibalize existing business model.</p>
+                        <img src="image/freemium_ideation.jpg" alt="ideation screenshot" width="100%" style="border-radius: 28px;">
+                        <p id="highlight">Running concept testing</p>
+                        <p>To assess whether each option offered enough value to encourage repeated use of the freemium model, I conducted concept testing with 40 non-subscribers on UserTesting.com. The results showed that all options, except for AI Summary, were seen as highly valuable by students. We decided to prioritize Free Step-Reveal for the initial freemium experiment, as it required the least effort, allowing us to gather quick signals.</p>
+                        <br>
+                        <div class="container-fliud">
+                            <div class="row comparison">
+                                <div class="col-sm-3">
+                                    <img src="image/freemium_concept_1.jpg" alt="wireframe" width="100%" style="border-radius: 28px;">
+                                    <p id="annotation">Free AI Solution: <br>Offering all AI solutions for free to stay competitive with free AI tools in the market.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/freemium_concept_3.jpg" alt="wireframe" width="100%" style="border-radius: 28px;">
+                                    <p id="annotation">Guided Walkthrough: <br>Guiding users solve each step of the problem independently.</p>
+                            </div>
+                                <div class="col-sm-3">
+                                    <img src="image/freemium_concept_4.jpg" alt="wireframe" width="100%" style="border-radius: 28px;">
+                                    <p id="annotation">AI Summary: <br>Summarizing the solutions using AI while withholding the final answers</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/freemium_concept_2.jpg" alt="wireframe" width="100%" style="border-radius: 28px;">
+                                    <p id="annotation">Free Step-Reveal: <br>Revealing the first one to two steps of the solutions for free</p>
+                                    <div class="selected-tag">
+                                        <img src="image/check_circle.svg" alt="">
+                                        <p>Prioritized</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block" id="nav-user-flow">
                         <p id="section-title">User flow</p>
                         <h2 id="subtitle2">Thinking through the end-to-end flow</h2>
-                        <p>I began by mapping out the current user journey and analyzing traffic at each step. Once I gained a deeper understanding, I designed the freemium user flow at a high level. Most of Chegg's traffic comes from SEO. Once a visitor lands on the site, they are prompted to sign up to unlock the first step for free. In the existing acquisition flow, users were directed to the interstitial page for subscription. I intentionally moved the interstitial to a later stage in the flow to streamline the onboarding process to freemium.</p>
-                        <img src="image/freemium_flow.jpg" alt="freemium flow" width="100%">
+                        <p>New to the growth and commerce side, I started by mapping the current acquisition flow and analyzing traffic at each step. After gaining a deeper understanding, I designed a high-level freemium user flow. In the original acquisition flow, users were directed to a subscription interstitial page immediately after signing up. I intentionally moved this interstitial to a later stage, streamlining the onboarding process for freemium users.</p>
+                        <img id="image_w_annotation" src="image/freemium_flow.jpg" alt="user flow" style="border-radius: 28px; width: 100%;">
+                        <p id="annotation" style="text-align: center;">Simplified version of the main freemium flow</p>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
-                        <h2 id="subtitle2">Ensuring discoverability of freemium entry</h2>
-                        <p>One challenge was ensuring the discoverability of the freemium entry point. Initially, we started with a version where I reused the design from the current acquisition flow, making only minor copy adjustments for freemium. However, I discovered that many visitors return to Chegg multiple times before signing up. For these returning visitors, the freemium entry was easy to overlook because it resembled the existing acquisition flow. Eventually, we landed on the version where I added an eye-catching illustration. Drawing insights from previous experiments, we incorporated the words “free” and “join now,” which had proven effective in boosting CVR and CTR, into the messaging.</p>
-                        <img src="image/freemium_entry.jpg" alt="iteration on freemium entry" width="100%">
+                    <div class="block" id="nav-design-iteration">
+                        <p id="section-title">Design Iteration</p>
+                        <h2 id="subtitle2">Ensuring discoverability of freemium entry point</h2>
+                        <p>One challenge was ensuring the discoverability of the freemium entry point. Initially, we started with a version where I reused the upsell model design from the current acquisition flow, making only minor copy adjustments for freemium. However, I was informed by the product marketing manager that many visitors return to Chegg multiple times before signing up. For these returning visitors, the freemium entry could be easily overlooked if it appeared similar to the existing upsell model. Eventually, we landed on the version where I added an eye-catching illustration. Drawing insights from previous experiments, we incorporated the words “free” and “join now,” which had proven effective in boosting CVR and CTR, into the messaging.</p>
+                        <img id="image_w_annotation" class="small-img" src="image/freemium_entry.jpg" alt="entry point design" style="border-radius: 28px;">
+                        <p id="annotation" style="text-align: center;">Before vs. After</p>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-feedback-handling">
+                        <p id="section-title">Feedback handling</p>
                         <h2 id="subtitle2">Nudge, don't push</h2>
                         <p>The design of the freemium content page sparked extensive debate. We deliberately limited upselling in this experience to allow freemium members to focus on the content. However, some stakeholders raised concerns that this approach might reduce conversion rates (CVR). Additionally, since not all solution types supported free steps, we needed to manage expectations by mentioning these constraints in the onboarding messaging—further amplifying concerns about potential CVR impact.</p>
-                        <img id="image_w_annotation" src="image/freemium_content_1.jpg" alt="content page early version" width="100%">
+                        <img id="image_w_annotation" class="small-img" src="image/freemium_content_1.jpg" alt="early version" style="border-radius: 28px;">
                         <p id="annotation" style="text-align: center;">An early version of the freemium content page that raised concerns about conversion rate</p>
-
-                        <br>
-                        <p>Acknowledging the feedback, I brought it to my team. While we agreed on maintaining a transparent and focused experience, I explored ways to incorporate the feedback and strike a balance by subtly nudging users to subscribe. After discussions, we made three changes:</p>
+                        <p>I brought the critical feedback to my team for further discussion. While we agreed that a transparent and focused experience was key to building trust and engagement, I explored ways to incorporate the feedback by nudging users to subscribe rather than pushing them. After discussions, we made three changes:</p>
                         <ul>
-                            <li style="margin-bottom: 2vh;"><b id="toogether-highlight">Positive Onboarding Messaging: </b>I dug into data on Amplitude and found that traffic to solution types not supporting free step-reveal was lower than anticipated. This insight allowed us to tweak the messaging tone to be more optimistic.</li>
-                            <li style="margin-bottom: 2vh;"><b id="toogether-highlight">Transparent communication at the right moment: </b>We ensured that the constraints were clearly communicated when users landed on unsupported solutions.</li>
-                            <li style="margin-bottom: 2vh;"><b id="toogether-highlight">Subtle Upselling: </b> Instead of overtly promoting subscriptions, we highlighted the gated "Send to Expert" feature to demonstrate value and added similar Q&As to showcase Chegg’s extensive library.</li>
+                            <li><b>Subtle upselling: </b>Instead of overtly promoting subscriptions, we highlighted the gated "Send to Expert" feature to demonstrate value and added similar Q&As to showcase Chegg’s extensive library.</li>
+                            <li><b>Positive onboarding messaging: </b> I dug into data on Amplitude and found that traffic to solution types not supporting free step-reveal was lower than anticipated. This insight allowed us to tweak the messaging tone to be more optimistic.</li>
+                            <li><b>Transparent communication at the right moment: </b>We ensured that the constraints were clearly communicated when users landed on unsupported solutions.</li>
                         </ul>
-                        <img id="image_w_annotation" src="image/freemium_content_2.jpg" alt="content page final version" width="100%">
-                        <p id="annotation" style="text-align: center;">Final version that incorporates stakeholders' feedback</p>
-
-
+                        <div class="container-fliud">
+                            <div class="row comparison">
+                                <div class="col col-sm-4">
+                                    <img src="image/freemium_content_2_value.png" alt="wireframe" width="100%">
+                                    <p id="annotation">Subtle upselling</p>
+                                </div>
+                                <div class="col col-sm-4">
+                                    <img src="image/freemium_content_2_onboarding.png" alt="wireframe" width="100%">
+                                    <p id="annotation">Positive onboarding messaging</p>
+                                </div>
+                                <div class="col col-sm-4">
+                                    <img src="image/freemium_content_2_upgrade.png" alt="wireframe" width="100%">
+                                    <p id="annotation">Transparent communication at the right moment</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Design iteration</p>
+                    <div class="block" id="nav-motion-design">
+                        <p id="section-title">Motion design</p>
                         <h2 id="subtitle2">Creating enticing onboarding through animations</h2>
                         <p>Since the early version of the onboarding felt too low-key, I utilized animations to make the experience more enticing, which I believed would help users better appreciate the freemium offering. In the initial version, when users dismissed the onboarding modal, an animation with confetti played as the first step expanded. While the confetti added excitement, it felt cliché and random.</p>
                         <p>Based on feedback from my UX team, I iterated and designed a new unlocking animation, where users would wait briefly for the first step to unlock. This approach was intended to make users attach more value to the freemium experience.</p>
-                        <div style="padding:64.24% 0 0 0;position:relative; margin-top: 8vh;margin-bottom: 8vh;"><iframe src="https://player.vimeo.com/video/1038362092?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        <div style="padding:64.24% 0 0 0;position:relative; margin-top: 8vh;margin-bottom: 8vh;"><iframe src="https://player.vimeo.com/video/1038362092?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
 
-                    <div class="block">
-                        <p id="section-title">Wrap-up</p>
+                    <div class="block" id="nav-wrap-up">
+                        <p id="section-title">Wrap-Up</p>
                         <h2 id="subtitle2">Final design and next steps</h2>
                         <p>Although the freemium experience has not yet launched, once it does, we plan to closely track metrics such as the number of sign-ups, session visits, and conversion rate. I will continue iterating on the design based on qualitative data and may conduct additional user research.</p>
-                        <div style="padding:64.24% 0 0 0;position:relative; margin-top: 8vh;margin-bottom: 8vh;"><iframe src="https://player.vimeo.com/video/1038321796?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 15px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
+                        <div style="padding:64.24% 0 0 0;position:relative; margin-top: 8vh;margin-bottom: 8vh;"><iframe src="https://player.vimeo.com/video/1038321796?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 28px;" title="Freemium"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
-
-
-                    <div class="block" style="padding-bottom: 16vh;">
+                    
+                
+                    <div class="block" id="nav-reflection">
                         <p id="section-title">Reflection</p>
-                        <h2 id="subtitle2">Growing through growth design</h2>
-                        <p>As someone new to growth design, I quickly onboarded by studying existing acquisition flows and reviewing previous experiments. To simplify and communicate the complex processes, I visualized end-to-end user journeys. This not only helped me better understand the flows but also enhanced cross-functional communication, ensuring alignment among stakeholders. One thing I could have done better was to involve the creative marketing team and product marketing managers more frequently in the conversations. Their perspectives would have helped the team develop more solid strategies.</p>
+                        <h2 id="subtitle2">Navigating growth design: lessons in collaboration and communication</h2>
+                        <p>As someone new to growth design, I quickly onboarded by studying existing acquisition flows and reviewing previous experiments. To simplify and communicate the complex processes, I visualized end-to-end user journeys. This not only helped me better understand the flows but also enhanced cross-functional communication, ensuring alignment among stakeholders. One thing I could have done better was to involve the creative marketing team and product marketing managers more frequently in the early conversations. Their perspectives could have helped the team develop solid solutions more efficiently.</p>
                     </div>
  
-                   
-
-                </div>
-            </div>
-
-            
-                <div class="next container-fliud">
-                    <a href="loading_state.html">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>Next</p>
-                                <h1>AI Loading State</h1>
-                            </div>
-                            <div class="col-sm-6">
-                                <img id="arrow" src="image/arrow.svg" alt="">
+                </div>               
+                
+                <div class="narrow-body next-project">
+                    <hr id="footer-divider">
+                    <p id="subtitle2">Next project</p>
+                    <a href="loading_state.html" style="text-decoration: none;">
+                        <div class="container-fliud card-container hover-target">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex align-items-center">
+                                    <div class="title-intro">
+                                            <h3>How I creatively tackled the long AI response latency</h3>
+                                            <ul class="nav nav-pills" id="tag">
+                                                <li>Shipped</li>
+                                                <li>Generative AI</li>
+                                                <li>Motion design</li>
+                                            </ul>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-7 pl-0 pr-0 pb-0 pt-0">
+                                    <img src="image/loading_cover.png" alt="preview" >
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
-
-            <div class="project-body">
+                 </div>
                 
-                <!-- footer -->
-                <div class="footer">
-                    <div class="contact">
-                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
-                        <a href="https://www.linkedin.com/in/monaluo/" target="_blank">LinkedIn</a>
-                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
-                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2024 Mona Luo.</span>
+            
+
+             <!-- footer -->
+            <div class="home-footer container-fliud project-footer narrow-body" id="footer">
+                <div class="footer-container row">
+                    <div class="col-sm-12">
+                        <p class="copyright" style="float: left;">Designed and coded with love and coffee by Mona Luo </p>
+                        <p class="copyright" style="float: right;">Copyright &copy; 2025 Mona Luo</p>
                     </div>
                 </div>
-            
             </div>
+
+            
+            
+
         </div> 
+
+        <div id="cursor"></div>
+        <script src="cursor.js"></script>
+        
     </body>
 
     </html>
