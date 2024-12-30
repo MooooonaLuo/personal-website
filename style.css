@@ -860,10 +860,10 @@ body{
 
 @media only screen and ( max-width: 599px){
     .comparison #annotation{
-        margin-bottom: 20px;
+        margin-bottom: 32px;
     }
     .comparison img{
-        margin-bottom: 4px !important;
+        margin-bottom: 12px !important;
     }
 }
 
