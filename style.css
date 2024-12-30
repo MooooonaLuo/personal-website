@@ -956,10 +956,11 @@ body{
     }
     .footer-container{
         margin-top: 2vh;
+        margin-bottom: 12vh;
     }
     .project-footer .footer-container{
         margin-top: 5vh;
-        margin-bottom: 15vh;
+        margin-bottom: 12vh;
     }
     #footer-divider{
         margin-bottom: 4vh;
